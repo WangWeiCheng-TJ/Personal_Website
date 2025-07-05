@@ -58,7 +58,7 @@ features:
     enable: false
   privacy_pack:
     enable: false
-    
+
 marketing:
   analytics:
-    google_analytics: 'YOUR_ID'
+    google_analytics: 'G-8HE21Q7221'
