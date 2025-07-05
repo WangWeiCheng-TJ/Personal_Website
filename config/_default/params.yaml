@@ -35,7 +35,8 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      filename: 'Elf_white.png'
+      alt_text: "Wei-Cheng"
 
 # Site footer
 footer:
