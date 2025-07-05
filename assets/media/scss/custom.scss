@@ -1,0 +1,7 @@
+body {
+  background-color: red !important;
+}
+// Make the 'About Me and My Research' block wider
+.wide-text-block .prose {
+  max-width: 900px; /* 您可以隨意調整這個數字，例如 800px 或 1000px */
+}

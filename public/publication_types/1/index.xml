@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/publication_types/1/</link>
+      <atom:link href="http://localhost:1313/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>1</title>
+      <link>http://localhost:1313/publication_types/1/</link>
+    </image>
+    
+    <item>
+      <title>Selective manipulation of disentangled representations for privacy-aware facial image processing</title>
+      <link>http://localhost:1313/publication/deconinck-2022-selectivemanipulationdisentangledrepresentations/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/deconinck-2022-selectivemanipulationdisentangledrepresentations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering Trajectories in Heterogeneous Representations for Video Event Detection</title>
+      <link>http://localhost:1313/publication/2018-icip/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2018-icip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Event based surveillance video synopsis using trajectory kinematics descriptors</title>
+      <link>http://localhost:1313/publication/2017-icmva/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2017-icmva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video gender recognition using temporal coherent face descriptor</title>
+      <link>http://localhost:1313/publication/2015-snpd/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2015-snpd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trajectory kinematics descriptor for trajectory clustering in surveillance videos</title>
+      <link>http://localhost:1313/publication/2015-iscas/</link>
+      <pubDate>Sun, 24 May 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2015-iscas/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
