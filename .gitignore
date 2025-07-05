@@ -1,0 +1,16 @@
+# Hugo 
+/public/ 
+/resources/ 
+/static/uploads/ 
+hugo_stats.json  
+
+# OS 
+.DS_Store 
+Thumbs.db  
+
+# node.js 
+/node_modules/
+
+# others
+go.sum
+test.txt
