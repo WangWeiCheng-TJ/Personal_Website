@@ -1,0 +1,6 @@
+# 檔案路徑: /config/_default/config.toml
+
+[build]
+  # 告訴 Hugo 隨時注意 SCSS 等資源檔案的變化並重新編譯
+  # 這是啟用自訂樣式的關鍵基礎
+  useResourceCacheWhen = 'always'
