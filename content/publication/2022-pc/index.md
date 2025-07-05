@@ -7,7 +7,7 @@ authors:
 - Pieter Simoens
 date: "2022-10-01T00:00:00Z"
 publishDate: "2022-10-01T00:00:00Z"
-publication_types: ["2"]
+publication_types: [Journal article]
 publication: "*IEEE Pervasive Computing, vol. 21, no. 4*"
 publication_short: "*IEEE Pervasive Comput.*"
 doi: 10.1109/MPRV.2022.3210377

@@ -7,7 +7,7 @@ authors:
 - Wei-Yun Huang
 date: "2017-05-08T00:00:00Z"
 publishDate: "2017-05-08T00:00:00Z"
-publication_types: ["1"]
+publication_types: [Conference paper]
 publication: "*2017 Fifteenth IAPR International Conference on Machine Vision Applications (MVA)*"
 publication_short: "*IAPR MVA 2017*"
 doi: 10.23919/MVA.2017.7986848

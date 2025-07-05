@@ -8,7 +8,7 @@ authors:
 - Wei-Yun Huang
 date: "2018-03-01T00:00:00Z"
 publishDate: "2018-03-01T00:00:00Z"
-publication_types: ["2"]
+publication_types: [Journal article]
 publication: "*IEEE Transactions on Circuits and Systems for Video Technology, vol. 28, no. 3*"
 publication_short: "*IEEE T-CSVT*"
 doi: 10.1109/TCSVT.2016.2629340
@@ -21,7 +21,7 @@ tags:
 - Spatiotemporal Coherence
 - Video Surveillance
 - Markov Random Fields
-featured: true
+featured: false
 
 url_pdf: 'https://ieeexplore.ieee.org/document/7744579'
 url_code: ''

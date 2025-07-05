@@ -7,7 +7,7 @@ authors:
 - Chun-Rong Huang
 date: "2018-10-07T00:00:00Z"
 publishDate: "2018-10-07T00:00:00Z"
-publication_types: ["1"]
+publication_types: [Conference paper]
 publication: "*2018 25th IEEE International Conference on Image Processing (ICIP)*"
 publication_short: "*IEEE ICIP 2018*"
 doi: 10.1109/ICIP.2018.8451160

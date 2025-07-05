@@ -9,7 +9,7 @@ doi: "10.3390/s25133856"
 
 publishDate: "2025-07-04T00:00:00Z"
 
-publication_types: ["article-journal"]
+publication_types: [Journal article]
 
 publication: "*MDPI Sensors*"
 publication_short: "*Sensors*"

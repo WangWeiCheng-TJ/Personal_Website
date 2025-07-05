@@ -9,7 +9,7 @@ authors:
 - Yun-Yang Lai
 date: "2019-01-27T00:00:00Z"
 publishDate: "2019-01-27T00:00:00Z"
-publication_types: ["2"]
+publication_types: [Journal article]
 publication: "*IEEE Transactions on Intelligent Transportation Systems, vol. 21, no. 1*"
 publication_short: "*IEEE T-ITS*"
 doi: 10.1109/TITS.2019.2892155

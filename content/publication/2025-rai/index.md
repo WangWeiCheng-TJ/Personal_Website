@@ -9,7 +9,7 @@ date: "2025-01-13T00:00:00Z"
 publishDate: "2025-01-13T00:00:00Z"
 
 # Publication type: 2 = Journal article
-publication_types: ["article-journal"]
+publication_types: [Journal article]
 
 publication: "*Frontiers in Robotics and AI*"
 publication_short: "*Frontiers in Robotics & AI*"

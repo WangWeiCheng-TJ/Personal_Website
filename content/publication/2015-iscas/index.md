@@ -7,7 +7,7 @@ authors:
 - Chun-Rong Huang
 date: "2015-05-24T00:00:00Z"
 publishDate: "2015-05-24T00:00:00Z"
-publication_types: ["1"]
+publication_types: [Conference paper]
 publication: "*2015 IEEE International Symposium on Circuits and Systems (ISCAS)*"
 publication_short: "*IEEE ISCAS 2015*"
 doi: 10.1109/ISCAS.2015.7168854

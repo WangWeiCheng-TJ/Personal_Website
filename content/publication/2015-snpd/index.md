@@ -7,7 +7,7 @@ authors:
 - Li-You Syu
 date: "2015-06-01T00:00:00Z"
 publishDate: "2015-06-01T00:00:00Z"
-publication_types: ["1"]
+publication_types: [Conference paper]
 publication: "*2015 IEEE/ACIS 16th International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD)*"
 publication_short: "*IEEE/ACIS SNPD 2015*"
 doi: 10.1109/SNPD.2015.7176186

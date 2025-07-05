@@ -8,7 +8,7 @@ authors:
 - Yen-Yu Lin
 date: "2018-10-01T00:00:00Z"
 publishDate: "2018-10-01T00:00:00Z"
-publication_types: ["2"]
+publication_types: [Journal article]
 publication: "*IEEE Transactions on Image Processing, vol. 27, no. 10*"
 publication_short: "*IEEE T-IP*"
 doi: 10.1109/TIP.2018.2848548
