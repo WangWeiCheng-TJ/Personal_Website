@@ -13,7 +13,7 @@ sections:
 
         Furthermore, I see a profound need to extend these technologies beyond urban convenience and into the domain of humanitarian aid. The same frameworks developed for analyzing complex scenes could be adapted to assist first responders in disaster relief scenarios, such as in the aftermath of a major earthquake, helping to categorize needs when resources are critically limited. They could also provide tools for humanitarian organizations to document events in other crisis zones in a secure and verifiable manner. 
         
-        Ultimately, I believe it is our collective responsibility as technologists to not only build powerful tools, but to actively envision and advocate for their use in service of human dignity and safety. Meaning lies not in the possession of results, but in the integrity of participation. My ultimate goal is to see deep learning prove valuable in addressing the practical needs of our most vulnerable populations in their most difficult moments.
+        Ultimately, I believe it is our collective responsibility as researches to not only build powerful tools, but to actively envision and advocate for their use in service of human dignity and safety. Meaning lies not in the possession of results, but in the integrity of participation. My ultimate goal is to see deep learning prove valuable in addressing the practical needs of our most vulnerable populations in their most difficult moments.
 
 page_type: mission
 
