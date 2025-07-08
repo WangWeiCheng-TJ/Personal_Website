@@ -92,7 +92,7 @@ work:
       - Mentored Bacholar's and Master's level students in machine learning course.
       - Designed and guided hands-on projects using real-world tools, including large-scale datasets from Airbnb and industry hardware like Sony's depth cameras.
 
-  - position: President
+  - position: Co-President
     company_name: Taiwanese Student Association of Ghent University
     company_url: ''
     company_logo: ''
