@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video Surveillance | Wei-Cheng Wang&#39;s Personal Website</title>
+    <link>http://localhost:1313/tags/video-surveillance/</link>
+      <atom:link href="http://localhost:1313/tags/video-surveillance/index.xml" rel="self" type="application/rss+xml" />
+    <description>Video Surveillance</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Video Surveillance</title>
+      <link>http://localhost:1313/tags/video-surveillance/</link>
+    </image>
+    
+    <item>
+      <title>Clustering Trajectories in Heterogeneous Representations for Video Event Detection</title>
+      <link>http://localhost:1313/publication/2018-icip/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2018-icip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatiotemporal Coherence-Based Annotation Placement for Surveillance Videos</title>
+      <link>http://localhost:1313/publication/2018-tcsvt/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2018-tcsvt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

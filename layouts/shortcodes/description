@@ -1,0 +1,5 @@
+{{ if .Page.Params.description }}
+  <div class="pub-description">
+    {{ .Page.Params.description | markdownify }}
+  </div>
+{{ end }}

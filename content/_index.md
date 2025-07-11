@@ -45,7 +45,7 @@ sections:
         Beyond research, I have consistently developed my leadership and mentorship skills. As a teaching assistant for three semsters of "Applied Machine Learning" for both Bachelor's and Master's students, I developed my ability to communicate complex topics by guiding hands-on projects using real-world tools, from Airbnb datasets to Sony's depth cameras. Concurrently, as President of the Taiwanese Student Association in Ghent, I served as the community's main contact and initiated a mentor-mentee program to support students and residents during the pandemic, strengthening my skills in community building and cross-cultural coordination.
         </p>
     design:
-      columns: 2
+      columns: 1
       css_class: "wide-text-block"
   - block: collection
     id: papers

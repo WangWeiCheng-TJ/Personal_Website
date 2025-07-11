@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Journal Article | Wei-Cheng Wang&#39;s Personal Website</title>
+    <link>http://localhost:1313/publication_types/journal-article/</link>
+      <atom:link href="http://localhost:1313/publication_types/journal-article/index.xml" rel="self" type="application/rss+xml" />
+    <description>Journal Article</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Journal Article</title>
+      <link>http://localhost:1313/publication_types/journal-article/</link>
+    </image>
+    
+    <item>
+      <title>Source-Free Model Transferability Assessment for Smart Surveillance via Randomly Initialized Networks</title>
+      <link>http://localhost:1313/publication/wang-2025-source/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/wang-2025-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedding-based pair generation for contrastive representation learning in audio-visual surveillance data</title>
+      <link>http://localhost:1313/publication/2025-rai/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2025-rai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy-preserving visual analysis: training video obfuscation models without sensitive labels</title>
+      <link>http://localhost:1313/publication/de-2024-privacy/</link>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/de-2024-privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Opt-in Framework for Privacy Protection in Audio-Based Applications</title>
+      <link>http://localhost:1313/publication/2022-pc/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2022-pc/</guid>
+      <description>
+  &lt;div class=&#34;pub-description&#34;&gt;
+    &lt;p style=&#34;text-align: justify;&#34;&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;&#34; style=&#34;max-width:320;margin:0.2em 1.5em 0.2em 0em;float:left;&#34; class=&#34;pub-img&#34; &gt;
+As audio-based applications become ubiquitous, they create a significant privacy risk through data bundling. Raw audio inherently contains far more information, such as identity, gender, and emotion, than required for the intended task. Existing privacy-preserving methods, mostly built on an &#34;opt-out&#34; mechanism, are insufficient as they place an impractical burden on users to anticipate and list all personal data they wish to protect. Furthermore, many of these solutions demand the costly retraining of downstream models, rendering them incompatible with the vast ecosystem of existing third-party systems.
+&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;
+To address these fundamental gaps, we developed an &#34;opt-in&#34; privacy framework where users proactively select the single piece of information they are willing to share. The core of this framework is an on-edge deep neural network obfuscator, trained via an adversarial process using a novel privacy loss function we designed, which operates directly on latent space representations to suppress all non-essential information. A key architectural constraint was ensuring third-party compatibility, making the obfuscator&#39;s output fully functional with existing, unmodified pre-trained models to avoid costly retraining and ensure immediate applicability. The framework&#39;s efficacy was then rigorously validated, not only against &#34;ignorant&#34; attackers but also more sophisticated &#34;informed&#34; attacker models across four public datasets. Its practicability was simultaneously benchmarked on a spectrum of hardware from a CPU-only Raspberry Pi to a GPU-equipped NVIDIA Jetson TX1.
+&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;
+The empirical results confirm that the opt-in paradigm offers superior and more comprehensive privacy protection. The framework successfully reduced attacker accuracy to near-random chance, critically outperforming the opt-out baseline against informed attackers, and proved resilient against attacks on unspecified attributes like emotion—a key failure point for opt-out systems. This robust privacy was achieved with only a minor 2-6% degradation in classification accuracy on the authorized task. Furthermore, latency benchmarks demonstrated the framework&#39;s viability for real-time edge deployment on devices with embedded GPUs (e.g., 34ms on Jetson TX1), providing a clear roadmap for future work in model compression for broader applicability.
+&lt;/p&gt;
+  &lt;/div&gt;
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors</title>
+      <link>http://localhost:1313/publication/2020-tits/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2020-tits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>USEAQ: Ultra-Fast Superpixel Extraction via Adaptive Sampling From Quantized Regions</title>
+      <link>http://localhost:1313/publication/2018-tip/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2018-tip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatiotemporal Coherence-Based Annotation Placement for Surveillance Videos</title>
+      <link>http://localhost:1313/publication/2018-tcsvt/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2018-tcsvt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,6 +1,7 @@
-# 檔案路徑: /config/_default/params.toml
+[appearance]
+color = 'emerald'
+mode = 'system'
 
 [features]
   [features.custom_asset]
-    # 明確地告訴主題：啟用自訂資源功能
     enabled = true

@@ -1,0 +1,15 @@
+// 測試用 - 讓頁面頂部出現紅色邊框
+body {
+    border-top: 3px solid red !important;
+}
+
+// 調整頁面寬度
+html body .max-w-prose {
+    max-width: 850px !important;
+}
+
+html body .prose {
+    max-width: 850px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
