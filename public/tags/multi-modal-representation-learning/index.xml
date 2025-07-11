@@ -17,7 +17,22 @@
       <link>http://localhost:1313/publication/2025-rai/</link>
       <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/2025-rai/</guid>
-      <description></description>
+      <description>
+  &lt;div class=&#34;pub-description&#34;&gt;
+    &lt;p style=&#34;text-align: justify;&#34;&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;&#34; style=&#34;max-width:320;margin:0.2em 1.5em 0.2em 0em;float:left;&#34; class=&#34;pub-img&#34; &gt;
+Conventional contrastive learning methods for self-supervised representation learning rely on an overly strict temporal alignment to generate positive pairs.  This approach, while effective in some domains, creates critical issues when applied to continuous surveillance data. The first problem is the prevalence of False Negatives; semantically identical events, such as a car passing, that occur at different times are incorrectly treated as negative pairs, which fundamentally misguides the learning objective and degrades the quality of the learned representations. This leads to a second issue, an Information Bottleneck, where the model learns superficial temporal cues instead of rich, generalizable semantic features, thus limiting its effectiveness on diverse downstream tasks that demand a deeper understanding of the data. 
+&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;
+To resolve these challenges, we developed a novel self-supervised framework centered on a new mechanism termed Embedding-based Pair Generation. Instead of relying on timestamps, EPG strategically leverages the frequent recurrence of events by sampling positive pairs based on their mutual proximity within the learnt embedding space. This process was coupled with a modified contrastive loss function specifically designed to effectively incorporate these multi-positive pairs, thereby enriching the learning signal and breaking through the information bottleneck. 
+&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;
+The results confirmed the superiority of this method. The EPG-trained representations significantly outperformed existing baselines, achieving a 10% performance increase in the task of audio-visual event localization. The efficacy and generality of these features were further validated across a range of applications, including unsupervised anomaly detection and event search. These findings empirically prove that the EPG framework successfully resolves the false negative problem and learns robust, versatile representations from complex, unlabeled surveillance streams in real-world scenarios.
+&lt;/p&gt;
+  &lt;/div&gt;
+
+
+</description>
     </item>
     
   </channel>
