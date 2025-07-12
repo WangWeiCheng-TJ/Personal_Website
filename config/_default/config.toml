@@ -4,3 +4,5 @@
   # 告訴 Hugo 隨時注意 SCSS 等資源檔案的變化並重新編譯
   # 這是啟用自訂樣式的關鍵基礎
   useResourceCacheWhen = 'always'
+
+googleAnalytics = "G-CZQYLMST6R"
