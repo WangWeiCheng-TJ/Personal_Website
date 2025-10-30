@@ -48,19 +48,20 @@ interests:
   - Audio Privacy
 
 education:
-  - area: PhD Candidate Computer Science Engineering
+  - area: PhD in Computer Science Engineering
     institution: Ghent University, Belgium
     date_start: 2019-09-01
-    date_end: 2025-12-31
+    date_end: 2025-11-14
     summary: |
-      My doctoral research, titled _Urban Sensor Intelligence: Advancing Privacy-Preserving Smart City Surveillance in the City of Things Era_, was conducted under the guidance of [Prof Pieter Simoens](https://research.ugent.be/web/person/pieter-simoens-0/en) and [Prof Sam Leroux](https://research.ugent.be/web/person/sam-leroux-0/en). This project was fully funded by the AI Flanders strategic research program of the Flemish Government.
-      Authored a total of five publications, consisting of three first-author articles in international peer-reviewed journals (e.g., IEEE Pervasive Computing, Sensors, and Frontiers in Robotics and AI), one co-authored journal article(Applied Intelligence), and one peer-reviewed workshop paper.
-      I will have my internal PhD defense in early October and expect to graduate by the end of the year.
+      My doctoral research, titled _Transferable and Privacy-Friendly Deep Learning Techniques for Audio-Visual Urban Surveillance: From Lab to Street_, , was conducted at Ghent University under the guidance of [Prof Pieter Simoens](https://research.ugent.be/web/person/pieter-simoens-0/en) and [Prof Sam Leroux](https://research.ugent.be/web/person/sam-leroux-0/en). Supported by the AI Flanders strategic research program, this project addressed both academic and real-world challenges in building robust, transferable, and privacy-preserving deep learning models for urban environments.
+      Motivated by the increasing deployment of smart surveillance technologies in modern cities—and the corresponding societal demand for privacy—my research systematically explored how to bridge the gap between laboratory-developed models and their practical, street-level applications. The work focused on (1) developing deep learning methods that respect privacy constraints while retaining high accuracy, (2) evaluating model transferability with minimal domain labels, and (3) validating techniques through real-world deployments with industry partner datasets.
+      Throughout this project, I developed multiple privacy-aware frameworks for acoustic surveillance, culminating in five peer-reviewed publications: three as first author in leading international journals (IEEE Pervasive Computing, Sensors, and Frontiers in Robotics and AI), plus a co-authored journal article and a workshop paper. My protocols have been adopted by industry partners for model evaluation, and research findings have been presented at Flanders AI events and IDLab Day. In addition, I co-advised a master's thesis on visual surveillance data anonymization, further extending the project's societal impact.
+      Having unanimously passed my internal PhD defense, I am scheduled for a public defense in November 2025, marking the completion of this project.
           
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
-  - area: MSc Computer and Communication Engineering 
+  - area: MSc in Computer and Communication Engineering 
     institution: National Cheng Kung University, Taiwan
     date_start: 2014-09-01
     date_end: 2016-06-30
@@ -69,7 +70,7 @@ education:
       Thesis on _Spatiotemporal Coherence based Annotation Placement for Surveillance Videos_.
 
       Supervised by [Prof Pau-Choo Chung](https://researchoutput.ncku.edu.tw/en/persons/pau-choo-chung). Authored four first-author publications, including a journal article in IEEE TCSVT, culminating in a thesis that received two national Best Thesis awards. Simultaneously, led a project team to develop an award-winning driver monitoring system, securing three international and national awards.
-  - area: BSc Electrical Engineering
+  - area: BSc in Electrical Engineering
     institution: National Cheng Kung University, Taiwan
     date_start: 2010-09-01
     date_end: 2014-06-30
