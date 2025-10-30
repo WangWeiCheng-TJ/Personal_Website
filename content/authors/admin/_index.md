@@ -51,7 +51,7 @@ education:
   - area: PhD in Computer Science Engineering
     institution: Ghent University, Belgium
     date_start: 2019-09-01
-    date_end: 2025-11-14 (expected)
+    date_end: 2025-11-14
     summary: |
       My doctoral research, titled _Transferable and Privacy-Friendly Deep Learning Techniques for Audio-Visual Urban Surveillance: From Lab to Street_, , was conducted at Ghent University under the guidance of [Prof Pieter Simoens](https://research.ugent.be/web/person/pieter-simoens-0/en) and [Prof Sam Leroux](https://research.ugent.be/web/person/sam-leroux-0/en). Supported by the AI Flanders strategic research program, this project addressed both academic and real-world challenges in building robust, transferable, and privacy-preserving deep learning models for urban environments.
 
