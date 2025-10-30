@@ -15,7 +15,9 @@ sections:
       username: admin
       text: |-
         <p style="text-align: justify;">
-        I am now actively seeking full-time opportunities in Europe (including the UK) and Canada where I can contribute my unique blend of research expertise and practical leadership to a forward-thinking team. While I am excited to tackle complex technical problems across any industry, I hold a strong personal interest in the potential for AI to address critical challenges in fields like humanitarian aid, medical innovation, and environmental protection.
+        I am a doctoral researcher specializing in developing transferable and privacy-friendly deep learning frameworks for complex, real-world audio and visual data. With hands-on experience tackling privacy, data scarcity, and cross-domain deployment challenges in smart urban environments, I am now seeking full-time opportunities in Europe (including the UK) and Canada to advance cutting-edge AI solutions with direct impact.
+
+        Open to both research and applied scientist roles in the AI industry, particularly focused on computer vision and audio analytics.
         </p>
       # Show a call-to-action button under your biography? (optional)
       button:
@@ -39,10 +41,19 @@ sections:
       subtitle: ''
       text: |-
         <p style="text-align: justify;">
-        I am a final-year Ph.D. candidate with the <a href="https://decide.ugent.be/">DECIDE</a> team at <a href="https://idlab.ugent.be/home">IDLab</a>, Ghent University-imec, with my work fully funded by the AI Flanders strategic research program. My doctoral research on smart city surveillance aims to tackle the real-world deployment challenges of deep learning models for audio and video analysis. The goal is to create frameworks that are not only technically advanced but also ethically grounded and privacy-aware, making them practical for real-world deployment. Under the guidence of <a href="https://research.ugent.be/web/person/pieter-simoens-0/en">Prof. Pieter Simoens</a> and <a href="https://research.ugent.be/web/person/sam-leroux-0/en">Prof. Sam Leroux</a>, the results and methodologies of this work have been published in peer-reviewed journals and conferences including IEEE Pervasive Computing, Sensors, and Frontiers Robotics and AI.
+        I am a final-year Ph.D. candidate with the <a href="https://decide.ugent.be/">DECIDE</a> team at <a href="https://idlab.ugent.be/home">IDLab</a>, Ghent University-imec. My research is fully funded by the AI Flanders strategic program and is supervised by [Prof Pieter Simoens](https://research.ugent.be/web/person/pieter-simoens-0/en) and [Prof Sam Leroux](https://research.ugent.be/web/person/sam-leroux-0/en).
         </p>
         <p style="text-align: justify;">
-        Beyond research, I have consistently developed my leadership and mentorship skills. As a teaching assistant for three semsters of "Applied Machine Learning" for both Bachelor's and Master's students, I developed my ability to communicate complex topics by guiding hands-on projects using real-world tools, from Airbnb datasets to Sony's depth cameras. Concurrently, as President of the Taiwanese Student Association in Ghent, I served as the community's main contact and initiated a mentor-mentee program to support students and residents during the pandemic, strengthening my skills in community building and cross-cultural coordination.
+        My doctoral work focuses on developing transferable and privacy-friendly deep learning techniques for real-world audio-visual urban surveillance: bridging the gap between the lab and dynamic street environments. The goal is to create frameworks that are both technically advanced and ethically robust, ensuring responsible AI deployment in smart cities. This has involved designing self-supervised and contrastive learning models for urban monitoring, collaborating with industry partners to validate results with domain-specific datasets, and innovating on privacy protection mechanisms that empower user consent.
+        </p>
+        <p style="text-align: justify;">
+        My research outcomes include peer-reviewed publications in journals such as IEEE Pervasive Computing, Sensors, and Frontiers in Robotics and AI. Many of these methodologies have been presented at academic and industry events and are now being adopted in practical applications: extending beyond the academic context to immediate societal impact.
+        </p>
+        <p style="text-align: justify;">
+        Beyond research, I am passionate about mentorship and leadership. I’ve served as a teaching assistant for three semesters in "Applied Machine Learning," guiding students through real-world data-driven projects using tools ranging from Airbnb datasets to Sony Depthsensing. As President of the Taiwanese Student Association in Ghent, I initiated and led a city-wide mentor-mentee program that supported our community throughout the pandemic, further sharpening my cross-cultural collaboration and community-building skills.
+        </p>
+        <p style="text-align: justify;">
+        Together, these experiences reflect my commitment to advancing AI technology that is not only powerful, but also human-centric, transparent, and positively impactful for diverse urban societies.
         </p>
     design:
       columns: 1

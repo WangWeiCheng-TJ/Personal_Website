@@ -51,10 +51,12 @@ education:
   - area: PhD in Computer Science Engineering
     institution: Ghent University, Belgium
     date_start: 2019-09-01
-    date_end: 2025-11-14
+    date_end: 2025-11-14 (expected)
     summary: |
       My doctoral research, titled _Transferable and Privacy-Friendly Deep Learning Techniques for Audio-Visual Urban Surveillance: From Lab to Street_, , was conducted at Ghent University under the guidance of [Prof Pieter Simoens](https://research.ugent.be/web/person/pieter-simoens-0/en) and [Prof Sam Leroux](https://research.ugent.be/web/person/sam-leroux-0/en). Supported by the AI Flanders strategic research program, this project addressed both academic and real-world challenges in building robust, transferable, and privacy-preserving deep learning models for urban environments.
-      Motivated by the increasing deployment of smart surveillance technologies in modern cities—and the corresponding societal demand for privacy—my research systematically explored how to bridge the gap between laboratory-developed models and their practical, street-level applications. The work focused on (1) developing deep learning methods that respect privacy constraints while retaining high accuracy, (2) evaluating model transferability with minimal domain labels, and (3) validating techniques through real-world deployments with industry partner datasets.
+
+      Motivated by the increasing deployment of smart surveillance technologies in modern cities and the corresponding societal demand for privacy, my research systematically explored how to bridge the gap between laboratory-developed models and their practical, street-level applications. The work focused on (1) developing deep learning methods that respect privacy constraints while retaining high accuracy, (2) evaluating model transferability with minimal domain labels, and (3) validating techniques through real-world deployments with industry partner datasets.
+
       Throughout this project, I developed multiple privacy-aware frameworks for acoustic surveillance, culminating in five peer-reviewed publications: three as first author in leading international journals (IEEE Pervasive Computing, Sensors, and Frontiers in Robotics and AI), plus a co-authored journal article and a workshop paper. My protocols have been adopted by industry partners for model evaluation, and research findings have been presented at Flanders AI events and IDLab Day. In addition, I co-advised a master's thesis on visual surveillance data anonymization, further extending the project's societal impact.
       Having unanimously passed my internal PhD defense, I am scheduled for a public defense in November 2025, marking the completion of this project.
           
