@@ -41,7 +41,7 @@ sections:
       subtitle: ''
       text: |-
         <p style="text-align: justify;">
-        I am a final-year Ph.D. candidate with the <a href="https://decide.ugent.be/">DECIDE</a> team at <a href="https://idlab.ugent.be/home">IDLab</a>, Ghent University-imec. My research is fully funded by the AI Flanders strategic program and is supervised by <a href="https://research.ugent.be/web/person/pieter-simoens-0/en">Prof. Pieter Simoens</a> and <a href="https://research.ugent.be/web/person/sam-leroux-0/en">Prof. Sam Leroux</a>.
+        I recently recieved my Ph.D. in Computer Science Engineering at Ghent University. Fully funded by the AI Flanders strategic program, I conducted my research with the <a href="https://decide.ugent.be/">DECIDE</a> team at <a href="https://idlab.ugent.be/home">IDLab</a>, Ghent University-imec under the supervision of <a href="https://research.ugent.be/web/person/pieter-simoens-0/en">Prof. Pieter Simoens</a> and <a href="https://research.ugent.be/web/person/sam-leroux-0/en">Prof. Sam Leroux</a>.
         </p>
         <p style="text-align: justify;">
         My doctoral work focuses on developing transferable and privacy-friendly deep learning techniques for real-world audio-visual urban surveillance: bridging the gap between the lab and dynamic street environments. The goal is to create frameworks that are both technically advanced and ethically robust, ensuring responsible AI deployment in smart cities. This has involved designing self-supervised and contrastive learning models for urban monitoring, collaborating with industry partners to validate results with domain-specific datasets, and innovating on privacy protection mechanisms that empower user consent.
