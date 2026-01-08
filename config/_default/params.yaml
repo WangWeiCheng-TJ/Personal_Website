@@ -59,7 +59,7 @@ features:
     enable: false
   privacy_pack:
     enable: false
-
+    
 marketing:
   analytics:
     google_analytics: 'G-CZQYLMST6R'

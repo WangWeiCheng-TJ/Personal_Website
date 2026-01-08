@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python/Pytorch | Wei-Cheng Wang&#39;s Personal Website</title>
+    <link>http://localhost:1313/tags/python/pytorch/</link>
+      <atom:link href="http://localhost:1313/tags/python/pytorch/index.xml" rel="self" type="application/rss+xml" />
+    <description>Python/Pytorch</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Python/Pytorch</title>
+      <link>http://localhost:1313/tags/python/pytorch/</link>
+    </image>
+    
+    <item>
+      <title>SensCity - Acoustic Surveillance in Real-World</title>
+      <link>http://localhost:1313/project-research/sensecity/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/sensecity/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Why &amp;ldquo;Off-the-Shelf&amp;rdquo; Fails in the Wild:&lt;/strong&gt;&lt;br&gt;
+Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on &lt;em&gt;raw, unprocessed urban audio&lt;/em&gt; remains largely unverified.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Mission:&lt;/strong&gt;&lt;br&gt;
+In collaboration with &lt;em&gt;AsaSense&lt;/em&gt;, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to &lt;em&gt;stress-test&lt;/em&gt; two dominant paradigms: anomaly detection and sound tagging, and identify &lt;em&gt;why&lt;/em&gt; conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.&lt;/p&gt;
+&lt;h3 id=&#34;operational-context-the-senscity-testbed&#34;&gt;Operational Context (The SensCity Testbed)&lt;/h3&gt;
+&lt;p&gt;This project leveraged a real-world infrastructure to diagnose algorithmic limitations:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Raw Data Ingestion:&lt;/strong&gt;&lt;br&gt;
+Unlike academic datasets, the SensCity sensor network captures the &amp;ldquo;messy&amp;rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Audit:&lt;/strong&gt;&lt;br&gt;
+We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to &lt;em&gt;contextual blindness&lt;/em&gt; (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Conclusion:&lt;/strong&gt;&lt;br&gt;
+Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, &lt;em&gt;Context-Specific Modeling&lt;/em&gt; (sensor-specific baselines) is a prerequisite for operational reliability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proposed Resolution:&lt;/strong&gt;&lt;br&gt;
+Based on these findings, we formulated a &lt;em&gt;Context-Aware Design Framework&lt;/em&gt;, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;core-methodologies&#34;&gt;Core Methodologies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Source:&lt;/strong&gt; High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent &amp;amp; Rotterdam).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diagnosis Method:&lt;/strong&gt; Cross-context evaluation (Spatial &amp;amp; Temporal Domain Shift).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Algorithmic Focus:&lt;/strong&gt; Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architecture Design:&lt;/strong&gt; Feasibility analysis of &lt;em&gt;Hybrid Edge-Cloud&lt;/em&gt; pipelines to mitigate bandwidth bottlenecks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;technical-analysis--innovations&#34;&gt;Technical Analysis &amp;amp; Innovations&lt;/h3&gt;
+&lt;h4 id=&#34;1-diagnosing-the-generalization-fallacy&#34;&gt;1. Diagnosing the &amp;ldquo;Generalization Fallacy&amp;rdquo;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on &amp;ldquo;winter data&amp;rdquo; failed catastrophically during summer evenings due to changed human activity patterns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Solution:&lt;/strong&gt; Proposed a &lt;em&gt;Context-Specific Modeling&lt;/em&gt; approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-the-limits-of-semantic-tagging&#34;&gt;2. The Limits of Semantic Tagging&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Finding:&lt;/strong&gt; Standard sound taggers (trained on AudioSet) struggle with the &lt;em&gt;Open-Set Nature&lt;/em&gt; of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Proposal:&lt;/strong&gt; Suggested moving from &amp;ldquo;rigid classification&amp;rdquo; to &amp;ldquo;&lt;em&gt;unsupervised deviation detection&lt;/em&gt;&amp;rdquo; at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-architectural-scalability-edge-vs-cloud&#34;&gt;3. Architectural Scalability (Edge vs. Cloud)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Analysis:&lt;/strong&gt; Analyzed the trade-off between &lt;em&gt;transmission cost&lt;/em&gt; and &lt;em&gt;detection latency&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; Proposed a &lt;em&gt;&amp;ldquo;Filter-then-Forward&amp;rdquo;&lt;/em&gt; architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;outcomes--impact&#34;&gt;Outcomes &amp;amp; Impact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Empirical Evidence:&lt;/strong&gt; Provided one of the first comprehensive studies on the &lt;em&gt;limitations of transfer learning&lt;/em&gt; in acoustic surveillance using real-world, longitudinal data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Design Guidelines:&lt;/strong&gt; The findings established the foundation for &lt;em&gt;Privacy-Preserved &amp;amp; Adaptive Surveillance&lt;/em&gt;, directly influencing the design of subsequent research on privacy in surveillance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strategic Value:&lt;/strong&gt; Delivered critical insights to the industrial partner (AsaSense) on avoiding &amp;ldquo;technical debt&amp;rdquo; by pivoting from global models to adaptive, edge-based learning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Chapter 2: The AsaSense Project&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Detailed analysis of deployment constraints and algorithmic failures.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

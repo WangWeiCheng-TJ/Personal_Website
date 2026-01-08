@@ -34,6 +34,85 @@
     </item>
     
     <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/project/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taiwanese at Ghent Survivor Kit - A Serverless LLM-Agent Deployment</title>
+      <link>http://localhost:1313/project-applied/ugentapp/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-applied/ugentapp/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;&lt;strong&gt;TW@Ghent Survivor Kit : AI-Powered Community Platform&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A serverless, AI-driven information hub designed to automate community management and solve information fragmentation for international students.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;motivation--product-philosophy&#34;&gt;Motivation &amp;amp; Product Philosophy&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;TW@Ghent Survivor Kit&lt;/strong&gt; is a comprehensive survival guide platform.
+Originally engineered for students, I collaborated with the current president of UGent Taiwanese Student Association (TSA) to redefine the product roadmap, expanding its scope to serve the entire Taiwanese expatriate community. This ensured the system aligned with actual operational needs rather than just technical novelty.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;I built this not just as a developer, but as the former President who identified the root cause of platform failure.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I recognized that previous platforms failed due to &lt;strong&gt;high operational friction&lt;/strong&gt;. To solve this, I set a strict constraint: &lt;strong&gt;The system must be &amp;ldquo;low-maintenance&amp;rdquo; and operable by non-tech staff.&lt;/strong&gt; This drove the decision to adopt a &lt;em&gt;serverless architecture&lt;/em&gt; combined with &lt;em&gt;autonomous AI agents&lt;/em&gt;, allowing for rapid iteration and a &amp;ldquo;set-and-forget&amp;rdquo; operational model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Role:&lt;/strong&gt; Product Owner &amp;amp; Full-Stack Engineer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scope:&lt;/strong&gt; Requirement Analysis → System Architecture → AI Agent Development → CI/CD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AI &amp;amp; NLP:&lt;/strong&gt; Python, Gemma 3 4B (LLM), Feedparser (RSS), Prompt Engineering&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend / CMS:&lt;/strong&gt; Google Sheets API (NoSQL/CMS), Google Apps Script, Event-Driven ETL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; Next.js 14 (App Router), TypeScript, Tailwind CSS, ISR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Vercel (Serverless), GitHub Actions (CI/CD), Docker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;technical-architecture--implementation&#34;&gt;Technical Architecture &amp;amp; Implementation&lt;/h3&gt;
+&lt;h4 id=&#34;1-ai-driven-intelligence-pipeline-event-driven-etl&#34;&gt;1. AI-Driven Intelligence Pipeline (Event-Driven ETL)&lt;/h4&gt;
+&lt;p&gt;The core innovation is an automated pipeline that monitors, analyzes, and translates local news without human intervention, effectively functioning as a &lt;em&gt;domain-specific AI agent&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Ingestion:&lt;/strong&gt; A Python-based agent continuously monitors municipal RSS feeds (stad.gent) and emergency alerts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLM Integration (Gemma 3 4B):&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Deployed &lt;strong&gt;Gemma 3 4B&lt;/strong&gt; to perform semantic analysis on raw Dutch texts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Prompt Engineering:&lt;/strong&gt; Designed rigorous prompt templates to enforce valid JSON output from the LLM. Tasks include: Importance Grading (Level 1-3), Audience Classification (Student vs. Resident), Traditional Chinese Translation, and Summarization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robustness:&lt;/strong&gt; Implemented retry logic with exponential backoff to handle API rate limits and ensure pipeline reliability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ETL Execution:&lt;/strong&gt; Structured data is automatically validated and written back to the Google Sheets CMS, triggering frontend updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-serverless-full-stack-architecture&#34;&gt;2. Serverless Full-Stack Architecture&lt;/h4&gt;
+&lt;p&gt;Designed a cost-efficient architecture suitable for long-term operation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Headless CMS (Google Sheets):&lt;/strong&gt; Abstracted Google Sheets into a JSON API. This allows non-technical staff to manage content via a familiar spreadsheet interface, eliminating database costs ($0/month) and lowering the maintenance barrier.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend (Next.js 14):&lt;/strong&gt; Implemented &lt;em&gt;incremental static regeneration&lt;/em&gt; (60s revalidation) to ensure high performance and SEO while keeping data fresh.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-cicd--devops&#34;&gt;3. CI/CD &amp;amp; DevOps&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Actions:&lt;/strong&gt; Orchestrated daily cron jobs (UTC 6:00) to execute the news crawling and AI analysis agents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security &amp;amp; Reproducibility:&lt;/strong&gt; Managed API Secrets via GitHub Secrets and utilized docker to ensure environment consistency for the AI agents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automated Deployment:&lt;/strong&gt; Configured Vercel for automatic deployments on git push, establishing a production-ready lifecycle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;key-results--impact&#34;&gt;Key Results &amp;amp; Impact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;100% Automation:&lt;/strong&gt; Achieved a fully automated loop for news gathering, translation, classification, and publishing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zero Operational Cost:&lt;/strong&gt; Leveraged serverless tiers to maintain &lt;em&gt;costfree&lt;/em&gt;_, ensuring the project&amp;rsquo;s financial sustainability for the student association.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Solved &amp;ldquo;Technical Debt&amp;rdquo;:&lt;/strong&gt; Created a system that &lt;em&gt;requires no coding skills to maintain&lt;/em&gt;, addressing the high turnover rate inherent in student organizations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ugenttsasurvivorkit.vercel.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Live Website&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/daily_news_agent.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;AI Agent Source Code&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Python agent for scraping and LLM processing.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Prompt Engineering Templates&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Structured prompts for Gemma 3 4B.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Source-Free Model Transferability Assessment for Smart Surveillance via Randomly Initialized Networks</title>
       <link>http://localhost:1313/publication/wang-2025-source/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
@@ -77,14 +156,6 @@ The results confirmed the superiority of this method. The EPG-trained representa
 
 
 </description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -179,30 +250,6 @@ The results confirmed the superiority of this method. The EPG-trained representa
 &lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Pandas</title>
-      <link>http://localhost:1313/project/pandas/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/pandas/</guid>
-      <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PyTorch</title>
-      <link>http://localhost:1313/project/pytorch/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/pytorch/</guid>
-      <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
-      <link>http://localhost:1313/project/scikit/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/scikit/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -332,7 +379,7 @@ The results confirmed the superiority of this method. The EPG-trained representa
 
 
 
-&lt;div id=&#34;chart-395647128&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-798436215&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -350,7 +397,7 @@ The results confirmed the superiority of this method. The EPG-trained representa
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-395647128&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-798436215&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1008,6 +1055,71 @@ The empirical results confirm that the opt-in paradigm offers superior and more 
     </item>
     
     <item>
+      <title>SensCity - Acoustic Surveillance in Real-World</title>
+      <link>http://localhost:1313/project-research/sensecity/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/sensecity/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Why &amp;ldquo;Off-the-Shelf&amp;rdquo; Fails in the Wild:&lt;/strong&gt;&lt;br&gt;
+Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on &lt;em&gt;raw, unprocessed urban audio&lt;/em&gt; remains largely unverified.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Mission:&lt;/strong&gt;&lt;br&gt;
+In collaboration with &lt;em&gt;AsaSense&lt;/em&gt;, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to &lt;em&gt;stress-test&lt;/em&gt; two dominant paradigms: anomaly detection and sound tagging, and identify &lt;em&gt;why&lt;/em&gt; conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.&lt;/p&gt;
+&lt;h3 id=&#34;operational-context-the-senscity-testbed&#34;&gt;Operational Context (The SensCity Testbed)&lt;/h3&gt;
+&lt;p&gt;This project leveraged a real-world infrastructure to diagnose algorithmic limitations:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Raw Data Ingestion:&lt;/strong&gt;&lt;br&gt;
+Unlike academic datasets, the SensCity sensor network captures the &amp;ldquo;messy&amp;rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Audit:&lt;/strong&gt;&lt;br&gt;
+We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to &lt;em&gt;contextual blindness&lt;/em&gt; (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Conclusion:&lt;/strong&gt;&lt;br&gt;
+Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, &lt;em&gt;Context-Specific Modeling&lt;/em&gt; (sensor-specific baselines) is a prerequisite for operational reliability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proposed Resolution:&lt;/strong&gt;&lt;br&gt;
+Based on these findings, we formulated a &lt;em&gt;Context-Aware Design Framework&lt;/em&gt;, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;core-methodologies&#34;&gt;Core Methodologies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Source:&lt;/strong&gt; High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent &amp;amp; Rotterdam).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diagnosis Method:&lt;/strong&gt; Cross-context evaluation (Spatial &amp;amp; Temporal Domain Shift).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Algorithmic Focus:&lt;/strong&gt; Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architecture Design:&lt;/strong&gt; Feasibility analysis of &lt;em&gt;Hybrid Edge-Cloud&lt;/em&gt; pipelines to mitigate bandwidth bottlenecks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;technical-analysis--innovations&#34;&gt;Technical Analysis &amp;amp; Innovations&lt;/h3&gt;
+&lt;h4 id=&#34;1-diagnosing-the-generalization-fallacy&#34;&gt;1. Diagnosing the &amp;ldquo;Generalization Fallacy&amp;rdquo;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on &amp;ldquo;winter data&amp;rdquo; failed catastrophically during summer evenings due to changed human activity patterns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Solution:&lt;/strong&gt; Proposed a &lt;em&gt;Context-Specific Modeling&lt;/em&gt; approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-the-limits-of-semantic-tagging&#34;&gt;2. The Limits of Semantic Tagging&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Finding:&lt;/strong&gt; Standard sound taggers (trained on AudioSet) struggle with the &lt;em&gt;Open-Set Nature&lt;/em&gt; of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Proposal:&lt;/strong&gt; Suggested moving from &amp;ldquo;rigid classification&amp;rdquo; to &amp;ldquo;&lt;em&gt;unsupervised deviation detection&lt;/em&gt;&amp;rdquo; at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-architectural-scalability-edge-vs-cloud&#34;&gt;3. Architectural Scalability (Edge vs. Cloud)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Analysis:&lt;/strong&gt; Analyzed the trade-off between &lt;em&gt;transmission cost&lt;/em&gt; and &lt;em&gt;detection latency&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; Proposed a &lt;em&gt;&amp;ldquo;Filter-then-Forward&amp;rdquo;&lt;/em&gt; architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;outcomes--impact&#34;&gt;Outcomes &amp;amp; Impact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Empirical Evidence:&lt;/strong&gt; Provided one of the first comprehensive studies on the &lt;em&gt;limitations of transfer learning&lt;/em&gt; in acoustic surveillance using real-world, longitudinal data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Design Guidelines:&lt;/strong&gt; The findings established the foundation for &lt;em&gt;Privacy-Preserved &amp;amp; Adaptive Surveillance&lt;/em&gt;, directly influencing the design of subsequent research on privacy in surveillance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strategic Value:&lt;/strong&gt; Delivered critical insights to the industrial partner (AsaSense) on avoiding &amp;ldquo;technical debt&amp;rdquo; by pivoting from global models to adaptive, edge-based learning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Chapter 2: The AsaSense Project&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Detailed analysis of deployment constraints and algorithmic failures.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors</title>
       <link>http://localhost:1313/publication/2020-tits/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
@@ -1045,6 +1157,88 @@ The empirical results confirm that the opt-in paradigm offers superior and more 
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/2017-icmva/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Multimodal Driver Monitoring &amp; Temporal Face Analysis</title>
+      <link>http://localhost:1313/project-research/drivermonitor/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/drivermonitor/</guid>
+      <description>&lt;hr&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;Multimodal Driver Safety System &amp;amp; Robust Face Analysis&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A holistic driver monitoring framework developed with ARTC, fusing visual temporal dynamics and ECG signals to enable early anomaly detection and proactive safety intervention.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;From Passive Recording to Proactive Intervention:&lt;/strong&gt;&lt;br&gt;
+Standard recognition models often fail in real-world cockpits due to inter-personal variability. A generic model struggles to distinguish between a driver&amp;rsquo;s natural features (e.g., droopy eyelids) and fatigue.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Goal:&lt;/strong&gt; &lt;br&gt;
+To build a safety-critical system capable of &lt;em&gt;early detection&lt;/em&gt; of compromised states by combining &lt;em&gt;non-intrusive visual monitoring&lt;/em&gt; with physiological signals (ECG), reducing false alarms and ensuring timely intervention.&lt;/p&gt;
+&lt;h3 id=&#34;operational-user-scenario-how-it-works&#34;&gt;Operational User Scenario (How it Works)&lt;/h3&gt;
+&lt;p&gt;To address the variability mentioned above, the system operates in a three-stage safety loop:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Initialization (The &amp;ldquo;Handshake&amp;rdquo;):&lt;/strong&gt; When the driver starts the car, the system silently records a short &amp;ldquo;calibration sequence&amp;rdquo; to learn their current appearance (e.g., wearing sunglasses, heavy makeup, or fatigue). This establishes a &lt;strong&gt;Personalized Normal Driving Model (PNDM)&lt;/strong&gt; for the specific trip.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Monitoring:&lt;/strong&gt; As the vehicle moves through changing environments (e.g., entering a dark tunnel or facing high-beam glare), the &lt;strong&gt;alignment-free visual descriptor&lt;/strong&gt; maintains robust tracking without being confused by lighting shifts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proactive Intervention:&lt;/strong&gt; If the driver shows signs of drowsiness (e.g., prolonged eye closure) &lt;em&gt;AND&lt;/em&gt; the ECG sensor detects physiological fatigue, the system triggers a &lt;strong&gt;multi-stage alert&lt;/strong&gt;—first warning the driver, and in critical cases, notifying fleet management or emergency services.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;core-methodologies&#34;&gt;Core Methodologies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Visual Algorithms:&lt;/strong&gt; Temporal Coherent Face Descriptor (alignment-free, robust to lighting).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Integration:&lt;/strong&gt; Multimodal Sensor Fusion (Vision + ECG).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modeling Strategy:&lt;/strong&gt; Sparse Representation-based Classification with &lt;em&gt;online dictionary learning&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation:&lt;/strong&gt; Co-developed and tested with the Automotive Research &amp;amp; Testing Center (ARTC).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;technical-architecture--innovations&#34;&gt;Technical Architecture &amp;amp; Innovations&lt;/h3&gt;
+&lt;h4 id=&#34;1-personalized-calibration-user-centric-design&#34;&gt;1. Personalized Calibration (User-Centric Design)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; &lt;br&gt;
+Drivers look different every day. Pre-trained generic models fail when users change appearance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Solution:&lt;/strong&gt; &lt;br&gt;
+Implemented a &lt;em&gt;rapid initialization phase&lt;/em&gt; that builds a dynamic baseline for each trip. The algorithm detects anomalies based on &lt;em&gt;relative deviation&lt;/em&gt; from this baseline, effectively filtering out noise from accessories or facial structure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-robust-temporal-modeling-visual-subsystem&#34;&gt;2. Robust Temporal Modeling (Visual Subsystem)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Alignment-Free:&lt;/strong&gt; &lt;br&gt;
+By leveraging &lt;em&gt;temporal consistency&lt;/em&gt; across continuous frames, we eliminated the need for fragile face alignment steps, ensuring stability even under rapid head movements.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lighting Invariance:&lt;/strong&gt; &lt;br&gt;
+Utilized &lt;em&gt;intensity contrast descriptors&lt;/em&gt; to maintain accuracy in challenging lighting conditions (e.g., nighttime driving validated in NCKU-driver database).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-proactive-safety-trigger-system-level&#34;&gt;3. Proactive Safety Trigger (System Level)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Multimodal Logic:&lt;/strong&gt; &lt;br&gt;
+Designed the visual module to work in tandem with ECG sensors. While ECG detects physiological drops in alertness, our visual module confirms behavioral lapses (e.g., nodding off).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;/strong&gt; &lt;br&gt;
+This cross-verification significantly reduces false positives, ensuring that alerts are only triggered for genuine safety risks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;outcomes--validation&#34;&gt;Outcomes &amp;amp; Validation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Industry Collaboration:&lt;/strong&gt; Co-developed with &lt;em&gt;ARTC&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Award-Winning:&lt;/strong&gt; Secured &lt;em&gt;Second Place&lt;/em&gt; at the &lt;em&gt;International ICT Innovative Services Awards&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance:&lt;/strong&gt; Achieved &lt;em&gt;real-time performance&lt;/em&gt; and superior accuracy over state-of-the-art baselines in nighttime scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;p&gt;Publications: &lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wang Wei-Cheng&lt;/strong&gt;, Ru-Yun Hsu, Chun-Rong Huang, Li-You Syu (2015). &lt;a href=&#34;http://localhost:1313/publication/2015-snpd&#34;&gt;Video gender recognition using temporal coherent face descriptor.&lt;/a&gt; &lt;em&gt;IEEE/ACIS SNPD 2015&lt;/em&gt;.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Chien-Yu Chiou, &lt;strong&gt;Wang Wei-Cheng&lt;/strong&gt;, Shueh-Chou Lu, Chun-Rong Huang, Pau-Choo Chung, Yun-Yang Lai (2019). &lt;a href=&#34;http://localhost:1313/publication/2020-tits&#34;&gt;Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors.&lt;/a&gt;  &lt;em&gt;IEEE T-ITS&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>

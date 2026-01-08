@@ -20,5 +20,87 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Multimodal Driver Monitoring &amp; Temporal Face Analysis</title>
+      <link>http://localhost:1313/project-research/drivermonitor/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/drivermonitor/</guid>
+      <description>&lt;hr&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;Multimodal Driver Safety System &amp;amp; Robust Face Analysis&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A holistic driver monitoring framework developed with ARTC, fusing visual temporal dynamics and ECG signals to enable early anomaly detection and proactive safety intervention.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;From Passive Recording to Proactive Intervention:&lt;/strong&gt;&lt;br&gt;
+Standard recognition models often fail in real-world cockpits due to inter-personal variability. A generic model struggles to distinguish between a driver&amp;rsquo;s natural features (e.g., droopy eyelids) and fatigue.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Goal:&lt;/strong&gt; &lt;br&gt;
+To build a safety-critical system capable of &lt;em&gt;early detection&lt;/em&gt; of compromised states by combining &lt;em&gt;non-intrusive visual monitoring&lt;/em&gt; with physiological signals (ECG), reducing false alarms and ensuring timely intervention.&lt;/p&gt;
+&lt;h3 id=&#34;operational-user-scenario-how-it-works&#34;&gt;Operational User Scenario (How it Works)&lt;/h3&gt;
+&lt;p&gt;To address the variability mentioned above, the system operates in a three-stage safety loop:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Initialization (The &amp;ldquo;Handshake&amp;rdquo;):&lt;/strong&gt; When the driver starts the car, the system silently records a short &amp;ldquo;calibration sequence&amp;rdquo; to learn their current appearance (e.g., wearing sunglasses, heavy makeup, or fatigue). This establishes a &lt;strong&gt;Personalized Normal Driving Model (PNDM)&lt;/strong&gt; for the specific trip.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Monitoring:&lt;/strong&gt; As the vehicle moves through changing environments (e.g., entering a dark tunnel or facing high-beam glare), the &lt;strong&gt;alignment-free visual descriptor&lt;/strong&gt; maintains robust tracking without being confused by lighting shifts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proactive Intervention:&lt;/strong&gt; If the driver shows signs of drowsiness (e.g., prolonged eye closure) &lt;em&gt;AND&lt;/em&gt; the ECG sensor detects physiological fatigue, the system triggers a &lt;strong&gt;multi-stage alert&lt;/strong&gt;—first warning the driver, and in critical cases, notifying fleet management or emergency services.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;core-methodologies&#34;&gt;Core Methodologies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Visual Algorithms:&lt;/strong&gt; Temporal Coherent Face Descriptor (alignment-free, robust to lighting).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Integration:&lt;/strong&gt; Multimodal Sensor Fusion (Vision + ECG).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modeling Strategy:&lt;/strong&gt; Sparse Representation-based Classification with &lt;em&gt;online dictionary learning&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation:&lt;/strong&gt; Co-developed and tested with the Automotive Research &amp;amp; Testing Center (ARTC).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;technical-architecture--innovations&#34;&gt;Technical Architecture &amp;amp; Innovations&lt;/h3&gt;
+&lt;h4 id=&#34;1-personalized-calibration-user-centric-design&#34;&gt;1. Personalized Calibration (User-Centric Design)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; &lt;br&gt;
+Drivers look different every day. Pre-trained generic models fail when users change appearance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Solution:&lt;/strong&gt; &lt;br&gt;
+Implemented a &lt;em&gt;rapid initialization phase&lt;/em&gt; that builds a dynamic baseline for each trip. The algorithm detects anomalies based on &lt;em&gt;relative deviation&lt;/em&gt; from this baseline, effectively filtering out noise from accessories or facial structure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-robust-temporal-modeling-visual-subsystem&#34;&gt;2. Robust Temporal Modeling (Visual Subsystem)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Alignment-Free:&lt;/strong&gt; &lt;br&gt;
+By leveraging &lt;em&gt;temporal consistency&lt;/em&gt; across continuous frames, we eliminated the need for fragile face alignment steps, ensuring stability even under rapid head movements.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lighting Invariance:&lt;/strong&gt; &lt;br&gt;
+Utilized &lt;em&gt;intensity contrast descriptors&lt;/em&gt; to maintain accuracy in challenging lighting conditions (e.g., nighttime driving validated in NCKU-driver database).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-proactive-safety-trigger-system-level&#34;&gt;3. Proactive Safety Trigger (System Level)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Multimodal Logic:&lt;/strong&gt; &lt;br&gt;
+Designed the visual module to work in tandem with ECG sensors. While ECG detects physiological drops in alertness, our visual module confirms behavioral lapses (e.g., nodding off).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;/strong&gt; &lt;br&gt;
+This cross-verification significantly reduces false positives, ensuring that alerts are only triggered for genuine safety risks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;outcomes--validation&#34;&gt;Outcomes &amp;amp; Validation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Industry Collaboration:&lt;/strong&gt; Co-developed with &lt;em&gt;ARTC&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Award-Winning:&lt;/strong&gt; Secured &lt;em&gt;Second Place&lt;/em&gt; at the &lt;em&gt;International ICT Innovative Services Awards&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance:&lt;/strong&gt; Achieved &lt;em&gt;real-time performance&lt;/em&gt; and superior accuracy over state-of-the-art baselines in nighttime scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;p&gt;Publications: &lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wang Wei-Cheng&lt;/strong&gt;, Ru-Yun Hsu, Chun-Rong Huang, Li-You Syu (2015). &lt;a href=&#34;http://localhost:1313/publication/2015-snpd&#34;&gt;Video gender recognition using temporal coherent face descriptor.&lt;/a&gt; &lt;em&gt;IEEE/ACIS SNPD 2015&lt;/em&gt;.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Chien-Yu Chiou, &lt;strong&gt;Wang Wei-Cheng&lt;/strong&gt;, Shueh-Chou Lu, Chun-Rong Huang, Pau-Choo Chung, Yun-Yang Lai (2019). &lt;a href=&#34;http://localhost:1313/publication/2020-tits&#34;&gt;Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors.&lt;/a&gt;  &lt;em&gt;IEEE T-ITS&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
   </channel>
 </rss>

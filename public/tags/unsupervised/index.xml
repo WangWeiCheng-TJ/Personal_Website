@@ -17,7 +17,22 @@
       <link>http://localhost:1313/publication/wang-2025-source/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/wang-2025-source/</guid>
-      <description></description>
+      <description>
+  &lt;div class=&#34;pub-description&#34;&gt;
+    &lt;p style=&#34;text-align: justify;&#34;&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;&#34; style=&#34;max-width:320;margin:0.2em 1.5em 0.2em 0em;float:left;&#34; class=&#34;pub-img&#34; &gt;
+A fundamental challenge in deploying machine learning models is &#34;domain shift,&#34; where performance degrades when a model encounters data different from its training set. This problem is magnified by real-world operational constraints, specifically the &#34;source-free, unsupervised&#34; setting. &#34;Source-free&#34; means the original training data is inaccessible due to privacy or commercial confidentiality, while &#34;unsupervised&#34; means the new target domain has no ground-truth labels for evaluation. This dual constraint renders traditional model selection and adaptation methods ineffective.
+&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;
+We designed and developed a principled transferability assessment framework that operates effectively under these demanding conditions. The core innovation is the use of Randomly Initialized Neural Networks (RINNs) as an unbiased, task-agnostic reference. Instead of relying on potentially biased features, our framework evaluates a pretrained model’s suitability by measuring the alignment of its learnt representation structure against the RINNs&#39; outputs on the target data. This comparison, quantified efficiently using minibatch Centered Kernel Alignment (CKA), provides a robust score to rank models without needing source data or target labels.
+&lt;/p&gt;
+&lt;p style=&#34;text-align: justify;&#34;&gt;
+The RINN-based framework was rigorously evaluated on multiple real-world surveillance datasets and downstream tasks, including object tagging, event classification, and anomaly detection. It consistently outperformed state-of-the-art baselines, demonstrating high Kendall&#39;s τ correlation between its predicted model ranking and the actual ground-truth performance ranking. This work provides a robust and practical solution for the critical first step of model adaptation in privacy-sensitive and data-limited systems.
+&lt;/p&gt;
+  &lt;/div&gt;
+
+
+</description>
     </item>
     
   </channel>

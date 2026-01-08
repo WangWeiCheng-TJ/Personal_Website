@@ -5,7 +5,7 @@
     <link>http://localhost:1313/project/</link>
       <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Projects</title>
@@ -13,11 +13,75 @@
     </image>
     
     <item>
-      <title>Pandas</title>
-      <link>http://localhost:1313/project/pandas/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/pandas/</guid>
-      <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;</description>
+      <title>UGent Survivor Kit - A Serverless LLM-Agent Deployment</title>
+      <link>http://localhost:1313/project/ugentapp/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/ugentapp/</guid>
+      <description>&lt;h1 id=&#34;-ugent-tsa-survivor-kit--ai-powered-community-platform&#34;&gt;🎒 UGent TSA Survivor Kit | AI-Powered Community Platform&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A serverless, AI-driven information hub designed to automate community management and solve information fragmentation for international students.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;-motivation--product-philosophy&#34;&gt;🎯 Motivation &amp;amp; Product Philosophy&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;UGent TSA Survivor Kit&lt;/strong&gt; is a comprehensive survival guide platform originally engineered for students. &lt;br&gt;
+Following strategic discussions with the current association leadership, the platform&amp;rsquo;s scope was expanded to serve the entire Taiwanese expatriate community in Ghent.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;I built this not just as a developer, but as the former Student Association President who understood user needs and exactly why previous platforms failed.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Drawing from my tenure as President, I identified a critical failure mode: student platforms often become obsolete due to &lt;strong&gt;high operational friction&lt;/strong&gt; and the &lt;strong&gt;technical barriers&lt;/strong&gt; required for maintenance.&lt;/p&gt;
+&lt;p&gt;Before writing a single line of code, I conducted user research and defined a strict engineering constraint: &lt;strong&gt;The system must be &amp;ldquo;Zero-Maintenance&amp;rdquo; for dynamic information (e.g., news, policies) and operable by non-tech staff.&lt;/strong&gt; This domain insight drove the architectural decision to decouple the content from the code, using &lt;strong&gt;Google Sheets as a Headless CMS&lt;/strong&gt; instead of a traditional database.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Role:&lt;/strong&gt; Product Owner &amp;amp; Full-Stack Engineer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scope:&lt;/strong&gt; User Research → Architecture Design → Full-Stack Implementation → CI/CD Automation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-tech-stack&#34;&gt;🛠 Tech Stack&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; Next.js 14 (App Router), TypeScript, Tailwind CSS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend / CMS:&lt;/strong&gt; Google Sheets API (NoSQL/CMS), Google Apps Script&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI &amp;amp; NLP:&lt;/strong&gt; Python, &lt;strong&gt;Gemma 3 4B (LLM)&lt;/strong&gt;, Feedparser (RSS), Gspread&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Vercel (Serverless), GitHub Actions (CI/CD), Docker&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Key Concepts:&lt;/strong&gt; Serverless Architecture, Event-Driven ETL, Prompt Engineering, ISR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-technical-architecture--implementation&#34;&gt;💻 Technical Architecture &amp;amp; Implementation&lt;/h2&gt;
+&lt;h3 id=&#34;1-serverless-full-stack-architecture&#34;&gt;1. Serverless Full-Stack Architecture&lt;/h3&gt;
+&lt;p&gt;Designed a cost-efficient, low-maintenance architecture suitable for long-term community operation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Frontend (Next.js 14 + TS):&lt;/strong&gt; Built a mobile-first, PWA-like interface using modular components (&lt;code&gt;MainView&lt;/code&gt;, &lt;code&gt;NewsFeed&lt;/code&gt;). Implemented &lt;strong&gt;Incremental Static Regeneration (ISR)&lt;/strong&gt; to ensure high performance and SEO while keeping data fresh (60s revalidation).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend (Google Sheets as CMS):&lt;/strong&gt; abstracted Google Sheets into a JSON API endpoint using Google Apps Script. This &amp;ldquo;Serverless CMS&amp;rdquo; approach allows non-technical staff to manage content via a spreadsheet interface, eliminating database costs and server maintenance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-ai-driven-intelligence-pipeline-event-driven-etl&#34;&gt;2. AI-Driven Intelligence Pipeline (Event-Driven ETL)&lt;/h3&gt;
+&lt;p&gt;The core innovation is an automated pipeline that monitors, analyzes, and translates local news without human intervention:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Ingestion:&lt;/strong&gt; A Python-based agent continuously scrapes municipal RSS feeds (stad.gent) and emergency alerts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLM Integration (Gemma 3 4B):&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Deployed &lt;strong&gt;Gemma 3 4B&lt;/strong&gt; to perform semantic analysis on raw Dutch texts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Prompt Engineering:&lt;/strong&gt; Designed complex prompt templates to force the LLM to output valid JSON. Tasks include: Importance Grading (Level 1-3), Audience Classification (Student vs. Resident), Traditional Chinese Translation, and Summarization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robustness:&lt;/strong&gt; Implemented retry logic with exponential backoff to handle API rate limits and ensure pipeline reliability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ETL Execution:&lt;/strong&gt; Structured data is automatically validated and written back to the Google Sheets CMS, triggering frontend updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-cicd--devops&#34;&gt;3. CI/CD &amp;amp; DevOps&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Actions:&lt;/strong&gt; Orchestrated daily cron jobs (UTC 6:00) to execute the news crawling and AI analysis agents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security:&lt;/strong&gt; Managed Service Accounts and API Keys via GitHub Secrets.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Containerization:&lt;/strong&gt; Utilized Docker to ensure environment consistency across development and production agents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automated Deployment:&lt;/strong&gt; Configured Vercel for automatic deployments on git push, achieving a production-ready lifecycle with 30+ stable deployments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-key-results--impact&#34;&gt;📈 Key Results &amp;amp; Impact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;100% Automation:&lt;/strong&gt; Achieved a fully automated loop for news gathering, translation, classification, and publishing.&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Zero Operational Cost:&lt;/strong&gt; Leveraged serverless tiers (Vercel, Google Sheets) to maintain a $0 monthly budget.&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Sustainability:&lt;/strong&gt; Solved the &amp;ldquo;technical debt&amp;rdquo; issue common in student organizations by creating a system that requires no coding skills to maintain.&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Production-Ready:&lt;/strong&gt; Validated through continuous uptime and real-world usage by the student community.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-repository--code-samples&#34;&gt;🔗 Repository &amp;amp; Code Samples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurviorKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurviorKit/blob/main/daily_news_agent.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;AI Agent Source Code&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Python agent for scraping and LLM processing.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurviorKit/blob/main/prompts/news_analysis.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Prompt Engineering Templates&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Structured prompts for Gemma 3 4B.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>

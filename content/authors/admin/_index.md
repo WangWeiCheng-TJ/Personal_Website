@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Ph.D. Candidate
+role: Ph.D.
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -43,7 +43,7 @@ profiles:
     url: https://github.com/WangWeiCheng-TJ
 
 interests:
-  - Artificial Intelligence
+  - Deep Learning
   - Computer Vision 
   - Audio Privacy
 

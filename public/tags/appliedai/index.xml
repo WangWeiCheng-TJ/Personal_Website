@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AppliedAI | Wei-Cheng Wang&#39;s Personal Website</title>
+    <link>http://localhost:1313/tags/appliedai/</link>
+      <atom:link href="http://localhost:1313/tags/appliedai/index.xml" rel="self" type="application/rss+xml" />
+    <description>AppliedAI</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>AppliedAI</title>
+      <link>http://localhost:1313/tags/appliedai/</link>
+    </image>
+    
+    <item>
+      <title>Taiwanese at Ghent Survivor Kit - A Serverless LLM-Agent Deployment</title>
+      <link>http://localhost:1313/project-applied/ugentapp/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-applied/ugentapp/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;&lt;strong&gt;TW@Ghent Survivor Kit : AI-Powered Community Platform&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A serverless, AI-driven information hub designed to automate community management and solve information fragmentation for international students.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;motivation--product-philosophy&#34;&gt;Motivation &amp;amp; Product Philosophy&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;TW@Ghent Survivor Kit&lt;/strong&gt; is a comprehensive survival guide platform.
+Originally engineered for students, I collaborated with the current president of UGent Taiwanese Student Association (TSA) to redefine the product roadmap, expanding its scope to serve the entire Taiwanese expatriate community. This ensured the system aligned with actual operational needs rather than just technical novelty.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;I built this not just as a developer, but as the former President who identified the root cause of platform failure.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I recognized that previous platforms failed due to &lt;strong&gt;high operational friction&lt;/strong&gt;. To solve this, I set a strict constraint: &lt;strong&gt;The system must be &amp;ldquo;low-maintenance&amp;rdquo; and operable by non-tech staff.&lt;/strong&gt; This drove the decision to adopt a &lt;em&gt;serverless architecture&lt;/em&gt; combined with &lt;em&gt;autonomous AI agents&lt;/em&gt;, allowing for rapid iteration and a &amp;ldquo;set-and-forget&amp;rdquo; operational model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Role:&lt;/strong&gt; Product Owner &amp;amp; Full-Stack Engineer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scope:&lt;/strong&gt; Requirement Analysis → System Architecture → AI Agent Development → CI/CD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AI &amp;amp; NLP:&lt;/strong&gt; Python, Gemma 3 4B (LLM), Feedparser (RSS), Prompt Engineering&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend / CMS:&lt;/strong&gt; Google Sheets API (NoSQL/CMS), Google Apps Script, Event-Driven ETL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; Next.js 14 (App Router), TypeScript, Tailwind CSS, ISR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Vercel (Serverless), GitHub Actions (CI/CD), Docker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;technical-architecture--implementation&#34;&gt;Technical Architecture &amp;amp; Implementation&lt;/h3&gt;
+&lt;h4 id=&#34;1-ai-driven-intelligence-pipeline-event-driven-etl&#34;&gt;1. AI-Driven Intelligence Pipeline (Event-Driven ETL)&lt;/h4&gt;
+&lt;p&gt;The core innovation is an automated pipeline that monitors, analyzes, and translates local news without human intervention, effectively functioning as a &lt;em&gt;domain-specific AI agent&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Ingestion:&lt;/strong&gt; A Python-based agent continuously monitors municipal RSS feeds (stad.gent) and emergency alerts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLM Integration (Gemma 3 4B):&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Deployed &lt;strong&gt;Gemma 3 4B&lt;/strong&gt; to perform semantic analysis on raw Dutch texts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Prompt Engineering:&lt;/strong&gt; Designed rigorous prompt templates to enforce valid JSON output from the LLM. Tasks include: Importance Grading (Level 1-3), Audience Classification (Student vs. Resident), Traditional Chinese Translation, and Summarization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robustness:&lt;/strong&gt; Implemented retry logic with exponential backoff to handle API rate limits and ensure pipeline reliability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ETL Execution:&lt;/strong&gt; Structured data is automatically validated and written back to the Google Sheets CMS, triggering frontend updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-serverless-full-stack-architecture&#34;&gt;2. Serverless Full-Stack Architecture&lt;/h4&gt;
+&lt;p&gt;Designed a cost-efficient architecture suitable for long-term operation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Headless CMS (Google Sheets):&lt;/strong&gt; Abstracted Google Sheets into a JSON API. This allows non-technical staff to manage content via a familiar spreadsheet interface, eliminating database costs ($0/month) and lowering the maintenance barrier.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend (Next.js 14):&lt;/strong&gt; Implemented &lt;em&gt;incremental static regeneration&lt;/em&gt; (60s revalidation) to ensure high performance and SEO while keeping data fresh.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-cicd--devops&#34;&gt;3. CI/CD &amp;amp; DevOps&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Actions:&lt;/strong&gt; Orchestrated daily cron jobs (UTC 6:00) to execute the news crawling and AI analysis agents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security &amp;amp; Reproducibility:&lt;/strong&gt; Managed API Secrets via GitHub Secrets and utilized docker to ensure environment consistency for the AI agents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automated Deployment:&lt;/strong&gt; Configured Vercel for automatic deployments on git push, establishing a production-ready lifecycle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;key-results--impact&#34;&gt;Key Results &amp;amp; Impact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;100% Automation:&lt;/strong&gt; Achieved a fully automated loop for news gathering, translation, classification, and publishing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zero Operational Cost:&lt;/strong&gt; Leveraged serverless tiers to maintain &lt;em&gt;costfree&lt;/em&gt;_, ensuring the project&amp;rsquo;s financial sustainability for the student association.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Solved &amp;ldquo;Technical Debt&amp;rdquo;:&lt;/strong&gt; Created a system that &lt;em&gt;requires no coding skills to maintain&lt;/em&gt;, addressing the high turnover rate inherent in student organizations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ugenttsasurvivorkit.vercel.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Live Website&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/daily_news_agent.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;AI Agent Source Code&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Python agent for scraping and LLM processing.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Prompt Engineering Templates&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Structured prompts for Gemma 3 4B.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
