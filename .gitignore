@@ -14,3 +14,13 @@ Thumbs.db
 # others
 go.sum
 test.txt
+
+# 新增這些
+.hugo_build.lock
+/resources/_gen/
+.vscode/
+.idea/
+.env
+*.log
+*.bak
+package-lock.json
