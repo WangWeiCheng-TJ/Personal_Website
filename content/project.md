@@ -14,8 +14,9 @@ sections:
       title: Applied AI Systems
       text: | 
         <div style="text-align: justify;">
-        My Ph.D. research trained me to dissect complex problems with a rigorous, user-centric framework. However, my drive for human connection, rooted in my community leadership experience, is what inspires me to make life safer and easier for others.<br>
-        Since graduating, I leverage LLMs to bridge these two worlds, rapidly turning ideas into deployed systems. The following projects are practical solutions built to address the critical needs of people around me. They prioritize tangible utility over complexity, focusing on solving daily challenges efficiently.
+        While my Ph.D. trained me to dissect complex problems with academic rigor, my drive for human connection, rooted in my community leadership, inspires me to build tangible solutions.
+
+        Since graduating, I bridge these worlds by leveraging Large Language Models (LLMs) and modern AI stacks to rapidly transform ideas into deployed systems. The following projects represent my agile approach to AI engineering: identifying critical daily needs and engineering practical, high-utility solutions that make life safer and easier.
         </div>
 
       filters:
@@ -46,5 +47,25 @@ sections:
       view: article-grid
       fill_image: true
       columns: 3
+  
+  - block: collection
+    content:
+      title: Research Engineering
+      text: |
+        <div style="text-align: justify;">
+        "Where theoretical rigor meets production constraints."
+        
+        This section showcases my work in translating complex research algorithms into robust, deployable systems. Here, the focus is on performance, reliability, and architectural precision.
+        </div>
+
+      filters:
+        folders:
+          - project-tech
+        tags:
+          - Research     # 只顯示有 research tag 的專案
+    design:
+      view: article-grid
+      fill_image: true
+      columns: 1
 
 ---

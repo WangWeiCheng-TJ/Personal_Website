@@ -274,6 +274,31 @@
         
       
     
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -504,6 +529,9 @@
         
       
     
+  
+  
+  
   
   
   
@@ -1043,10 +1071,9 @@
   </div>
 
   <p><div style="text-align: justify;">
-My Ph.D. research trained me to dissect complex problems with a rigorous, user-centric framework. However, my drive for human connection, rooted in my community leadership experience, is what inspires me to make life safer and easier for others.<br>
-Since graduating, I leverage LLMs to bridge these two worlds, rapidly turning ideas into deployed systems. The following projects are practical solutions built to address the critical needs of people around me. They prioritize tangible utility over complexity, focusing on solving daily challenges efficiently.
-</div>
-</p>
+While my Ph.D. trained me to dissect complex problems with academic rigor, my drive for human connection, rooted in my community leadership, inspires me to build tangible solutions.
+<p>Since graduating, I bridge these worlds by leveraging Large Language Models (LLMs) and modern AI stacks to rapidly transform ideas into deployed systems. The following projects represent my agile approach to AI engineering: identifying critical daily needs and engineering practical, high-utility solutions that make life safer and easier.</p>
+</div></p>
 </div>
 
 
@@ -1118,7 +1145,7 @@ Motivation &amp; Product Philosophy TW@Ghent Survivor Kit is a comprehensive sur
 I recognized that previous platforms failed due to high operational friction. To solve this, I set a strict constraint: The system must be “low-maintenance” and operable by non-tech staff. This drove the decision to adopt a serverless architecture combined with autonomous AI agents, allowing for rapid iteration and a “set-and-forget” operational model.
 Role: Product Owner &amp; Full-Stack Engineer Scope: Requirement Analysis → System Architecture → AI Agent Development → CI/CD Tech Stack AI &amp; NLP: Python, Gemma 3 4B (LLM), Feedparser (RSS), Prompt Engineering Backend / CMS: Google Sheets API (NoSQL/CMS), Google Apps Script, Event-Driven ETL Frontend: Next.js 14 (App Router), TypeScript, Tailwind CSS, ISR Infrastructure: Vercel (Serverless), GitHub Actions (CI/CD), Docker Technical Architecture &amp; Implementation 1. AI-Driven Intelligence Pipeline (Event-Driven ETL) The core innovation is an automated pipeline that monitors, analyzes, and translates local news without human intervention, effectively functioning as a domain-specific AI agent:
 Data Ingestion: A Python-based agent continuously monitors municipal RSS feeds (stad.gent) and emergency alerts. LLM Integration (Gemma 3 4B): Deployed Gemma 3 4B to perform semantic analysis on raw Dutch texts. Structured Prompt Engineering: Designed rigorous prompt templates to enforce valid JSON output from the LLM. Tasks include: Importance Grading (Level 1-3), Audience Classification (Student vs. Resident), Traditional Chinese Translation, and Summarization. Robustness: Implemented retry logic with exponential backoff to handle API rate limits and ensure pipeline reliability. ETL Execution: Structured data is automatically validated and written back to the Google Sheets CMS, triggering frontend updates. 2. Serverless Full-Stack Architecture Designed a cost-efficient architecture suitable for long-term operation:
-Headless CMS (Google Sheets): Abstracted Google Sheets into a JSON API. This allows non-technical staff to manage content via a familiar spreadsheet interface, eliminating database costs ($0/month) and lowering the maintenance barrier. Frontend (Next.js 14): Implemented incremental static regeneration (60s revalidation) to ensure high performance and SEO while keeping data fresh. 3. CI/CD &amp; DevOps GitHub Actions: Orchestrated daily cron jobs (UTC 6:00) to execute the news crawling and AI analysis agents. Security &amp; Reproducibility: Managed API Secrets via GitHub Secrets and utilized docker to ensure environment consistency for the AI agents. Automated Deployment: Configured Vercel for automatic deployments on git push, establishing a production-ready lifecycle. Key Results &amp; Impact 100% Automation: Achieved a fully automated loop for news gathering, translation, classification, and publishing. Zero Operational Cost: Leveraged serverless tiers to maintain costfree_, ensuring the project’s financial sustainability for the student association. Solved “Technical Debt”: Created a system that requires no coding skills to maintain, addressing the high turnover rate inherent in student organizations. Resources Live Website GitHub Repository AI Agent Source Code - Python agent for scraping and LLM processing. Prompt Engineering Templates - Structured prompts for Gemma 3 4B. </a></p>
+Headless CMS (Google Sheets): Abstracted Google Sheets into a JSON API. This allows non-technical staff to manage content via a familiar spreadsheet interface, eliminating database costs ($0/month) and lowering the maintenance barrier. Frontend (Next.js 14): Implemented incremental static regeneration (60s revalidation) to ensure high performance and SEO while keeping data fresh. 3. CI/CD &amp; DevOps GitHub Actions: Orchestrated daily cron jobs (UTC 6:00) to execute the news crawling and AI analysis agents. Security &amp; Reproducibility: Managed API Secrets via GitHub Secrets and utilized docker to ensure environment consistency for the AI agents. Automated Deployment: Configured Vercel for automatic deployments on git push, establishing a production-ready lifecycle. Key Results &amp; Impact 100% Automation: Achieved a fully automated loop for news gathering, translation, classification, and publishing. Zero Operational Cost: Leveraged serverless tiers to maintain costfree_, ensuring the project’s financial sustainability for the student association. Solved “Technical Debt”: Created a system that requires no coding skills to maintain, addressing the high turnover rate inherent in student organizations. Resources Live Website GitHub Repository AI Agent Source Code - Python agent for scraping and LLM processing. Prompt Engineering Templates - Structured prompts for Gemma 3-4B. </a></p>
       </div>
       <div class="flex-none">
         <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
@@ -1346,6 +1373,78 @@ My academic journey at Ghent University and NCKU centered on analyzing real-worl
 
     <a
       class="relative block aspect-video"
+      href="/project-research/phd/" >
+
+      <img alt="Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street"
+           class="object-fill transition-all"
+           data-nimg="fill"
+           decoding="async"
+           fetchpriority="high" height="540" loading="lazy" src="/project-research/phd/featured_hu11025979831286906752.webp"
+           style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+           width="960"></a>
+  </div>
+  
+  <div class="">
+    <div class="">
+      <div class="flex gap-3">
+        
+        <a href="/tags/unsupervised-learning/"><span
+          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Unsupervised Learning</span></a>
+        
+      </div>
+      
+      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
+        href="/project-research/phd/" ><span
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street
+          </span></a>
+      </h2>
+      
+      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
+        href="/project-research/phd/" >
+        Bridging the gap between academic models and real-world deployment.
+My Ph.D. research tackles the critical bottlenecks that prevent deep learning models from moving “from lab to street”: privacy risks, data scarcity, and environmental domain shifts. I proposed a unified framework for urban surveillance that balances performance with ethical compliance and robustness.
+The dissertation is built upon three core technical pillars:
+Privacy-Friendly Visual Analysis: Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.
+Audio-Visual Representation Learning: Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.
+Transferability Assessment: Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.
+(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)
+(Details to be followed)</a></p>
+      </div>
+      <div class="flex-none">
+        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
+          
+          
+          <time class="truncate text-sm" datetime="2025-06-30">Jun 30, 2025</time>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<div class="group cursor-pointer">
+
+  
+  
+  
+    
+  
+  
+  <div class="overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800">
+
+    <a
+      class="relative block aspect-video"
       href="/project-research/sensecity/" >
 
       <img alt="SensCity - Acoustic Surveillance in Real-World"
@@ -1422,6 +1521,75 @@ Based on these findings, we formulated a Context-Aware Design Framework, advocat
 
     <a
       class="relative block aspect-video"
+      href="/project-research/prephd/" >
+
+      <img alt="Intelligent Video Analytics & Surveillance Systems"
+           class="object-fill transition-all"
+           data-nimg="fill"
+           decoding="async"
+           fetchpriority="high" height="540" loading="lazy" src="/project-research/prephd/featured_hu7377141018090171087.webp"
+           style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+           width="960"></a>
+  </div>
+  
+  <div class="">
+    <div class="">
+      <div class="flex gap-3">
+        
+        <a href="/tags/unsupervised-learning/"><span
+          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Unsupervised Learning</span></a>
+        
+      </div>
+      
+      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
+        href="/project-research/prephd/" ><span
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Intelligent Video Analytics &amp; Surveillance Systems
+          </span></a>
+      </h2>
+      
+      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
+        href="/project-research/prephd/" >
+        Extracting insights from chaos without labeled data.
+This research project focuses on the unsupervised understanding of surveillance video, tackling the full pipeline from raw pixel processing to user-centric visualization.
+The core analysis module leverages background modeling to extract foreground entities, constructing trajectory kinematics descriptors to capture motion patterns. By applying unsupervised clustering on these spatiotemporal features, the system automatically distinguishes between normal routines and anomalous events without requiring manual annotations.
+Beyond detection, my Master’s thesis addressed the challenge of information presentation. I formulated the dynamic annotation placement as a spatiotemporal optimization problem. By enforcing coherence constraints, the algorithm calculates optimal label positions that maximize readability while minimizing occlusion of critical visual information, ensuring a seamless monitoring experience.
+(Details and visual results to be followed)</a></p>
+      </div>
+      <div class="flex-none">
+        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
+          
+          
+          <time class="truncate text-sm" datetime="2016-06-30">Jun 30, 2016</time>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<div class="group cursor-pointer">
+
+  
+  
+  
+    
+  
+  
+  <div class="overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800">
+
+    <a
+      class="relative block aspect-video"
       href="/project-research/drivermonitor/" >
 
       <img alt="Multimodal Driver Monitoring & Temporal Face Analysis"
@@ -1464,6 +1632,263 @@ Lighting Invariance: Utilized intensity contrast descriptors to maintain accurac
 Impact: This cross-verification significantly reduces false positives, ensuring that alerts are only triggered for genuine safety risks.
 Outcomes &amp; Validation Industry Collaboration: Co-developed with ARTC. Award-Winning: Secured Second Place at the International ICT Innovative Services Awards. Performance: Achieved real-time performance and superior accuracy over state-of-the-art baselines in nighttime scenarios. Resources Publications: Wang Wei-Cheng, Ru-Yun Hsu, Chun-Rong Huang, Li-You Syu (2015). Video gender recognition using temporal coherent face descriptor. IEEE/ACIS SNPD 2015.
 Chien-Yu Chiou, Wang Wei-Cheng, Shueh-Chou Lu, Chun-Rong Huang, Pau-Choo Chung, Yun-Yang Lai (2019). Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors. IEEE T-ITS. </a></p>
+      </div>
+      <div class="flex-none">
+        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
+          
+          
+          <time class="truncate text-sm" datetime="2016-06-30">Jun 30, 2016</time>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
+
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-collection" class="relative hbb-section blox-collection  " style="padding: 5rem 0 5rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6 md:px-0">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Research Engineering
+  </div>
+
+  <p><div style="text-align: justify;">
+"Where theoretical rigor meets production constraints."
+<p>This section showcases my work in translating complex research algorithms into robust, deployable systems. Here, the focus is on performance, reliability, and architectural precision.</p>
+</div></p>
+</div>
+
+
+<div class="flex flex-col items-center px-6">
+
+  
+  
+
+
+<div class="container px-8 mx-auto xl:px-5 py-5 lg:py-8 max-w-[500px] justify-center">
+  <div class="grid gap-10 md:grid-cols-1 lg:gap-10">
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+<div class="group cursor-pointer">
+
+  
+  
+  
+    
+  
+  
+  <div class="overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800">
+
+    <a
+      class="relative block aspect-video"
+      href="/project-tech/sysnopsis/" >
+
+      <img alt="Bridging the gap between lab research and market value."
+           class="object-fill transition-all"
+           data-nimg="fill"
+           decoding="async"
+           fetchpriority="high" height="540" loading="lazy" src="/project-tech/sysnopsis/featured_hu13426445731220845871.webp"
+           style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+           width="960"></a>
+  </div>
+  
+  <div class="">
+    <div class="">
+      <div class="flex gap-3">
+        
+        <a href="/tags/tech-transfer/"><span
+          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Tech Transfer</span></a>
+        
+      </div>
+      
+      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
+        href="/project-tech/sysnopsis/" ><span
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Bridging the gap between lab research and market value.
+          </span></a>
+      </h2>
+      
+      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
+        href="/project-tech/sysnopsis/" >
+        I led the commercialization of the lab’s core research by developing a market-ready prototype and a viable business model. My role involved translating technical algorithms into a user-centric solution for surveillance efficiency.
+This venture won the APICTA Merit Award (R&amp;D category) and secured funding, leading to a successful acquisition of the product/team by our industry partner, EverSTek. This experience honed my ability to identify user needs, build MVPs, and execute a successful technology exit.
+(Details to be followed)</a></p>
       </div>
       <div class="flex-none">
         <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">

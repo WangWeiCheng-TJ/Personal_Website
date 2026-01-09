@@ -78,7 +78,7 @@ Originally engineered for students, I collaborated with the current president of
 &lt;li&gt;&lt;a href=&#34;https://ugenttsasurvivorkit.vercel.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Live Website&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/daily_news_agent.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;AI Agent Source Code&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Python agent for scraping and LLM processing.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Prompt Engineering Templates&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Structured prompts for Gemma 3 4B.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Prompt Engineering Templates&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Structured prompts for Gemma 3-4B.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</description>
     </item>

@@ -5,12 +5,40 @@
     <link>http://localhost:1313/project-research/</link>
       <atom:link href="http://localhost:1313/project-research/index.xml" rel="self" type="application/rss+xml" />
     <description>Project-Researches</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Project-Researches</title>
       <link>http://localhost:1313/project-research/</link>
     </image>
+    
+    <item>
+      <title>Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street</title>
+      <link>http://localhost:1313/project-research/phd/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/phd/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;Bridging the gap between academic models and real-world deployment.&lt;/p&gt;
+&lt;p&gt;My Ph.D. research tackles the critical bottlenecks that prevent deep learning models from moving &amp;ldquo;from lab to street&amp;rdquo;: privacy risks, data scarcity, and environmental domain shifts. I proposed a unified framework for urban surveillance that balances performance with ethical compliance and robustness.&lt;/p&gt;
+&lt;p&gt;The dissertation is built upon three core technical pillars:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Privacy-Friendly Visual Analysis: &lt;br&gt;
+Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Audio-Visual Representation Learning: &lt;br&gt;
+Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transferability Assessment: &lt;br&gt;
+Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)&lt;/p&gt;
+&lt;p&gt;(Details to be followed)&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>SensCity - Acoustic Surveillance in Real-World</title>
@@ -74,6 +102,20 @@ Based on these findings, we formulated a &lt;em&gt;Context-Aware Design Framewor
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Chapter 2: The AsaSense Project&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Detailed analysis of deployment constraints and algorithmic failures.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Intelligent Video Analytics &amp; Surveillance Systems</title>
+      <link>http://localhost:1313/project-research/prephd/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/prephd/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;Extracting insights from chaos without labeled data.&lt;/p&gt;
+&lt;p&gt;This research project focuses on the unsupervised understanding of surveillance video, tackling the full pipeline from raw pixel processing to user-centric visualization.&lt;/p&gt;
+&lt;p&gt;The core analysis module leverages background modeling to extract foreground entities, constructing trajectory kinematics descriptors to capture motion patterns. By applying unsupervised clustering on these spatiotemporal features, the system automatically distinguishes between normal routines and anomalous events without requiring manual annotations.&lt;/p&gt;
+&lt;p&gt;Beyond detection, my Master&amp;rsquo;s thesis addressed the challenge of information presentation. I formulated the dynamic annotation placement as a spatiotemporal optimization problem. By enforcing coherence constraints, the algorithm calculates optimal label positions that maximize readability while minimizing occlusion of critical visual information, ensuring a seamless monitoring experience.&lt;/p&gt;
+&lt;p&gt;(Details and visual results to be followed)&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     

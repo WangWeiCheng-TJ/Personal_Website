@@ -346,11 +346,31 @@
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>http://localhost:1313/project-research/prephd/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>http://localhost:1313/project-research/drivermonitor/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>http://localhost:1313/project-tech/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tags/real-time-optimization/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>http://localhost:1313/tags/real-time-system/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/project-tech/sysnopsis/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech-transfer/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

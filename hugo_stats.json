@@ -64,6 +64,7 @@
       "title",
       "tr",
       "ul",
+      "video",
       "|--"
     ],
     "classes": [
@@ -569,12 +570,13 @@
       "3-proactive-safety-trigger-system-level",
       "TableOfContents",
       "callouts",
-      "chart-762341958",
+      "chart-853271649",
       "charts",
       "code",
       "core-methodologies",
       "crowd-funded-open-source-software",
       "data-frames",
+      "demo-video",
       "diagrams",
       "did-you-find-this-page-helpful-consider-sharing-it-",
       "ecosystem",

@@ -107,7 +107,7 @@ Originally engineered for students, I collaborated with the current president of
 &lt;li&gt;&lt;a href=&#34;https://ugenttsasurvivorkit.vercel.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Live Website&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/daily_news_agent.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;AI Agent Source Code&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Python agent for scraping and LLM processing.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Prompt Engineering Templates&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Structured prompts for Gemma 3 4B.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Prompt Engineering Templates&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Structured prompts for Gemma 3-4B.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</description>
     </item>
@@ -379,7 +379,7 @@ The results confirmed the superiority of this method. The EPG-trained representa
 
 
 
-&lt;div id=&#34;chart-798436215&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-536879214&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -397,7 +397,7 @@ The results confirmed the superiority of this method. The EPG-trained representa
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-798436215&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-536879214&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1160,6 +1160,16 @@ Based on these findings, we formulated a &lt;em&gt;Context-Aware Design Framewor
     </item>
     
     <item>
+      <title>Intelligent Video Analytics &amp; Surveillance Systems</title>
+      <link>http://localhost:1313/project-research/prephd/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/prephd/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Multimodal Driver Monitoring &amp; Temporal Face Analysis</title>
       <link>http://localhost:1313/project-research/drivermonitor/</link>
       <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
@@ -1239,6 +1249,24 @@ This cross-verification significantly reduces false positives, ensuring that ale
 &lt;li&gt;Chien-Yu Chiou, &lt;strong&gt;Wang Wei-Cheng&lt;/strong&gt;, Shueh-Chou Lu, Chun-Rong Huang, Pau-Choo Chung, Yun-Yang Lai (2019). &lt;a href=&#34;http://localhost:1313/publication/2020-tits&#34;&gt;Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors.&lt;/a&gt;  &lt;em&gt;IEEE T-ITS&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Real-time Video Synopsis System - From Algorithm to Industry Deployment</title>
+      <link>http://localhost:1313/project-tech/sysnopsis/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-tech/sysnopsis/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;Bridging the gap between research and industry.&lt;/p&gt;
+&lt;p&gt;Co-developed an intelligent visual surveillance module with industry partner EverSTek, translating a theoretical Event-based Video Synopsis algorithm (published in MVA&#39;17) into a deployable C++ solution.&lt;/p&gt;
+&lt;p&gt;This system condenses hours of surveillance footage into minutes, enabling rapid event screening and tracking. The prototype demonstrated real-time performance on edge devices and won the Merit Award at the International APICTA Awards (Asia Pacific Information and Communications Technology Alliance), recognizing its innovation and commercial potential.&lt;/p&gt;
+&lt;p&gt;(Details to be followed)&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;demo-video&#34;&gt;Demo Video&lt;/h2&gt;
+&lt;video width=&#34;640&#34; height=&#34;480&#34; controls&gt;
+  &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</description>
     </item>
     
     <item>
