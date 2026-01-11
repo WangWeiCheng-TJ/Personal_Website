@@ -73,7 +73,7 @@ Designed to balance state-of-the-art reasoning with strict privacy controls:
 ### Resources
 * [**System Architecture Diagram**](#featured.png)
 * [**GitHub Repository**](https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator)
-* [**Analysis Sample**](#) - *Example of the Multi-Persona Report output.*
+* [**Analysis Sample**](https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator/tree/da11a9e245a28ab4bedd10d37e1fa9b6064f9d61/examples) - *Example of Analysis Report of a Fake JD.*
 </div>
 
 <!--more-->
