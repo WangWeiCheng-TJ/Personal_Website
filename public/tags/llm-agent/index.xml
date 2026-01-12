@@ -5,12 +5,81 @@
     <link>http://localhost:1313/tags/llm-agent/</link>
       <atom:link href="http://localhost:1313/tags/llm-agent/index.xml" rel="self" type="application/rss+xml" />
     <description>LLM Agent</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>LLM Agent</title>
       <link>http://localhost:1313/tags/llm-agent/</link>
     </image>
+    
+    <item>
+      <title>Agentic Career Orchestrator - Multi-Agent LLM System for Intelligent Job Matching</title>
+      <link>http://localhost:1313/project-applied/job_hunter/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-applied/job_hunter/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Agentic Career Orchestrator: Multi-Agent LLM System for Intelligent Job Matching&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A local-first, hybrid AI ecosystem designed to automate strategic decision-making and semantic filtering in high-noise job markets while preserving data sovereignty.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;p&gt;Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game.&lt;/p&gt;
+&lt;p&gt;After defending my doctoral thesis, I found myself navigating a market where a single &amp;ldquo;Machine Learning Engineer&amp;rdquo; posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between &amp;ldquo;nice-to-have&amp;rdquo; and &amp;ldquo;required&amp;rdquo; qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.&lt;/p&gt;
+&lt;p&gt;The real challenge isn&amp;rsquo;t just about finding jobs: it&amp;rsquo;s identifying the right 3-5 opportunities buried among hundreds of irrelevant listings. Manually reviewing every job description is exhausting and error-prone. I needed an intelligent system that understands context, not just keywords.&lt;/p&gt;
+&lt;h3 id=&#34;impact--core-philosophy&#34;&gt;Impact &amp;amp; Core Philosophy&lt;/h3&gt;
+&lt;p&gt;Since deployment, this system has:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reduced manual screening time&lt;/strong&gt;, allowing focus on high-fit applications&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prevented 12+ wasted submissions&lt;/strong&gt; to visa-incompatible positions before application&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identified non-obvious matches&lt;/strong&gt;: roles where my audio privacy research applies to healthcare compliance systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The core philosophy is straightforward: &lt;strong&gt;AI should amplify human judgment, not replace it.&lt;/strong&gt; This system doesn&amp;rsquo;t auto-apply to jobs-it functions as an intelligent research assistant that surfaces insights I would miss and learns from my decisions. It represents a collaboration between human intuition and machine pattern recognition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Research Context:&lt;/strong&gt; This project serves dual purposes. While addressing my immediate career challenge, it validates an architectural pattern I&amp;rsquo;m exploring for post-doctoral research on agentic workflows in synthetic surveillance data generation.&lt;/p&gt;
+&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AI &amp;amp; Orchestration:&lt;/strong&gt; Python, Google Gemma-3-12b, Semantic Routing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory &amp;amp; RAG:&lt;/strong&gt; ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Docker Compose (Containerization), Environment Variables Management&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; Local-First, Hybrid Cloud Inference, Event-Driven Ingestion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;technical-architecture--implementation&#34;&gt;Technical Architecture &amp;amp; Implementation&lt;/h3&gt;
+&lt;h4 id=&#34;1-multi-persona-reasoning-engine-game-theoretic-decision&#34;&gt;1. Multi-Persona Reasoning Engine (Game-Theoretic Decision)&lt;/h4&gt;
+&lt;p&gt;Instead of a single generic prompt, the system orchestrates three distinct AI agents to simulate a &amp;ldquo;War Room&amp;rdquo; debate, reducing hallucination and bias:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Blind-Spot Radar:&lt;/strong&gt; Scans for hidden costs, legacy code risks, and physical/supply chain bottlenecks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devil’s Advocate:&lt;/strong&gt; Performs &amp;ldquo;Pre-mortem&amp;rdquo; analysis to predict failure scenarios (e.g., &amp;ldquo;Why will this application fail?&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Strategist:&lt;/strong&gt; Synthesizes conflict into actionable advice, aligning the user&amp;rsquo;s specific &amp;ldquo;About Me&amp;rdquo; values (Visa, Salary, Tech Preferences) with market reality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-closed-loop-history-rag-the-war-room-module&#34;&gt;2. Closed-Loop History RAG (The &amp;ldquo;War Room&amp;rdquo; Module)&lt;/h4&gt;
+&lt;p&gt;Implemented a V1.1 &lt;strong&gt;History Recall Mechanism&lt;/strong&gt; to turn past failures into future assets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vectorized Battle Archive:&lt;/strong&gt; Automatically indexes past JDs, Resume versions, and Outcomes (Reject/Offer) into a local ChromaDB.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Semantic Trigger:&lt;/strong&gt; When a new JD is analyzed, the system performs a similarity search. If a similar past role is found, it proactively retrieves the previous outcome (e.g., &amp;ldquo;Rejected due to lack of 3D experience&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lazy Loading:&lt;/strong&gt; Utilizes a two-stage retrieval process—checking vector similarity first, then dynamically parsing the specific historical Resume snippet only when a match is found to optimize token usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-local-first-hybrid-infrastructure&#34;&gt;3. Local-First Hybrid Infrastructure&lt;/h4&gt;
+&lt;p&gt;Designed to balance state-of-the-art reasoning with strict privacy controls:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multimodal Ingestion Pipeline:&lt;/strong&gt; A robust ETL pipeline capable of processing raw PDFs and performing OCR on image-based JDs (using Gemini Flash with rate-limiting protection).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Sovereignty:&lt;/strong&gt; All long-term memory (Vector DB) and sensitive documents (CVs) reside in local Docker volumes. The cloud LLM receives only &amp;ldquo;Minimal Viable Context&amp;rdquo; for ephemeral inference, preventing third-party profiling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;key-results--impact&#34;&gt;Key Results &amp;amp; Impact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Efficiency:&lt;/strong&gt; Reduced time-to-decision for complex job applications from hours to minutes by automating semantic filtering and risk assessment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Closed-Loop Learning:&lt;/strong&gt; Achieved a system that &amp;ldquo;remembers&amp;rdquo; past rejections, preventing the repetition of strategic errors across different applications.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Research Validation:&lt;/strong&gt; Successfully demonstrated the viability of &lt;em&gt;Agentic Workflows&lt;/em&gt; for handling unstructured, constraint-heavy data, serving as a foundational prototype for future synthetic data generation research.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#featured.png&#34;&gt;&lt;strong&gt;System Architecture Diagram&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator/tree/da11a9e245a28ab4bedd10d37e1fa9b6064f9d61/examples&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Analysis Sample&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Example of Analysis Report of a Fake JD.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Taiwanese at Ghent Survivor Kit - A Serverless LLM-Agent Deployment</title>

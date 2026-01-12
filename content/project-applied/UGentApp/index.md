@@ -1,5 +1,5 @@
 ---
-title: Taiwanese at Ghent Survivor Kit - A Serverless LLM-Agent Deployment
+title: Taiwanese in Ghent, The Survivor Kit - A Serverless LLM-Agent Deployment
 date: 2026-01-06
 # external_link: https://ugenttsasurvivorkit.vercel.app/
 tags:
@@ -13,12 +13,12 @@ tags:
 ---
 <div style="text-align: justify;">
 
-**TW@Ghent Survivor Kit : AI-Powered Community Platform**
+**Taiwanese in Ghent, The Survivor Kit : AI-Powered Community Platform**
 
 > **A serverless, AI-driven information hub designed to automate community management and solve information fragmentation for international students.**
 
 ### Motivation & Product Philosophy
-**TW@Ghent Survivor Kit** is a comprehensive survival guide platform.
+**Taiwanese in Ghent, The Survivor Kit** is a comprehensive survival guide platform.
 Originally engineered for students, I collaborated with the current president of UGent Taiwanese Student Association (TSA) to redefine the product roadmap, expanding its scope to serve the entire Taiwanese expatriate community. This ensured the system aligned with actual operational needs rather than just technical novelty.
 
 **"I built this not just as a developer, but as the former President who identified the root cause of platform failure."**

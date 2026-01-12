@@ -260,6 +260,6 @@ awards:
       Our project, _Innovative Personal Driver Monitoring System_, was recognized for its innovation in ICT applications, securing Second Place in its category at the International ICT Innovative Services Awards.
 ---
 
-## About Me
+<!-- ## About Me -->
 
-Wei-Cheng Wang is a final-year Ph.D. candidate with the DECIDE team at IDLab, Ghent University-imec. His work, fully funded by the AI Flanders strategic research program, centers on developing surveillance systems that are robust, adaptable, and crucially, privacy-aware. His research, with findings published in journals such as IEEE Pervasive Computing, is complemented by practical leadership experience as President of the Taiwanese Student Association, where he initiated and managed city-wide mentorship programs.
+<!-- Wei-Cheng Wang is a final-year Ph.D. candidate with the DECIDE team at IDLab, Ghent University-imec. His work, fully funded by the AI Flanders strategic research program, centers on developing surveillance systems that are robust, adaptable, and crucially, privacy-aware. His research, with findings published in journals such as IEEE Pervasive Computing, is complemented by practical leadership experience as President of the Taiwanese Student Association, where he initiated and managed city-wide mentorship programs. -->
