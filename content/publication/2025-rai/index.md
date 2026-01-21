@@ -12,7 +12,7 @@ publishDate: "2025-01-13T00:00:00Z"
 publication_types: [Journal article]
 
 publication: "*Frontiers in Robotics and AI*"
-publication_short: "*Frontiers in Robotics & AI*"
+publication_short: "*Frontiers in Robotics & AI*(JCR Q2)"
 
 doi: 10.3389/frobt.2024.1490718
 

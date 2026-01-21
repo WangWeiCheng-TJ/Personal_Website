@@ -12,7 +12,7 @@ publishDate: "2025-07-04T00:00:00Z"
 publication_types: [Journal article]
 
 publication: "*MDPI Sensors*"
-publication_short: "*Sensors*"
+publication_short: "*Sensors*(JCR Q2)"
 
 abstract: |-
   <p style="text-align: justify;">
