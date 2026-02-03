@@ -16,9 +16,9 @@ main:
   - name: Projects
     url: project/
     weight: 14
-  - name: Research Philosophy
-    url: post/mission/
-    weight: 30
+  # - name: Research Philosophy
+  #   url: post/mission/
+  #   weight: 30
   # - name: News
   #   url: /#news
   #   weight: 13

@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 12, 2026 --><html lang="en-us" dir="ltr"
+<!-- Last Published: February 4, 2026 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -41,14 +41,25 @@
   
     
   
-  <meta name="description" content="Bridging the gap between academic models and real-world deployment.
-My Ph.D. research tackles the critical bottlenecks that prevent deep learning models from moving &ldquo;from lab to street&rdquo;: privacy risks, data scarcity, and environmental domain shifts. I proposed a unified framework for urban surveillance that balances performance with ethical compliance and robustness.
+  <meta name="description" content="&ldquo;AI is here they say.&rdquo; We have witnessed how artificial intelligence has reshaped our perception of the world in the past years. AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.
+My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.
 The dissertation is built upon three core technical pillars:
-Privacy-Friendly Visual Analysis: Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.
-Audio-Visual Representation Learning: Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.
-Transferability Assessment: Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.
-(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)
-(Details to be followed)
+Privacy-Friendly Sensing Framework Audio-Visual Representation Learning Source-Free Unsupervised Transferability Assessment (This research culminated in a Ph.D. degree from Ghent University.) Privacy-Friendly Sensing Framework The &ldquo;Opt-in&rdquo; Mechanism: From Audio to Visual
+Traditional privacy protection is fundamentally reactive (Opt-out). Users are forced to play an infinite game of whack-a-mole, trying to list every sensitive attribute they want to hide. However, raw data is inherently &ldquo;bundled&rdquo;: a simple voice command carries not just the semantic content, but also speaker&rsquo;s gender, emotion, and identity. In the real world, it is impossible to exhaustively list and block every potential leakage. This &ldquo;collect first, sanitize later&rdquo; approach violates the core principle of GDPR, leaving users vulnerable to future, unforeseen extraction techniques.
+Addressing the trade-off between utility and privacy. I proposed a fundamental inversion of this paradigm. Instead of asking &ldquo;what should we hide?&rdquo;, my framework asks &ldquo;what is strictly necessary?&rdquo;. Using adversarial learning, I trained an on-edge obfuscator adapted from a generative architecture (CycleGAN-VC2), designed to protect attributes like speaker identity, emotion, and gender while maintaining compatibility with downstream models (e.g., DeepSpeech2).This model acts as a digital sieve that actively strips away the &ldquo;bundled&rdquo; sensitive attributes (like identity) at the signal level, while selectively preserving only the features required for the authorized task (e.g., speech recognition). It transforms privacy from a passive policy into an active, mathematical constraint.
+Crucially, this framework solves the deployment bottleneck. The obfuscated data remains mathematically compatible with off-the-shelf models. This means service providers can &ldquo;plug-in&rdquo; this privacy module at the edge without needing to retrain their massive backend models. It offers a source-free, scalable path to GDPR compliance that protects users without dismantling the existing AI infrastructure.
+Experiments on four speech datasets demonstrate that the framework suppresses unauthorized attribute recognition to near-random chance levels, while incurring a minimal performance drop (only 2-6%) on authorized tasks.
+Audio Domain: Published in IEEE Pervasive Computing (1st author). Visual Domain: The core &ldquo;opt-in&rdquo; logic proved robust enough to be adapted to the visual domain, validating its cross-modal universality. Published in Applied Intelligence (2nd author). Audio-Visual Representation Learning: The Paradox of Misalignment: Turning False Negatives into Semantic Anchors
+Contrastive learning is an effective way to learn representation without labels. Yet, conventional contrastive learning on multimodal data, such as surveillance, suffers from false negatives.
+When two ambulance cars occur at different times during the night, the temporal coherence constraint used by traditional contrastive learning treats them as unrelated events. These false negatives lead to inefficient and ineffective representation learning. In urban surveillance, spatiotemporal discontinuity is the norm, not the exception. A siren is often heard before the ambulance appears; a crash sound precedes the visual collision. By rigidly enforcing temporal alignment, traditional models discard these meaningful but asynchronous correlations as false negatives, actively unlearning the causal structure of reality.
+Furthermore, traditional methods suffer from an information bottleneck: by relying on a single positive pair (the exact timestamp), the model learns only the minimal sufficient features needed to match that pair, discarding rich semantic details essential for generalization.
+Instead of treating asynchronous signals as errors to be filtered, I utilized them as semantic anchors. I developed the Embedding-based Pair Generation (EPG) mechanism, which operates on a simple premise: if two signals share high similarity in the latent space, they belong to the same event regardless of their timestamp.
+Dynamic Pair Re-evaluation: EPG actively retrieves these &ldquo;misaligned&rdquo; samples from the memory bank and re-labels them as positive pairs. Multi-Positive Contrastive Loss: By forcing the model to recognize multiple, time-scattered instances of the same event, we break the information bottleneck. This compels the encoder to capture richer, more robust features rather than just the minimal cues needed for temporal alignment. This approach successfully transformed the chaotic charateristics of surveillance data from a performance bottleneck into a source of data augmentation.
+Performance: Achieved a 10% improvement over state-of-the-art baselines (TACMA, MAViL) in audio-visual event localization. Rich in Information: The proposed EPG and the multi-positive loss force the model to capture dense, semantic features. This learnt representation is general-purpose, successfully powering multiple downstream tasks including event localization, anomaly detection, and query-guided event search without retraining. Scalability: Such versatility dramatically improves the scalability of edge deployments. Instead of installing separate, heavy models for each function, a single lightweight encoder can now serve multiple analytical tasks simultaneously. The results has been published in Frontiers in Robotics and AI, 1st author. Transferability Assessment: Navigating Without a Map: The &ldquo;Source-Free&rdquo; Compass
+One of the greatest hurdle in large-scale deployment is domain shift: a model trained on a sunny day in Ghent often fails miserably on a rainy night in Taipei. In an ideal world, we would access the original training data (source data) to bridge this gap, and the well-annotated target data during the evalutaion. But in the real world, strict privacy regulations (like GDPR) often lock this data away. Engineers are forced to deploy models into new, unseen environments while effectively flying blind, unable to predict which model will survive the shift.
+To solve this, I leveraged the underexplored potentional of an unlikely guide: Randomness. I proposed a novel assessment framework using Randomly Initialized Neural Networks (RINNs). My research revealed that while random networks contain no knowledge, their statistical structure provides a consistent, unbiased &ldquo;universal ruler.&rdquo; By measuring the Centered Kernel Alignment (CKA) between a pre-trained model and a set of random networks, I derived a &ldquo;fingerprint&rdquo; of the model&rsquo;s structural adaptability. This allows us to assess model compatibility with a new environment without ever touching the restricted source data or requiring ground-truth labels.
+This turns model selection from a guessing game into a precise science.
+Task-Agnostic Validation: I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection. High Correlation: Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance. Operational Efficiency: It acts as a &ldquo;Source-Free Compass,&rdquo; allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty. The results has been published in Sensors, 1st author.
 " />
 
   
@@ -192,27 +203,71 @@ Transferability Assessment: Ensuring reliability in changing environments. I des
   
   <meta property="og:site_name" content="Wei-Cheng Wang&#39;s Personal Website" />
   <meta property="og:url" content="http://localhost:1313/project-research/phd/" />
-  <meta property="og:title" content="Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street | Wei-Cheng Wang&#39;s Personal Website" />
+  <meta property="og:title" content="From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance | Wei-Cheng Wang&#39;s Personal Website" />
   <meta property="og:description" content="
-Bridging the gap between academic models and real-world deployment.
-My Ph.D. research tackles the critical bottlenecks that prevent deep learning models from moving &ldquo;from lab to street&rdquo;: privacy risks, data scarcity, and environmental domain shifts. I proposed a unified framework for urban surveillance that balances performance with ethical compliance and robustness.
+&ldquo;AI is here they say.&rdquo; 
+We have witnessed how artificial intelligence has reshaped our perception of the world in the past years.
+AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.
+My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.
 The dissertation is built upon three core technical pillars:
 
+Privacy-Friendly Sensing Framework 
+Audio-Visual Representation Learning 
+Source-Free Unsupervised Transferability Assessment 
+(This research culminated in a Ph.D. degree from Ghent University.)
 
-Privacy-Friendly Visual Analysis: 
-Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.
+
+Privacy-Friendly Sensing Framework
+
+The &ldquo;Opt-in&rdquo; Mechanism: From Audio to Visual
+
+Traditional privacy protection is fundamentally reactive (Opt-out). Users are forced to play an infinite game of whack-a-mole, trying to list every sensitive attribute they want to hide.
+However, raw data is inherently &ldquo;bundled&rdquo;: a simple voice command carries not just the semantic content, but also speaker&rsquo;s gender, emotion, and identity. In the real world, it is impossible to exhaustively list and block every potential leakage. This &ldquo;collect first, sanitize later&rdquo; approach violates the core principle of GDPR, leaving users vulnerable to future, unforeseen extraction techniques.
+Addressing the trade-off between utility and privacy. I proposed a fundamental inversion of this paradigm. Instead of asking &ldquo;what should we hide?&rdquo;, my framework asks &ldquo;what is strictly necessary?&rdquo;.
+Using adversarial learning, I trained an on-edge obfuscator adapted from a generative architecture (CycleGAN-VC2), designed to protect attributes like speaker identity, emotion, and gender while maintaining compatibility with downstream models (e.g., DeepSpeech2).This model acts as a digital sieve that actively strips away the &ldquo;bundled&rdquo; sensitive attributes (like identity) at the signal level, while selectively preserving only the features required for the authorized task (e.g., speech recognition). It transforms privacy from a passive policy into an active, mathematical constraint.
+Crucially, this framework solves the deployment bottleneck. The obfuscated data remains mathematically compatible with off-the-shelf models.
+This means service providers can &ldquo;plug-in&rdquo; this privacy module at the edge without needing to retrain their massive backend models. It offers a source-free, scalable path to GDPR compliance that protects users without dismantling the existing AI infrastructure.
+Experiments on four speech datasets demonstrate that the framework suppresses unauthorized attribute recognition to near-random chance levels, while incurring a minimal performance drop (only 2-6%) on authorized tasks.
+
+Audio Domain: 
+Published in IEEE Pervasive Computing (1st author).
+Visual Domain: 
+The core &ldquo;opt-in&rdquo; logic proved robust enough to be adapted to the visual domain, validating its cross-modal universality. Published in Applied Intelligence (2nd author).
 
 
 Audio-Visual Representation Learning: 
-Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.
+
+The Paradox of Misalignment: Turning False Negatives into Semantic Anchors
+
+Contrastive learning is an effective way to learn representation without labels. Yet, conventional contrastive learning on multimodal data, such as surveillance, suffers from false negatives.
+When two ambulance cars occur at different times during the night, the temporal coherence constraint used by traditional contrastive learning treats them as unrelated events. These false negatives lead to inefficient and ineffective representation learning. In urban surveillance, spatiotemporal discontinuity is the norm, not the exception. A siren is often heard before the ambulance appears; a crash sound precedes the visual collision. By rigidly enforcing temporal alignment, traditional models discard these meaningful but asynchronous correlations as false negatives, actively unlearning the causal structure of reality.
+Furthermore, traditional methods suffer from an information bottleneck: by relying on a single positive pair (the exact timestamp), the model learns only the minimal sufficient features needed to match that pair, discarding rich semantic details essential for generalization.
+Instead of treating asynchronous signals as errors to be filtered, I utilized them as semantic anchors. I developed the Embedding-based Pair Generation (EPG) mechanism, which operates on a simple premise: if two signals share high similarity in the latent space, they belong to the same event regardless of their timestamp.
+
+Dynamic Pair Re-evaluation: EPG actively retrieves these &ldquo;misaligned&rdquo; samples from the memory bank and re-labels them as positive pairs.
+Multi-Positive Contrastive Loss: By forcing the model to recognize multiple, time-scattered instances of the same event, we break the information bottleneck. This compels the encoder to capture richer, more robust features rather than just the minimal cues needed for temporal alignment.
+
+This approach successfully transformed the chaotic charateristics of surveillance data from a performance bottleneck into a source of data augmentation.
+
+Performance: Achieved a 10% improvement over state-of-the-art baselines (TACMA, MAViL) in audio-visual event localization.
+Rich in Information: The proposed EPG and the multi-positive loss force the model to capture dense, semantic features. This learnt representation is general-purpose, successfully powering multiple downstream tasks including event localization, anomaly detection, and query-guided event search without retraining.
+Scalability: Such versatility dramatically improves the scalability of edge deployments. Instead of installing separate, heavy models for each function, a single lightweight encoder can now serve multiple analytical tasks simultaneously.
+The results has been published in Frontiers in Robotics and AI, 1st author.
 
 
 Transferability Assessment: 
-Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.
 
+Navigating Without a Map: The &ldquo;Source-Free&rdquo; Compass
 
-(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)
-(Details to be followed)
+One of the greatest hurdle in large-scale deployment is domain shift: a model trained on a sunny day in Ghent often fails miserably on a rainy night in Taipei. In an ideal world, we would access the original training data (source data) to bridge this gap, and the well-annotated target data during the evalutaion. But in the real world, strict privacy regulations (like GDPR) often lock this data away. Engineers are forced to deploy models into new, unseen environments while effectively flying blind, unable to predict which model will survive the shift.
+To solve this, I leveraged the underexplored potentional of an unlikely guide: Randomness. I proposed a novel assessment framework using Randomly Initialized Neural Networks (RINNs). My research revealed that while random networks contain no knowledge, their statistical structure provides a consistent, unbiased &ldquo;universal ruler.&rdquo; By measuring the Centered Kernel Alignment (CKA) between a pre-trained model and a set of random networks, I derived a &ldquo;fingerprint&rdquo; of the model&rsquo;s structural adaptability. This allows us to assess model compatibility with a new environment without ever touching the restricted source data or requiring ground-truth labels.
+This turns model selection from a guessing game into a precise science.
+
+Task-Agnostic Validation: I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection.
+High Correlation: Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance.
+Operational Efficiency: It acts as a &ldquo;Source-Free Compass,&rdquo; allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty.
+
+The results has been published in Sensors, 1st author.
 " /><meta property="og:image" content="http://localhost:1313/project-research/phd/featured.png" />
     <meta property="twitter:image" content="http://localhost:1313/project-research/phd/featured.png" /><meta property="og:locale" content="en-us" />
   
@@ -232,7 +287,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
   
 
 
-  <title>Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street | Wei-Cheng Wang&#39;s Personal Website</title>
+  <title>From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance | Wei-Cheng Wang&#39;s Personal Website</title>
 
   
   
@@ -626,6 +681,10 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
   
   
   
+  
+  
+  
+  
     
       
       
@@ -875,20 +934,6 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
       
       
       
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
-          href="/post/mission/"
-        >Research Philosophy</a
-        >
-      </li>
-      
-      
-      
     </ul>
 
     <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
@@ -1004,7 +1049,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/project-applied/job_hunter/"
     
-  >Agentic Career Orchestrator - Multi-Agent LLM System for Intelligent Job Matching
+  >Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
     </a>
               
             </li><li class="flex flex-col "><a
@@ -1012,7 +1057,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/project-applied/ugentapp/"
     
-  >Taiwanese at Ghent Survivor Kit - A Serverless LLM-Agent Deployment
+  >Taiwanese in Ghent, The Survivor Kit - A Serverless LLM-Agent Deployment
     </a>
               
             </li></ul>
@@ -1039,8 +1084,16 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/project-research/phd/"
     
-  >Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street
+  >From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance
     </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#"
+                class="hb-docs-link"
+              ></a>
+            </li>
+          </ul>
   
               
             </li><li class="flex flex-col "><a
@@ -1312,7 +1365,16 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
 
 
 
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#privacy-friendly-sensing-framework">Privacy-Friendly Sensing Framework</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#audio-visual-representation-learning-br">Audio-Visual Representation Learning: </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#transferability-assessment-br">Transferability Assessment: </a>
+      </li></ul>
 
   
   
@@ -1344,7 +1406,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
 
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance</h1>
 
       <div class="mt-4 mb-16">
       <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jun 30, 2025</span>
@@ -1353,7 +1415,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
         
         <span class="mx-1">·</span>
         <span class="mx-1">
-          1 min read
+          6 min read
         </span>
         
         </div>
@@ -1399,25 +1461,69 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
         <div style="text-align: justify;">
-<p>Bridging the gap between academic models and real-world deployment.</p>
-<p>My Ph.D. research tackles the critical bottlenecks that prevent deep learning models from moving &ldquo;from lab to street&rdquo;: privacy risks, data scarcity, and environmental domain shifts. I proposed a unified framework for urban surveillance that balances performance with ethical compliance and robustness.</p>
+<p>&ldquo;<em>AI is here they say.</em>&rdquo; <br>
+We have witnessed how artificial intelligence has reshaped our perception of the world in the past years.
+AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.</p>
+<p>My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.</p>
 <p>The dissertation is built upon three core technical pillars:</p>
 <ul>
-<li>
-<p>Privacy-Friendly Visual Analysis: <br>
-Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.</p>
-</li>
-<li>
-<p>Audio-Visual Representation Learning: <br>
-Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.</p>
-</li>
-<li>
-<p>Transferability Assessment: <br>
-Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.</p>
-</li>
+<li><a href="#privacy-friendly-sensing-framework">Privacy-Friendly Sensing Framework</a> <br></li>
+<li><a href="#audio-visual-representation-learning">Audio-Visual Representation Learning</a> <br></li>
+<li><a href="#transferability-assessment">Source-Free Unsupervised Transferability Assessment</a> <br>
+(This research culminated in a Ph.D. degree from Ghent University.)</li>
 </ul>
-<p>(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)</p>
-<p>(Details to be followed)</p>
+<hr>
+<h3 id="privacy-friendly-sensing-framework">Privacy-Friendly Sensing Framework</h3>
+<blockquote>
+<p>The &ldquo;<strong>Opt-in</strong>&rdquo; Mechanism: From Audio to Visual</p>
+</blockquote>
+<p>Traditional privacy protection is fundamentally reactive (Opt-out). Users are forced to play an infinite game of <em>whack-a-mole</em>, trying to list every sensitive attribute they want to hide.
+However, raw data is inherently <strong>&ldquo;bundled&rdquo;</strong>: a simple voice command carries not just the semantic content, but also speaker&rsquo;s gender, emotion, and identity. In the real world, it is impossible to exhaustively list and block every potential leakage. This &ldquo;collect first, sanitize later&rdquo; approach violates the core principle of <strong>GDPR</strong>, leaving users vulnerable to future, unforeseen extraction techniques.</p>
+<p>Addressing the trade-off between utility and privacy. I proposed a fundamental inversion of this paradigm. Instead of asking &ldquo;what should we hide?&rdquo;, my framework asks &ldquo;what is strictly necessary?&rdquo;.
+Using <strong>adversarial learning</strong>, I trained an on-edge <strong>obfuscator</strong> adapted from a generative architecture (<strong>CycleGAN-VC2</strong>), designed to protect attributes like speaker identity, emotion, and gender while maintaining compatibility with downstream models (e.g., <strong>DeepSpeech2</strong>).This model acts as a digital sieve that actively strips away the &ldquo;bundled&rdquo; sensitive attributes (like identity) at the signal level, while selectively preserving only the features required for the authorized task (e.g., speech recognition). It transforms privacy from a passive policy into an active, mathematical constraint.</p>
+<p>Crucially, this framework solves the deployment bottleneck. The obfuscated data remains mathematically compatible with <strong>off-the-shelf models</strong>.
+This means service providers can &ldquo;plug-in&rdquo; this privacy module at the edge without needing to retrain their massive backend models. It offers a <strong>source-free</strong>, scalable path to GDPR compliance that protects users without dismantling the existing AI infrastructure.</p>
+<p>Experiments on four speech datasets demonstrate that the framework suppresses unauthorized attribute recognition to <strong>near-random chance levels</strong>, while incurring a <strong>minimal performance drop (only 2-6%)</strong> on authorized tasks.</p>
+<ul>
+<li><strong>Audio Domain:</strong> <br>
+Published in <a href="/publication/2022-pc/"><em>IEEE Pervasive Computing (1st author)</em></a>.</li>
+<li><strong>Visual Domain:</strong> <br>
+The core &ldquo;opt-in&rdquo; logic proved robust enough to be adapted to the visual domain, validating its cross-modal universality. Published in <a href="/publication/de-2024-privacy/"><em>Applied Intelligence (2nd author)</em></a>.</li>
+</ul>
+<hr>
+<h3 id="audio-visual-representation-learning-br">Audio-Visual Representation Learning: <br></h3>
+<blockquote>
+<p>The Paradox of Misalignment: Turning False Negatives into Semantic Anchors</p>
+</blockquote>
+<p>Contrastive learning is an effective way to learn representation without labels. Yet, conventional contrastive learning on multimodal data, such as surveillance, suffers from false negatives.</p>
+<p>When two ambulance cars occur at different times during the night, the temporal coherence constraint used by traditional contrastive learning treats them as unrelated events. These <strong>false negatives</strong> lead to inefficient and ineffective representation learning. In urban surveillance, <strong>spatiotemporal discontinuity</strong> is the norm, not the exception. A siren is often heard before the ambulance appears; a crash sound precedes the visual collision. By rigidly enforcing temporal alignment, traditional models discard these meaningful but asynchronous correlations as <strong>false negatives</strong>, actively unlearning the causal structure of reality.</p>
+<p>Furthermore, traditional methods suffer from an <strong>information bottleneck</strong>: by relying on a single positive pair (the exact timestamp), the model learns only the <strong>minimal sufficient</strong> features needed to match that pair, discarding rich semantic details essential for generalization.</p>
+<p>Instead of treating asynchronous signals as errors to be filtered, I utilized them as <strong>semantic anchors</strong>. I developed the <strong>Embedding-based Pair Generation</strong> (EPG) mechanism, which operates on a simple premise: if two signals share high similarity in the latent space, they belong to the same event regardless of their timestamp.</p>
+<ul>
+<li><strong>Dynamic Pair Re-evaluation</strong>: EPG actively retrieves these &ldquo;misaligned&rdquo; samples from the memory bank and re-labels them as positive pairs.</li>
+<li><strong>Multi-Positive Contrastive Loss</strong>: By forcing the model to recognize multiple, time-scattered instances of the same event, we break the information bottleneck. This compels the encoder to capture richer, more robust features rather than just the minimal cues needed for temporal alignment.</li>
+</ul>
+<p>This approach successfully <strong>transformed the chaotic charateristics</strong> of surveillance data from a performance bottleneck <strong>into a source of data augmentation</strong>.</p>
+<ul>
+<li><strong>Performance</strong>: <br>Achieved a 10% improvement over state-of-the-art baselines (TACMA, MAViL) in audio-visual event localization.</li>
+<li><strong>Rich in Information</strong>: <br>The proposed EPG and the multi-positive loss force the model to capture dense, semantic features. This learnt representation is general-purpose, successfully powering multiple downstream tasks including event localization, anomaly detection, and query-guided event search without retraining.</li>
+<li><strong>Scalability</strong>: <br>Such versatility dramatically improves the scalability of edge deployments. Instead of installing separate, heavy models for each function, a single lightweight encoder can now serve multiple analytical tasks simultaneously.</li>
+<li>The results has been published in <a href="/publication/2025-rai/"><em>Frontiers in Robotics and AI, 1st author</em></a>.</li>
+</ul>
+<hr>
+<h3 id="transferability-assessment-br">Transferability Assessment: <br></h3>
+<blockquote>
+<p>Navigating Without a Map: The &ldquo;Source-Free&rdquo; Compass</p>
+</blockquote>
+<p>One of the greatest hurdle in large-scale deployment is <strong>domain shift</strong>: a model trained on a sunny day in Ghent often fails miserably on a rainy night in Taipei. In an ideal world, we would access the original training data (source data) to bridge this gap, and the well-annotated target data during the evalutaion. But in the real world, strict privacy regulations (like GDPR) often lock this data away. Engineers are forced to deploy models into new, unseen environments while effectively flying blind, unable to predict which model will survive the shift.</p>
+<p>To solve this, I leveraged the underexplored potentional of an unlikely guide: Randomness. I proposed a novel assessment framework using <strong>Randomly Initialized Neural Networks</strong> (RINNs). My research revealed that while random networks contain no knowledge, their statistical structure provides a consistent, unbiased &ldquo;universal ruler.&rdquo; By measuring the <strong>Centered Kernel Alignment</strong> (CKA) between a pre-trained model and a set of random networks, I derived a &ldquo;fingerprint&rdquo; of the model&rsquo;s structural adaptability. This allows us to assess model compatibility with a new environment without ever touching the restricted source data or requiring ground-truth labels.</p>
+<p>This turns model selection from a guessing game into a precise science.</p>
+<ul>
+<li><strong>Task-Agnostic Validation</strong>: I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection.</li>
+<li><strong>High Correlation</strong>: Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance.</li>
+<li><strong>Operational Efficiency</strong>: It acts as a &ldquo;Source-Free Compass,&rdquo; allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty.</li>
+</ul>
+<p>The results has been published in <a href="/publication/wang-2025-source/"><em>Sensors, 1st author</em></a>.</p>
 </div>
       </div>
 
@@ -1436,15 +1542,15 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
 
 <div class="flex justify-center">
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/unsupervised-learning/">Unsupervised Learning</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/lab-to-street/">Lab to Street</a>
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/motion-kinematics/">Motion Kinematics</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/data-scarcity/">Data Scarcity</a>
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/annotation-placement-optimization/">Annotation Placement Optimization</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/privacy-preserving/">Privacy Preserving</a>
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/spatiotemporal-analysis/">Spatiotemporal Analysis</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/multimodal-learning/">Multimodal Learning</a>
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/human-computer-interaction/">Human-Computer Interaction</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/domain-adaptation/">Domain Adaptation</a>
   
 </div>
 
@@ -1462,7 +1568,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F&amp;text=Transferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;Techniques&#43;for&#43;Audio-Visual&#43;Urban&#43;Surveillance&#43;-&#43;From&#43;Lab&#43;to&#43;Street"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F&amp;text=From&#43;Lab&#43;to&#43;Street%EF%BC%9ATransferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;for&#43;Urban&#43;Surveillance"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1480,7 +1586,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F&amp;t=Transferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;Techniques&#43;for&#43;Audio-Visual&#43;Urban&#43;Surveillance&#43;-&#43;From&#43;Lab&#43;to&#43;Street"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F&amp;t=From&#43;Lab&#43;to&#43;Street%EF%BC%9ATransferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;for&#43;Urban&#43;Surveillance"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1500,7 +1606,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Transferable%20and%20Privacy-friendly%20Deep%20Learning%20Techniques%20for%20Audio-Visual%20Urban%20Surveillance%20-%20From%20Lab%20to%20Street&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F"
+    href="mailto:?subject=From%20Lab%20to%20Street%EF%BC%9ATransferable%20and%20Privacy-friendly%20Deep%20Learning%20for%20Urban%20Surveillance&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1518,7 +1624,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F&amp;title=Transferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;Techniques&#43;for&#43;Audio-Visual&#43;Urban&#43;Surveillance&#43;-&#43;From&#43;Lab&#43;to&#43;Street"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F&amp;title=From&#43;Lab&#43;to&#43;Street%EF%BC%9ATransferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;for&#43;Urban&#43;Surveillance"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1536,7 +1642,7 @@ Ensuring reliability in changing environments. I designed metrics to assess mode
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Transferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;Techniques&#43;for&#43;Audio-Visual&#43;Urban&#43;Surveillance&#43;-&#43;From&#43;Lab&#43;to&#43;Street%20http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F"
+    href="whatsapp://send?text=From&#43;Lab&#43;to&#43;Street%EF%BC%9ATransferable&#43;and&#43;Privacy-friendly&#43;Deep&#43;Learning&#43;for&#43;Urban&#43;Surveillance%20http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fphd%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"

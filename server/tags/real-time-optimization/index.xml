@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real-Time Optimization | Wei-Cheng Wang&#39;s Personal Website</title>
+    <link>https://example.com/tags/real-time-optimization/</link>
+      <atom:link href="https://example.com/tags/real-time-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Real-Time Optimization</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
+      <title>Real-Time Optimization</title>
+      <link>https://example.com/tags/real-time-optimization/</link>
+    </image>
+    
+    <item>
+      <title>Bridging the gap between lab research and market value.</title>
+      <link>https://example.com/project-tech/sysnopsis/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project-tech/sysnopsis/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;I led the commercialization of the lab&amp;rsquo;s core research by developing a market-ready prototype and a viable business model. My role involved translating technical algorithms into a user-centric solution for surveillance efficiency.&lt;/p&gt;
+&lt;p&gt;This venture won the APICTA Merit Award (R&amp;amp;D category) and secured funding, leading to a successful acquisition of the product/team by our industry partner, EverSTek. This experience honed my ability to identify user needs, build MVPs, and execute a successful technology exit.&lt;/p&gt;
+&lt;p&gt;(Details to be followed)&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;demo-video&#34;&gt;Demo Video&lt;/h2&gt;
+&lt;video width=&#34;640&#34; height=&#34;480&#34; controls&gt;
+  &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

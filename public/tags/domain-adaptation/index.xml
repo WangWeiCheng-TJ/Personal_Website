@@ -5,12 +5,46 @@
     <link>http://localhost:1313/tags/domain-adaptation/</link>
       <atom:link href="http://localhost:1313/tags/domain-adaptation/index.xml" rel="self" type="application/rss+xml" />
     <description>Domain Adaptation</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Domain Adaptation</title>
       <link>http://localhost:1313/tags/domain-adaptation/</link>
     </image>
+    
+    <item>
+      <title>From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance</title>
+      <link>http://localhost:1313/project-research/phd/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project-research/phd/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;AI is here they say.&lt;/em&gt;&amp;rdquo; &lt;br&gt;
+We have witnessed how artificial intelligence has reshaped our perception of the world in the past years.
+AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.&lt;/p&gt;
+&lt;p&gt;My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.&lt;/p&gt;
+&lt;p&gt;The dissertation is built upon three core technical pillars:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#audio-visual-representation-learning&#34;&gt;Audio-Visual Representation Learning&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#transferability-assessment&#34;&gt;Source-Free Unsupervised Transferability Assessment&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &amp;ldquo;&lt;strong&gt;Opt-in&lt;/strong&gt;&amp;rdquo; Mechanism: From Audio to Visual&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Traditional privacy protection is fundamentally reactive (Opt-out). Users are forced to play an infinite game of &lt;em&gt;whack-a-mole&lt;/em&gt;, trying to list every sensitive attribute they want to hide.
+However, raw data is inherently &lt;strong&gt;&amp;ldquo;bundled&amp;rdquo;&lt;/strong&gt;: a simple voice command carries not just the semantic content, but also speaker&amp;rsquo;s gender, emotion, and identity. In the real world, it is impossible to exhaustively list and block every potential leakage. This &amp;ldquo;collect first, sanitize later&amp;rdquo; approach violates the core principle of &lt;strong&gt;GDPR&lt;/strong&gt;, leaving users vulnerable to future, unforeseen extraction techniques.&lt;/p&gt;
+&lt;p&gt;Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.&lt;/p&gt;
+&lt;p&gt;We pioneered a domain-agnostic, source-free, &amp;ldquo;&lt;strong&gt;opt-in&lt;/strong&gt;&amp;rdquo; mechanism using adversarial training. Originally designed for acoustic data (&lt;a href=&#34;http://localhost:1313/publication/2022-pc/&#34;&gt;&lt;em&gt;IEEE Pervasive Computing, 1st author&lt;/em&gt;&lt;/a&gt;), this mechanism actively strips task-irrelevant biometric signatures at the feature level while preserving task applicability. The mechanism proved to be robust that we successfully adapted it to the visual domain (&lt;a href=&#34;http://localhost:1313/publication/de-2024-privacy/&#34;&gt;&lt;em&gt;Applied Intelligence, 2nd author&lt;/em&gt;&lt;/a&gt;), validating its capability to protect both voice and facial privacy without redesigning the core logic.&lt;/p&gt;
+&lt;h3 id=&#34;audio-visual-representation-learning-br&#34;&gt;Audio-Visual Representation Learning: &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.&lt;/p&gt;
+&lt;h3 id=&#34;transferability-assessment-br&#34;&gt;Transferability Assessment: &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.&lt;/p&gt;
+&lt;p&gt;(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)&lt;/p&gt;
+&lt;p&gt;(Details to be followed)&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>SensCity - Acoustic Surveillance in Real-World</title>

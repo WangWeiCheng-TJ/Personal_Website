@@ -1,0 +1,204 @@
+/*Bio業面*/
+/* 第一層：Hugo Blox 容器 */
+.blox-markdown {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* 第二層：自定義容器 + 覆蓋 Tailwind 的 max-w-prose */
+/*改About Me and My Research*/
+/* .wide-text-block.blox-markdown,
+.wide-text-block.max-w-prose {
+    max-width: 1100px !important;
+    margin-top: 3rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 1rem !important;
+} */
+
+/* 覆蓋有 wide-text-block 的區域 */
+/*沒啥用的樣子*/
+.wide-text-block[class*="max-w-prose"],
+.wide-text-block.max-w-prose,
+.flex.flex-col.max-w-prose.wide-text-block {
+    max-width: 1100px !important;
+    margin: 1rem auto !important;
+    padding: 0 1rem !important;
+}
+
+/* 覆蓋沒有 wide-text-block 的區域 */
+/*也是改About Me and My Research*/
+.flex.flex-col.items-center.max-w-prose,
+.flex.flex-col.max-w-prose {
+    max-width: 1100px !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 1rem !important;
+}
+
+
+/* 結合兩個類別，只影響同時有這兩個類別的元素 */
+.wide-text-block .prose {
+    max-width: 850px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0rem !important;
+    margin-bottom: 2rem !important;
+    padding: 1.5rem 1rem !important;
+    column-count: 1 !important;
+    column-gap: 0 !important;
+}
+
+.wide-text-block .prose p {
+    text-align: justify !important;
+    margin-bottom: 1rem !important;
+}
+
+@media (max-width: 1000px) {
+    .wide-text-block .prose {
+        max-width: 100% !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        padding: 1rem 1.5rem !important;
+    }
+}
+
+/*Publication葉面*/
+/* 主容器寬度調整 */
+.grid.max-w-prose {
+    max-width: 1000px !important;
+    margin: 2rem auto !important;
+    padding: 0 1rem !important;
+}
+
+/* 調整 grid 欄位寬度以適應新的容器寬度 */
+@media (min-width: 768px) {
+    .grid.max-w-prose {
+        grid-template-columns: 180px auto !important; /* 從 200px 增加到 250px */
+        gap: 0.5rem !important; /* 增加欄位間距 */
+    }
+}
+
+/* 左側欄位（A1, B1, C1）- 有 class 標籤的容器 */
+.grid.max-w-prose > div[class] {
+    max-width: 100% !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+}
+
+/* 右側欄位（A2, B2, C2）- 沒有 class 標籤的容器 */
+.grid.max-w-prose > div:not([class]) {
+    max-width: 600px !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+    /* 可選：給右側欄位加上視覺區分 */
+    /* border-left: 2px solid #e5e7eb !important; */
+    padding-left: 1.5rem !important;
+}
+
+/* 使用 nth-child 更精確地控制 A2, B2, C2 */
+.grid.max-w-prose > div:nth-child(even) {
+    /* 偶數位置的容器（A2, B2, C2） */
+    max-width: 600px  !important;
+    padding: 1rem 1rem 1rem 1.5rem !important;
+    /* border-left: 2px solid #e5e7eb !important; */
+}
+
+/* 響應式調整 */
+@media (max-width: 1200px) {
+    .grid.max-w-prose {
+        max-width: 95% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid.max-w-prose {
+        grid-template-columns: 1fr !important; /* 小螢幕時變為單欄 */
+        gap: 1rem !important;
+    }
+    
+    .grid.max-w-prose > div:nth-child(even) {
+        border-left: none !important;
+        padding: 1rem !important;
+        border-top: 2px solid #e5e7eb !important;
+        padding-top: 1.5rem !important;
+    }
+}
+
+/*有時候拉太寬左邊跟右邊邊會出現莫名方格影響排版*/
+/*右邊*/
+.hb-toc {
+    display: none !important;
+}
+/*左邊*/
+.hb-scrollbar {
+    display: none !important;
+}
+
+/* 新增：文章標題區域的圖片控制 */
+.article-header.article-container.featured-image-wrapper img,
+.featured-image-wrapper img {
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 1rem auto !important;
+    display: block !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 確保容器不會限制圖片 */
+.featured-image-wrapper {
+    text-align: center !important;
+    max-width: none !important;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .featured-image-wrapper img {
+        max-width: 200px !important;
+        margin: 0.5rem auto !important;
+    }
+}
+
+/*縮圖靠左*/
+.article-header.article-container.featured-image-wrapper {
+    margin: 0 !important; /* 取消上下預設間距 */
+    padding: 0 !important;
+    width: 300px !important; /* 固定寬度，可依需求調整 */
+}
+
+.article-header.article-container.featured-image-wrapper img {
+    width: 0% !important;   /* 圖片填滿容器 */
+    max-width: 0 !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+}
+
+
+/*把publication裡的圖關掉*/
+.mt-4.mb-16 {
+  margin-top: 8px !important;
+  margin-bottom: 0px !important;
+}
+/*把publication裡的圖嵌到descrption*/
+.pub-img {
+  max-width: 320px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.pub-description {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 1rem !important;
+}
+

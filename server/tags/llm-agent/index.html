@@ -1,0 +1,1187 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: February 3, 2026 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="system">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.3.1" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Wang Wei-Cheng" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Ph.D." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://example.com/tags/llm-agent/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/emerald.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.40d365a5c94bd94585e708f7c92e5782e00a8d8eefc348f5d2f21a80bb7783c8.css" rel="stylesheet" />
+  
+
+  
+  
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZQYLMST6R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-CZQYLMST6R', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="alternate" href="/tags/llm-agent/index.xml" type="application/rss+xml" title="Wei-Cheng Wang&#39;s Personal Website" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu3247630877640252165.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu4166356570829923896.png" />
+
+  <link rel="canonical" href="https://example.com/tags/llm-agent/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Wei-Cheng Wang&#39;s Personal Website" />
+  <meta property="og:url" content="https://example.com/tags/llm-agent/" />
+  <meta property="og:title" content="LLM Agent | Wei-Cheng Wang&#39;s Personal Website" />
+  <meta property="og:description" content="Ph.D." /><meta property="og:image" content="https://example.com/media/icon_hu7729264130191091259.png" />
+    <meta property="twitter:image" content="https://example.com/media/icon_hu7729264130191091259.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2026-01-21T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+
+  <title>LLM Agent | Wei-Cheng Wang&#39;s Personal Website</title>
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+  </style>
+
+  
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+
+<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      baseUrl: window.hbb.pagefind.baseUrl,
+      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.8c8ea06bd0420f5067e52fa727b9f92303757322ba4431774153d59a9735eadb.js"
+    integrity="sha256-jI6ga9BCD1Bn5S&#43;nJ7n5IwN1cyK6RDF3QVPVmpc16ts="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+      
+    
+  
+
+
+
+
+</head>
+
+
+
+<link rel="stylesheet" href="/css/custom.css" type="text/css">
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Wei-Cheng Wang&#39;s Personal Website">
+            
+            
+              
+              <img
+                fetchpriority="high"
+                decoding="async"
+                class=""
+                width="206"
+                height="36"
+                src="/media/Elf_white_hu7399649101897331904.webp"
+                alt="Wei-Cheng Wang&#39;s Personal Website" />
+            
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/"
+        >Bio</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/publication/"
+        >Papers</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/experience/"
+        >Experience</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/project/"
+        >Projects</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      
+
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="lg:text-6xl">LLM Agent</h1>
+    
+  </article>
+</div>
+
+
+
+
+<div class="flex flex-col items-center">
+
+  <div class="container max-w-[65ch] mx-auto bg-white dark:bg-zinc-900 rounded-xl border-gray-100 dark:border-gray-700 border shadow-md overflow-hidden my-5">
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+<a href="/project-applied/job_hunter/"  class="mb-5">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0 overflow-hidden">
+      
+        
+        
+      <img class="h-48 w-full object-cover md:w-48 hover:scale-125 transition duration-500 cursor-pointer object-cover" loading="lazy" src="/project-applied/job_hunter/featured_hu15449206475245508762.webp" height="655" width="655" alt="Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage & Advisory">
+      
+    </div>
+    <div class="p-8">
+      <div class="uppercase tracking-wide text-md text-primary-700 dark:text-primary-200 font-semibold">Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory</div>
+      <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+        Agentic Career Orchestrator: Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
+An ROI-driven, local-first AI ecosystem designed to augment human judgment through semantic filtering and strategic advisory in high-noise job markets, while preserving data sovereignty.
+Current Status: v2 Stable Release (Jan 2026) – full 5‑phase multi‑agent pipeline operational; ongoing prompt refinement, no major architecture changes planned.
+Motivation Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game. The core friction lies in the extremely low signal-to-noise ratio inherent in modern recruitment platforms.
+After defending my doctoral thesis, I found myself navigating a market where a single “Machine Learning Engineer” posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between “nice-to-have” and “required” qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.
+The real challenge, therefore, isn’t just about finding jobs: it’s about verification and strategic triage. Manually reviewing hundreds of listings to validate market salaries or check research alignment is exhausting and error-prone. I needed more than a search engine; I needed an ROI-driven intelligent assistant that understands context to filter out the noise, allowing me to allocate my limited cognitive bandwidth exclusively to high-leverage opportunities.
+Impact &amp; Core Philosophy Since deployment, this system has transformed job hunting from a chaotic volume game into a disciplined strategic campaign.
+Compressed Time-to-Decision: By automating the Observe-Orient-Decide-Act of job filtering, it reduces complex risk assessment from days to…less days, allowing me to focus bandwidth exclusively on high-leverage opportunities. Deep Semantic Qualification: Moving beyond rigid keyword matching, the system evaluates contextual fit: automatically distinguishing between generic “Machine Learning Engineering” roles and research-oriented positions that truly align with my Ph.D. expertise. Uncovered Asymmetric Opportunities: By aggregating independent assessments from the a Multi-Agent Council, the system synthesizes non-obvious connections, such as bridging my audio-visual surveillance background to fintech anomaly detection, that rigid keyword filters typically discard. The core philosophy is unyielding: to build a system that empowers executive decision-making, not replaces it.
+I develop this ecosystem not to automatically generate resumes or cover letters for mass applying, but as a specialized analyst team to reduce the burden from repetitive but non-productive works. My aim is by defining the strategic criteria and delegating the ground-level research to the agents, the analyst team handle the preliminary debates and data crunching. This structure allows me to step back from the “grunt work” and focus entirely on the final strategic call, ensuring that every application is tailored with authentic human intuition but backed by machine-speed intelligence.
+Research Context: The Dual Purpose Beyond its immediate utility, this project serves as a Proof of Concept for integrating system-level engineering into the academic research workflow.
+Although my core research lies in deep learning rather than system engineering, my past works urge me to think my research from a bigger picture. Consequently, importing robust engineering tooling into the research loop seems to be an effective strategy to accelerate the Proof-of-Concept cycle. By validating the Mixture-of-Advisors framework here, this project explores how we can leverage “system thinking” to orchestrate complex models (like video generators and LoRAs) as distinct agents. This project serves as an architectural pilot for physically‑aware synthetic surveillance data generation, validating the Mixture‑of‑Advisors orchestration pattern before applying it to video generators and task‑specific LoRAs.
+Beyond its immediate utility, this project serves as a PoC for integrating system-level engineering into the academic research workflow.
+System Evolution: From Linear Script to Dynamic Orchestration While the core objective remains unchanged (identifying high-fit opportunities from a sea of noise) the architectural approach has fundamentally shifted from a rigid linear protocol to a dynamic resource orchestration.
+v1: Linear Execution (Legacy) v1 operated as a single monolithic script that enforced a “One-Size-Fits-All” protocol. Every Job Description, regardless of its domain (Academic, Startup, Big Tech), was forced through the exact same processing sequence (Step A → B → C).
+Rigid Protocol: The system lacked the autonomy to deviate. It applied the same generic analysis prompts to a “Research Scientist” role as it did to a “Backend Engineer” role. Resource Inefficiency: It could not dynamically allocate resources: wasting tokens on irrelevant checks while missing domain-specific nuances that required deeper investigation. v1 was a static procedure: it executed steps blindly, focusing on process completion rather than strategic adaptability.
+v2: Adaptive Resource Orchestration v2 refactors the system into a flexible multi-agent ecosystem. Instead of a fixed linear path, it employs a Router Agent to analyze the context of each JD and dynamically “spin up” the necessary agents, allocating computational resources only where they yield the highest ROI.
+Phase 1: Observation (Tool-Augmented Grounding) Before analysis begins, the system proactively invokes external tools (Salary APIs, arXiv retrieval) to ground the JD in reality, ensuring subsequent agents operate on verified data rather than assumptions.
+Phase 2: Orientation (Gatekeeping) A lightweight Triage Agent performs a rapid “Survival Check.” It instantly discards non-viable roles (Visa/Language constraints) before expensive reasoning agents are instantiated, optimizing the computational budget.
+Phase 3: Decision (Context-Aware Council) This is the core architectural shift. The system dynamically assembles a Council of Advisors specific to the role.
+For a Research Scientist Role: It spins up the 🔬 Academic Reviewer, assessing the domain gap between my research and the target field. For an Early-Stage Founding Engineer: It activates the 🚀 Startup Veteran (analyzing equity potential &amp; risk) and 🏗️ System Architect (assessing scalability requirements). The Technical Advantage: By creating specialized agents, we ensure Context Isolation. This prevents “Context Pollution”, where an LLM gets confused by irrelevant information (e.g., applying corporate HR standards to a scrappy startup role). Each agent sees only what it needs to see, ensuring the signal remains pure. Phase 4 – Strategy War Room (Clustering &amp; ROI) The system steps back from single JDs and enters a war‑room view across all dossiers. It clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster, producing a ranked “battle plan” that prioritizes where limited effort should be invested first.
+Phase 5 – Briefing &amp; War Room Editor Finally, a briefing agent synthesizes per‑cluster guidance into concise strategy briefs, while the war‑room editor generates structured tables and bullet‑level action items instead of full ghostwritten documents. It suggests narrative angles, surfaces reusable experience blocks, and prepares checklists of edits so that I stay in control of the final wording while the system handles the pattern‑matching and retrieval work.
+The evolution mirrors the transition from a hard‑coded script to an intelligent orchestrator:
+v1 was process‑centric (“run every file through these 3 steps”), whereas v2 is resource‑centric (“analyze the target, deploy the right agents, and synthesize the strategy”).
+The Architectural Shift The evolution mirrors the transition from a Hard-coded Script to an Intelligent Orchestrator:
+v1 Approach: Process-Centric. “Run every file through these 3 steps.” v2 Approach: Resource-Centric. “Analyze the target, deploy the right agents, and synthesize the strategy.” By moving from linear execution to dynamic orchestration, v2 ensures that every decision is backed by the right experts, adapting the system’s behavior to the chaos of the real-world market.
+Tech Stack LLM &amp; Orchestration: Python 3.11, Google Generative AI SDK (Gemini API), semantic routing via a Smart Model Gateway. Models: Gemma‑3‑27b‑it for logic &amp; extraction; Gemini‑2.5‑Flash for long‑context strategic synthesis. Memory &amp; RAG: ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization Infrastructure: Docker Compose, .env‑based local path binding, local‑first storage of CVs and history. Technical Architecture &amp; Implementation System Architecture Overview The v2 system implements a multi-phase, multi-agent orchestration pipeline with clear separation of concerns. Unlike monolithic single-script approaches, each phase is encapsulated as an independent module with dedicated agents, enabling modular development and targeted optimization.
+Core Design Principles:
+Phase-Based Pipeline: Five sequential phases (Intel → Triage → Council → War Room → Briefing) with explicit data contracts between stages. Hybrid Model Gateway: A cost-aware routing layer that intelligently switches between quota-friendly models (Gemma) for extraction/filtering and high-capacity models (Gemini Flash) for deep reasoning. Structured Knowledge Layer: A local vector database designed for the semantic retrieval of reusable CV sections per JD. Implementation Stack Core Infrastructure: Python 3.11, Google Generative AI SDK, Docker Compose. Structured Output: Enforced JSON schemas ensure reliable agent communication and metadata parsing. Hybrid Inference Layer: The Workhorse (Gemma 3-27B-it): Handles ~90% of the workload, including JD parsing, keyword extraction, triage filtering, and initial gap analysis. Chosen for its high Rate-Limit (RPD) and efficiency. The Heavy Lifter (Gemini 2.5 Flash): Activated only for tasks requiring massive context windows or deep reasoning, such as deep RAG retrieval and strategic synthesis. Smart Gateway: A router that selects the appropriate model based on task complexity and real-time daily quota availability. Memory &amp; Knowledge: Vector Store: ChromaDB with MiniLM embeddings. Indexing: Personal CV, academic papers, and historical applications. Purpose: Enables the system to retrieve relevant experience blocks and reusable resume snippets for each specific JD. Multi-Agent Architecture The system executes a structured workflow to ensure comprehensive coverage:
+Phase 1: Intelligence Gathering (The Scout) Parses raw JDs (with text extraction caching) and invokes external tools (e.g., arXiv API for research group validation, Mock Salary Validator).
+Output: An Enriched Dossier containing external context (team credibility, market salary band).
+Phase 2: Triage &amp; Gatekeeping (The Gatekeeper) Enforces hard constraints (Visa, PhD relevance, Salary floor).
+Output: A structured triage decision. Only “playable” JDs proceed to the Council, saving compute resources.
+Phase 3: Mixture-of-Advisors (The Council) Router Agent: Dynamically selects multiple advisors within relevant field per JD (e.g., Academic Analyst and Leadership for senior research roles).
+Context Isolation: Each advisor has a dedicated persona definition and memory state, preventing context pollution.
+Output: Per-advisor scores and rationales stored in dossier metadata for downstream aggregation.
+Phase 4: Strategy War Room (Clustering &amp; ROI) In Phase 4, the system steps back from single JDs and enters a War Room view across all dossiers. Instead of treating each role as an isolated decision, it clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster. For each cluster, the War Room agent looks at:
+Rewrite effort: how much real editing is needed beyond a 5‑minute tweak. Reusability: whether a single narrative rewrite can unlock multiple similar roles. Strategic leverage: whether this cluster advances my long‑term trajectory (e.g., research scientist track vs. generic MLE). The output of Phase 4 is a ranked “battle plan”: a prioritized queue of clusters with concrete reasons for why they deserve attention now versus later.
+Phase 5: Briefing &amp; War Room Editor Phase 5 turns strategy into execution support rather than a ghostwriter. The Briefing agent synthesizes per‑cluster guidance into a concise strategy brief: which project angles to foreground, which gaps to acknowledge, and which phrasing patterns are reusable across roles.
+Instead of generating full resumes or cover letters, the War Room Editor produces structured tables and bullet‑level action items that I can copy into my own documents as needed. It surfaces:
+Suggested narrative angles per cluster and per JD (e.g., for Job A, frame my audio‑visual surveillance work as a privacy‑preserving mechanism; for Job B, emphasize high‑throughput anomaly detection). Phrases and experience blocks retrieved from my CV/history that are safe to reuse. A short checklist of edits for each application (what to add, what to cut, what to reframe). This keeps the human firmly in control of the final wording while letting the system handle the tedious pattern‑matching and retrieval work.
+Cost &amp; Efficiency Optimization The architecture is strictly ROI-Driven, prioritizing resource allocation to minimize waste:
+Aggressive Caching: JD text extraction and intermediate reasoning steps are cached locally to avoid redundant API calls. History Reusability: The RAG module is designed to retrieve reusable sentences from past successful applications, reducing the manual effort in rewriting the same sentence over and over again. Resources System Architecture Diagram GitHub Repository Analysis Sample - Example of Analysis Report of a Fake JD. </p>
+      <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">Jan 21, 2026</p>
+    </div>
+  </div>
+</a>
+
+  
+  
+
+
+
+
+
+
+
+
+<a href="/project-applied/ugentapp/"  class="mb-5">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0 overflow-hidden">
+      
+        
+        
+      <img class="h-48 w-full object-cover md:w-48 hover:scale-125 transition duration-500 cursor-pointer object-cover" loading="lazy" src="/project-applied/ugentapp/featured_hu12205103697720913141.webp" height="655" width="655" alt="Taiwanese in Ghent, The Survivor Kit - A Serverless LLM-Agent Deployment">
+      
+    </div>
+    <div class="p-8">
+      <div class="uppercase tracking-wide text-md text-primary-700 dark:text-primary-200 font-semibold">Taiwanese in Ghent, The Survivor Kit - A Serverless LLM-Agent Deployment</div>
+      <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+        Taiwanese in Ghent, The Survivor Kit : AI-Powered Community Platform
+A serverless, AI-driven information hub designed to automate community management and solve information fragmentation for international students.
+Motivation &amp; Product Philosophy Taiwanese in Ghent, The Survivor Kit is a comprehensive survival guide platform. Originally engineered for students, I collaborated with the current president of UGent Taiwanese Student Association (TSA) to redefine the product roadmap, expanding its scope to serve the entire Taiwanese expatriate community. This ensured the system aligned with actual operational needs rather than just technical novelty.
+“I built this not just as a developer, but as the former President who identified the root cause of platform failure.”
+I recognized that previous platforms failed due to high operational friction. To solve this, I set a strict constraint: The system must be “low-maintenance” and operable by non-tech staff. This drove the decision to adopt a serverless architecture combined with autonomous AI agents, allowing for rapid iteration and a “set-and-forget” operational model.
+Role: Product Owner &amp; Full-Stack Engineer Scope: Requirement Analysis → System Architecture → AI Agent Development → CI/CD Tech Stack AI &amp; NLP: Python, Gemma 3 4B (LLM), Feedparser (RSS), Prompt Engineering Backend / CMS: Google Sheets API (NoSQL/CMS), Google Apps Script, Event-Driven ETL Frontend: Next.js 14 (App Router), TypeScript, Tailwind CSS, ISR Infrastructure: Vercel (Serverless), GitHub Actions (CI/CD), Docker Technical Architecture &amp; Implementation 1. AI-Driven Intelligence Pipeline (Event-Driven ETL) The core innovation is an automated pipeline that monitors, analyzes, and translates local news without human intervention, effectively functioning as a domain-specific AI agent:
+Data Ingestion: A Python-based agent continuously monitors municipal RSS feeds (stad.gent) and emergency alerts. LLM Integration (Gemma 3 4B): Deployed Gemma 3 4B to perform semantic analysis on raw Dutch texts. Structured Prompt Engineering: Designed rigorous prompt templates to enforce valid JSON output from the LLM. Tasks include: Importance Grading (Level 1-3), Audience Classification (Student vs. Resident), Traditional Chinese Translation, and Summarization. Robustness: Implemented retry logic with exponential backoff to handle API rate limits and ensure pipeline reliability. ETL Execution: Structured data is automatically validated and written back to the Google Sheets CMS, triggering frontend updates. 2. Serverless Full-Stack Architecture Designed a cost-efficient architecture suitable for long-term operation:
+Headless CMS (Google Sheets): Abstracted Google Sheets into a JSON API. This allows non-technical staff to manage content via a familiar spreadsheet interface, eliminating database costs ($0/month) and lowering the maintenance barrier. Frontend (Next.js 14): Implemented incremental static regeneration (60s revalidation) to ensure high performance and SEO while keeping data fresh. 3. CI/CD &amp; DevOps GitHub Actions: Orchestrated daily cron jobs (UTC 6:00) to execute the news crawling and AI analysis agents. Security &amp; Reproducibility: Managed API Secrets via GitHub Secrets and utilized docker to ensure environment consistency for the AI agents. Automated Deployment: Configured Vercel for automatic deployments on git push, establishing a production-ready lifecycle. Key Results &amp; Impact 100% Automation: Achieved a fully automated loop for news gathering, translation, classification, and publishing. Zero Operational Cost: Leveraged serverless tiers to maintain costfree_, ensuring the project’s financial sustainability for the student association. Solved “Technical Debt”: Created a system that requires no coding skills to maintain, addressing the high turnover rate inherent in student organizations. Resources Live Website GitHub Repository AI Agent Source Code - Python agent for scraping and LLM processing. Prompt Engineering Templates - Structured prompts for Gemma 3-4B. </p>
+      <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">Jan 6, 2026</p>
+    </div>
+  </div>
+</a>
+
+  
+
+  </div>
+
+
+  
+
+
+</div>
+
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by text-center">
+    © 2026 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by text-center">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

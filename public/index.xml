@@ -34,69 +34,178 @@
     </item>
     
     <item>
-      <title>Agentic Career Orchestrator - Multi-Agent LLM System for Intelligent Job Matching</title>
+      <title>Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory</title>
       <link>http://localhost:1313/project-applied/job_hunter/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-applied/job_hunter/</guid>
       <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Agentic Career Orchestrator: Multi-Agent LLM System for Intelligent Job Matching&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agentic Career Orchestrator: Multi-Agent LLM System for Strategic Job Triage &amp;amp; Advisory&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An ROI-driven, local-first AI ecosystem designed to augment human judgment through semantic filtering and strategic advisory in high-noise job markets, while preserving data sovereignty.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;A local-first, hybrid AI ecosystem designed to automate strategic decision-making and semantic filtering in high-noise job markets while preserving data sovereignty.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Current Status: v2 Stable Release (Jan 2026) – full 5‑phase multi‑agent pipeline operational; ongoing prompt refinement, no major architecture changes planned.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
-&lt;p&gt;Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game.&lt;/p&gt;
+&lt;p&gt;Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game. The core friction lies in the extremely low &lt;strong&gt;signal-to-noise ratio&lt;/strong&gt; inherent in modern recruitment platforms.&lt;/p&gt;
 &lt;p&gt;After defending my doctoral thesis, I found myself navigating a market where a single &amp;ldquo;Machine Learning Engineer&amp;rdquo; posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between &amp;ldquo;nice-to-have&amp;rdquo; and &amp;ldquo;required&amp;rdquo; qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.&lt;/p&gt;
-&lt;p&gt;The real challenge isn&amp;rsquo;t just about finding jobs: it&amp;rsquo;s identifying the right 3-5 opportunities buried among hundreds of irrelevant listings. Manually reviewing every job description is exhausting and error-prone. I needed an intelligent system that understands context, not just keywords.&lt;/p&gt;
+&lt;p&gt;The real challenge, therefore, isn&amp;rsquo;t just about finding jobs: it&amp;rsquo;s about &lt;strong&gt;verification&lt;/strong&gt; and &lt;strong&gt;strategic triage&lt;/strong&gt;. Manually reviewing hundreds of listings to validate market salaries or check research alignment is exhausting and error-prone. I needed more than a search engine; I needed an &lt;strong&gt;ROI-driven intelligent assistant&lt;/strong&gt; that understands context to filter out the noise, allowing me to allocate my limited cognitive bandwidth exclusively to high-leverage opportunities.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;impact--core-philosophy&#34;&gt;Impact &amp;amp; Core Philosophy&lt;/h3&gt;
-&lt;p&gt;Since deployment, this system has:&lt;/p&gt;
+&lt;p&gt;Since deployment, this system has transformed job hunting from a chaotic volume game into a disciplined strategic campaign.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Reduced manual screening time&lt;/strong&gt;, allowing focus on high-fit applications&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Prevented 12+ wasted submissions&lt;/strong&gt; to visa-incompatible positions before application&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Identified non-obvious matches&lt;/strong&gt;: roles where my audio privacy research applies to healthcare compliance systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compressed Time-to-Decision:&lt;/strong&gt; By automating the &lt;em&gt;Observe-Orient-Decide-Act&lt;/em&gt; of job filtering, it reduces complex risk assessment from days to&amp;hellip;less days, allowing me to focus bandwidth exclusively on high-leverage opportunities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deep Semantic Qualification:&lt;/strong&gt; Moving beyond rigid keyword matching, the system evaluates &lt;strong&gt;contextual fit&lt;/strong&gt;: automatically distinguishing between generic &amp;ldquo;Machine Learning Engineering&amp;rdquo; roles and research-oriented positions that truly align with my Ph.D. expertise.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uncovered Asymmetric Opportunities:&lt;/strong&gt; By &lt;strong&gt;aggregating independent assessments&lt;/strong&gt; from the a Multi-Agent Council, the system synthesizes non-obvious connections, such as bridging my &lt;strong&gt;audio-visual surveillance&lt;/strong&gt; background to &lt;strong&gt;fintech anomaly detection&lt;/strong&gt;, that rigid keyword filters typically discard.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The core philosophy is straightforward: &lt;strong&gt;AI should amplify human judgment, not replace it.&lt;/strong&gt; This system doesn&amp;rsquo;t auto-apply to jobs-it functions as an intelligent research assistant that surfaces insights I would miss and learns from my decisions. It represents a collaboration between human intuition and machine pattern recognition.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Research Context:&lt;/strong&gt; This project serves dual purposes. While addressing my immediate career challenge, it validates an architectural pattern I&amp;rsquo;m exploring for post-doctoral research on agentic workflows in synthetic surveillance data generation.&lt;/p&gt;
+&lt;p&gt;The core philosophy is unyielding: &lt;strong&gt;to build a system that empowers executive decision-making, not replaces it.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I develop this ecosystem not to automatically generate resumes or cover letters for mass applying, but as a &lt;strong&gt;specialized analyst team&lt;/strong&gt; to reduce the burden from repetitive but non-productive works. My aim is by defining the strategic criteria and delegating the ground-level research to the agents, the analyst team handle the preliminary debates and data crunching. This structure allows me to step back from the &amp;ldquo;grunt work&amp;rdquo; and focus entirely on the final strategic call, ensuring that every application is tailored with authentic human intuition but backed by machine-speed intelligence.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;research-context-the-dual-purpose&#34;&gt;Research Context: The Dual Purpose&lt;/h3&gt;
+&lt;p&gt;Beyond its immediate utility, this project serves as a &lt;strong&gt;Proof of Concept&lt;/strong&gt; for integrating system-level engineering into the academic research workflow.&lt;/p&gt;
+&lt;p&gt;Although my core research lies in deep learning rather than system engineering, my past works urge me to think my research from a bigger picture. Consequently, &lt;em&gt;importing robust engineering tooling into the research loop&lt;/em&gt; seems to be an effective strategy to accelerate the Proof-of-Concept cycle. By validating the &lt;strong&gt;Mixture-of-Advisors&lt;/strong&gt; framework here, this project explores how we can leverage &amp;ldquo;system thinking&amp;rdquo; to orchestrate complex models (like video generators and LoRAs) as distinct agents. This project serves as an architectural pilot for physically‑aware synthetic surveillance data generation, validating the &lt;em&gt;Mixture‑of‑Advisors&lt;/em&gt; orchestration pattern before applying it to video generators and task‑specific LoRAs.&lt;/p&gt;
+&lt;p&gt;Beyond its immediate utility, this project serves as a &lt;strong&gt;PoC&lt;/strong&gt; for integrating system-level engineering into the academic research workflow.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;system-evolution-from-linear-script-to-dynamic-orchestration&#34;&gt;System Evolution: From Linear Script to Dynamic Orchestration&lt;/h3&gt;
+&lt;p&gt;While the core objective remains unchanged (identifying high-fit opportunities from a sea of noise) the architectural approach has fundamentally shifted from a rigid linear protocol to a dynamic resource orchestration.&lt;/p&gt;
+&lt;h4 id=&#34;v1-linear-execution-legacy&#34;&gt;v1: Linear Execution (Legacy)&lt;/h4&gt;
+&lt;p&gt;v1 operated as a &lt;strong&gt;single monolithic script&lt;/strong&gt; that enforced a &amp;ldquo;One-Size-Fits-All&amp;rdquo; protocol. Every Job Description, regardless of its domain (Academic, Startup, Big Tech), was forced through the exact same processing sequence (Step A → B → C).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rigid Protocol:&lt;/strong&gt; The system lacked the autonomy to deviate. It applied the same generic analysis prompts to a &amp;ldquo;Research Scientist&amp;rdquo; role as it did to a &amp;ldquo;Backend Engineer&amp;rdquo; role.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Inefficiency:&lt;/strong&gt; It could not dynamically allocate resources: wasting tokens on irrelevant checks while missing domain-specific nuances that required deeper investigation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;v1 was a static procedure: it executed steps blindly, focusing on process completion rather than strategic adaptability.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;v2-adaptive-resource-orchestration&#34;&gt;v2: Adaptive Resource Orchestration&lt;/h4&gt;
+&lt;p&gt;v2 refactors the system into a &lt;strong&gt;flexible multi-agent ecosystem&lt;/strong&gt;. Instead of a fixed linear path, it employs a &lt;strong&gt;Router Agent&lt;/strong&gt; to analyze the context of each JD and dynamically &amp;ldquo;spin up&amp;rdquo; the necessary agents, allocating computational resources only where they yield the highest ROI.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 1: Observation (Tool-Augmented Grounding)&lt;/strong&gt;
+Before analysis begins, the system proactively invokes external tools (Salary APIs, arXiv retrieval) to ground the JD in reality, ensuring subsequent agents operate on verified data rather than assumptions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 2: Orientation (Gatekeeping)&lt;/strong&gt;
+A lightweight Triage Agent performs a rapid &amp;ldquo;Survival Check.&amp;rdquo; It instantly discards non-viable roles (Visa/Language constraints) &lt;em&gt;before&lt;/em&gt; expensive reasoning agents are instantiated, optimizing the computational budget.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 3: Decision (Context-Aware Council)&lt;/strong&gt;
+This is the core architectural shift. The system &lt;strong&gt;dynamically assembles a Council of Advisors&lt;/strong&gt; specific to the role.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;For a Research Scientist Role:&lt;/em&gt; It spins up the &lt;strong&gt;🔬 Academic Reviewer&lt;/strong&gt;, assessing the domain gap between my research and the target field.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;For an Early-Stage Founding Engineer:&lt;/em&gt; It activates the &lt;strong&gt;🚀 Startup Veteran&lt;/strong&gt; (analyzing equity potential &amp;amp; risk) and &lt;strong&gt;🏗️ System Architect&lt;/strong&gt; (assessing scalability requirements).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Technical Advantage:&lt;/strong&gt; By creating specialized agents, we ensure &lt;strong&gt;Context Isolation&lt;/strong&gt;. This prevents &amp;ldquo;Context Pollution&amp;rdquo;, where an LLM gets confused by irrelevant information (e.g., applying corporate HR standards to a scrappy startup role). Each agent sees &lt;em&gt;only&lt;/em&gt; what it needs to see, ensuring the signal remains pure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 4 – Strategy War Room (Clustering &amp;amp; ROI)&lt;/strong&gt;
+The system steps back from single JDs and enters a war‑room view across all dossiers. It clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster, producing a ranked “battle plan” that prioritizes where limited effort should be invested first.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 5 – Briefing &amp;amp; War Room Editor&lt;/strong&gt;
+Finally, a briefing agent synthesizes per‑cluster guidance into concise strategy briefs, while the war‑room editor generates structured tables and bullet‑level action items instead of full ghostwritten documents. It suggests narrative angles, surfaces reusable experience blocks, and prepares checklists of edits so that I stay in control of the final wording while the system handles the pattern‑matching and retrieval work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The evolution mirrors the transition from a hard‑coded script to an intelligent orchestrator:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;v1 was process‑centric (“run every file through these 3 steps”), whereas v2 is resource‑centric (“analyze the target, deploy the right agents, and synthesize the strategy”).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;the-architectural-shift&#34;&gt;The Architectural Shift&lt;/h4&gt;
+&lt;p&gt;The evolution mirrors the transition from a &lt;strong&gt;Hard-coded Script&lt;/strong&gt; to an &lt;strong&gt;Intelligent Orchestrator&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;v1 Approach:&lt;/strong&gt; &lt;em&gt;Process-Centric.&lt;/em&gt; &amp;ldquo;Run every file through these 3 steps.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v2 Approach:&lt;/strong&gt; &lt;em&gt;Resource-Centric.&lt;/em&gt; &amp;ldquo;Analyze the target, deploy the right agents, and synthesize the strategy.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By moving from linear execution to dynamic orchestration, v2 ensures that every decision is backed by the right experts, adapting the system&amp;rsquo;s behavior to the chaos of the real-world market.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AI &amp;amp; Orchestration:&lt;/strong&gt; Python, Google Gemma-3-12b, Semantic Routing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLM &amp;amp; Orchestration:&lt;/strong&gt; Python 3.11, Google Generative AI SDK (Gemini API), semantic routing via a Smart Model Gateway.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Models&lt;/strong&gt;: Gemma‑3‑27b‑it for logic &amp;amp; extraction; Gemini‑2.5‑Flash for long‑context strategic synthesis.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Memory &amp;amp; RAG:&lt;/strong&gt; ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Docker Compose (Containerization), Environment Variables Management&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; Local-First, Hybrid Cloud Inference, Event-Driven Ingestion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Docker Compose, .env‑based local path binding, local‑first storage of CVs and history.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;technical-architecture--implementation&#34;&gt;Technical Architecture &amp;amp; Implementation&lt;/h3&gt;
-&lt;h4 id=&#34;1-multi-persona-reasoning-engine-game-theoretic-decision&#34;&gt;1. Multi-Persona Reasoning Engine (Game-Theoretic Decision)&lt;/h4&gt;
-&lt;p&gt;Instead of a single generic prompt, the system orchestrates three distinct AI agents to simulate a &amp;ldquo;War Room&amp;rdquo; debate, reducing hallucination and bias:&lt;/p&gt;
+&lt;h4 id=&#34;system-architecture-overview&#34;&gt;System Architecture Overview&lt;/h4&gt;
+&lt;p&gt;The v2 system implements a &lt;strong&gt;multi-phase, multi-agent orchestration pipeline&lt;/strong&gt; with clear separation of concerns. Unlike monolithic single-script approaches, each phase is encapsulated as an independent module with dedicated agents, enabling modular development and targeted optimization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Core Design Principles:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Blind-Spot Radar:&lt;/strong&gt; Scans for hidden costs, legacy code risks, and physical/supply chain bottlenecks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Devil’s Advocate:&lt;/strong&gt; Performs &amp;ldquo;Pre-mortem&amp;rdquo; analysis to predict failure scenarios (e.g., &amp;ldquo;Why will this application fail?&amp;rdquo;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The Strategist:&lt;/strong&gt; Synthesizes conflict into actionable advice, aligning the user&amp;rsquo;s specific &amp;ldquo;About Me&amp;rdquo; values (Visa, Salary, Tech Preferences) with market reality.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phase-Based Pipeline:&lt;/strong&gt; Five sequential phases (Intel → Triage → Council → War Room → Briefing) with explicit data contracts between stages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid Model Gateway:&lt;/strong&gt; A cost-aware routing layer that intelligently switches between quota-friendly models (Gemma) for extraction/filtering and high-capacity models (Gemini Flash) for deep reasoning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Knowledge Layer:&lt;/strong&gt; A local vector database designed for the semantic retrieval of reusable CV sections per JD.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;2-closed-loop-history-rag-the-war-room-module&#34;&gt;2. Closed-Loop History RAG (The &amp;ldquo;War Room&amp;rdquo; Module)&lt;/h4&gt;
-&lt;p&gt;Implemented a V1.1 &lt;strong&gt;History Recall Mechanism&lt;/strong&gt; to turn past failures into future assets:&lt;/p&gt;
+&lt;h4 id=&#34;implementation-stack&#34;&gt;Implementation Stack&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Vectorized Battle Archive:&lt;/strong&gt; Automatically indexes past JDs, Resume versions, and Outcomes (Reject/Offer) into a local ChromaDB.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Semantic Trigger:&lt;/strong&gt; When a new JD is analyzed, the system performs a similarity search. If a similar past role is found, it proactively retrieves the previous outcome (e.g., &amp;ldquo;Rejected due to lack of 3D experience&amp;rdquo;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Lazy Loading:&lt;/strong&gt; Utilizes a two-stage retrieval process—checking vector similarity first, then dynamically parsing the specific historical Resume snippet only when a match is found to optimize token usage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Infrastructure:&lt;/strong&gt; Python 3.11, Google Generative AI SDK, Docker Compose.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Output:&lt;/strong&gt; Enforced JSON schemas ensure reliable agent communication and metadata parsing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid Inference Layer:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Workhorse (Gemma 3-27B-it):&lt;/strong&gt; Handles ~90% of the workload, including JD parsing, keyword extraction, triage filtering, and initial gap analysis. Chosen for its high Rate-Limit (RPD) and efficiency.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Heavy Lifter (Gemini 2.5 Flash):&lt;/strong&gt; Activated only for tasks requiring massive context windows or deep reasoning, such as deep RAG retrieval and strategic synthesis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Smart Gateway:&lt;/strong&gt; A router that selects the appropriate model based on task complexity and real-time daily quota availability.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3-local-first-hybrid-infrastructure&#34;&gt;3. Local-First Hybrid Infrastructure&lt;/h4&gt;
-&lt;p&gt;Designed to balance state-of-the-art reasoning with strict privacy controls:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory &amp;amp; Knowledge:&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Multimodal Ingestion Pipeline:&lt;/strong&gt; A robust ETL pipeline capable of processing raw PDFs and performing OCR on image-based JDs (using Gemini Flash with rate-limiting protection).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Data Sovereignty:&lt;/strong&gt; All long-term memory (Vector DB) and sensitive documents (CVs) reside in local Docker volumes. The cloud LLM receives only &amp;ldquo;Minimal Viable Context&amp;rdquo; for ephemeral inference, preventing third-party profiling.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vector Store:&lt;/strong&gt; ChromaDB with MiniLM embeddings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Indexing:&lt;/strong&gt; Personal CV, academic papers, and historical applications.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Purpose:&lt;/strong&gt; Enables the system to retrieve relevant experience blocks and reusable resume snippets for each specific JD.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;key-results--impact&#34;&gt;Key Results &amp;amp; Impact&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;multi-agent-architecture&#34;&gt;Multi-Agent Architecture&lt;/h4&gt;
+&lt;p&gt;The system executes a structured workflow to ensure comprehensive coverage:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Efficiency:&lt;/strong&gt; Reduced time-to-decision for complex job applications from hours to minutes by automating semantic filtering and risk assessment.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Closed-Loop Learning:&lt;/strong&gt; Achieved a system that &amp;ldquo;remembers&amp;rdquo; past rejections, preventing the repetition of strategic errors across different applications.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Research Validation:&lt;/strong&gt; Successfully demonstrated the viability of &lt;em&gt;Agentic Workflows&lt;/em&gt; for handling unstructured, constraint-heavy data, serving as a foundational prototype for future synthetic data generation research.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 1: Intelligence Gathering (The Scout)&lt;/strong&gt;
+Parses raw JDs (with text extraction caching) and invokes external tools (e.g., arXiv API for research group validation, Mock Salary Validator).&lt;br&gt;
+Output: An Enriched Dossier containing external context (team credibility, market salary band).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 2: Triage &amp;amp; Gatekeeping (The Gatekeeper)&lt;/strong&gt;
+Enforces hard constraints (Visa, PhD relevance, Salary floor).&lt;br&gt;
+Output: A structured triage decision. Only “playable” JDs proceed to the Council, saving compute resources.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 3: Mixture-of-Advisors (The Council)&lt;/strong&gt;
+Router Agent: Dynamically selects multiple advisors within relevant field per JD (e.g., Academic Analyst and Leadership for senior research roles).&lt;br&gt;
+Context Isolation: Each advisor has a dedicated persona definition and memory state, preventing context pollution.&lt;br&gt;
+Output: Per-advisor scores and rationales stored in dossier metadata for downstream aggregation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 4: Strategy War Room (Clustering &amp;amp; ROI)&lt;/strong&gt;
+In Phase 4, the system steps back from single JDs and enters a War Room view across all dossiers. Instead of treating each role as an isolated decision, it clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster.
+For each cluster, the War Room agent looks at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rewrite effort: how much real editing is needed beyond a 5‑minute tweak.&lt;/li&gt;
+&lt;li&gt;Reusability: whether a single narrative rewrite can unlock multiple similar roles.&lt;/li&gt;
+&lt;li&gt;Strategic leverage: whether this cluster advances my long‑term trajectory (e.g., research scientist track vs. generic MLE).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The output of Phase 4 is a ranked “battle plan”: a prioritized queue of clusters with concrete reasons for why they deserve attention now versus later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 5: Briefing &amp;amp; War Room Editor&lt;/strong&gt;
+Phase 5 turns strategy into execution support rather than a ghostwriter. The Briefing agent synthesizes per‑cluster guidance into a concise strategy brief: which project angles to foreground, which gaps to acknowledge, and which phrasing patterns are reusable across roles.&lt;/p&gt;
+&lt;p&gt;Instead of generating full resumes or cover letters, the War Room Editor produces structured tables and bullet‑level action items that I can copy into my own documents as needed. It surfaces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Suggested narrative angles per cluster and per JD (e.g., for Job A, frame my audio‑visual surveillance work as a privacy‑preserving mechanism; for Job B, emphasize high‑throughput anomaly detection).&lt;/li&gt;
+&lt;li&gt;Phrases and experience blocks retrieved from my CV/history that are safe to reuse.&lt;/li&gt;
+&lt;li&gt;A short checklist of edits for each application (what to add, what to cut, what to reframe).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This keeps the human firmly in control of the final wording while letting the system handle the tedious pattern‑matching and retrieval work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cost--efficiency-optimization&#34;&gt;Cost &amp;amp; Efficiency Optimization&lt;/h4&gt;
+&lt;p&gt;The architecture is strictly &lt;strong&gt;ROI-Driven&lt;/strong&gt;, prioritizing resource allocation to minimize waste:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aggressive Caching:&lt;/strong&gt; JD text extraction and intermediate reasoning steps are cached locally to avoid redundant API calls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;History Reusability:&lt;/strong&gt; The RAG module is designed to &lt;strong&gt;retrieve reusable sentences&lt;/strong&gt; from past successful applications, reducing the manual effort in rewriting the same sentence over and over again.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#featured.png&#34;&gt;&lt;strong&gt;System Architecture Diagram&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/Agentic-Career-Orchestrator/tree/main&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator/tree/da11a9e245a28ab4bedd10d37e1fa9b6064f9d61/examples&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Analysis Sample&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Example of Analysis Report of a Fake JD.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</description>
@@ -182,30 +291,74 @@ Originally engineered for students, I collaborated with the current president of
     </item>
     
     <item>
-      <title>Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street</title>
+      <title>From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance</title>
       <link>http://localhost:1313/project-research/phd/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-research/phd/</guid>
       <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
-&lt;p&gt;Bridging the gap between academic models and real-world deployment.&lt;/p&gt;
-&lt;p&gt;My Ph.D. research tackles the critical bottlenecks that prevent deep learning models from moving &amp;ldquo;from lab to street&amp;rdquo;: privacy risks, data scarcity, and environmental domain shifts. I proposed a unified framework for urban surveillance that balances performance with ethical compliance and robustness.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;AI is here they say.&lt;/em&gt;&amp;rdquo; &lt;br&gt;
+We have witnessed how artificial intelligence has reshaped our perception of the world in the past years.
+AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.&lt;/p&gt;
+&lt;p&gt;My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.&lt;/p&gt;
 &lt;p&gt;The dissertation is built upon three core technical pillars:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Privacy-Friendly Visual Analysis: &lt;br&gt;
-Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Audio-Visual Representation Learning: &lt;br&gt;
-Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Transferability Assessment: &lt;br&gt;
-Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#audio-visual-representation-learning&#34;&gt;Audio-Visual Representation Learning&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#transferability-assessment&#34;&gt;Source-Free Unsupervised Transferability Assessment&lt;/a&gt; &lt;br&gt;
+(This research culminated in a Ph.D. degree from Ghent University.)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)&lt;/p&gt;
-&lt;p&gt;(Details to be followed)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &amp;ldquo;&lt;strong&gt;Opt-in&lt;/strong&gt;&amp;rdquo; Mechanism: From Audio to Visual&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Traditional privacy protection is fundamentally reactive (Opt-out). Users are forced to play an infinite game of &lt;em&gt;whack-a-mole&lt;/em&gt;, trying to list every sensitive attribute they want to hide.
+However, raw data is inherently &lt;strong&gt;&amp;ldquo;bundled&amp;rdquo;&lt;/strong&gt;: a simple voice command carries not just the semantic content, but also speaker&amp;rsquo;s gender, emotion, and identity. In the real world, it is impossible to exhaustively list and block every potential leakage. This &amp;ldquo;collect first, sanitize later&amp;rdquo; approach violates the core principle of &lt;strong&gt;GDPR&lt;/strong&gt;, leaving users vulnerable to future, unforeseen extraction techniques.&lt;/p&gt;
+&lt;p&gt;Addressing the trade-off between utility and privacy. I proposed a fundamental inversion of this paradigm. Instead of asking &amp;ldquo;what should we hide?&amp;rdquo;, my framework asks &amp;ldquo;what is strictly necessary?&amp;rdquo;.
+Using &lt;strong&gt;adversarial learning&lt;/strong&gt;, I trained an on-edge &lt;strong&gt;obfuscator&lt;/strong&gt; adapted from a generative architecture (&lt;strong&gt;CycleGAN-VC2&lt;/strong&gt;), designed to protect attributes like speaker identity, emotion, and gender while maintaining compatibility with downstream models (e.g., &lt;strong&gt;DeepSpeech2&lt;/strong&gt;).This model acts as a digital sieve that actively strips away the &amp;ldquo;bundled&amp;rdquo; sensitive attributes (like identity) at the signal level, while selectively preserving only the features required for the authorized task (e.g., speech recognition). It transforms privacy from a passive policy into an active, mathematical constraint.&lt;/p&gt;
+&lt;p&gt;Crucially, this framework solves the deployment bottleneck. The obfuscated data remains mathematically compatible with &lt;strong&gt;off-the-shelf models&lt;/strong&gt;.
+This means service providers can &amp;ldquo;plug-in&amp;rdquo; this privacy module at the edge without needing to retrain their massive backend models. It offers a &lt;strong&gt;source-free&lt;/strong&gt;, scalable path to GDPR compliance that protects users without dismantling the existing AI infrastructure.&lt;/p&gt;
+&lt;p&gt;Experiments on four speech datasets demonstrate that the framework suppresses unauthorized attribute recognition to &lt;strong&gt;near-random chance levels&lt;/strong&gt;, while incurring a &lt;strong&gt;minimal performance drop (only 2-6%)&lt;/strong&gt; on authorized tasks.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Audio Domain:&lt;/strong&gt; &lt;br&gt;
+Published in &lt;a href=&#34;http://localhost:1313/publication/2022-pc/&#34;&gt;&lt;em&gt;IEEE Pervasive Computing (1st author)&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visual Domain:&lt;/strong&gt; &lt;br&gt;
+The core &amp;ldquo;opt-in&amp;rdquo; logic proved robust enough to be adapted to the visual domain, validating its cross-modal universality. Published in &lt;a href=&#34;http://localhost:1313/publication/de-2024-privacy/&#34;&gt;&lt;em&gt;Applied Intelligence (2nd author)&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;audio-visual-representation-learning-br&#34;&gt;Audio-Visual Representation Learning: &lt;br&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Paradox of Misalignment: Turning False Negatives into Semantic Anchors&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Contrastive learning is an effective way to learn representation without labels. Yet, conventional contrastive learning on multimodal data, such as surveillance, suffers from false negatives.&lt;/p&gt;
+&lt;p&gt;When two ambulance cars occur at different times during the night, the temporal coherence constraint used by traditional contrastive learning treats them as unrelated events. These &lt;strong&gt;false negatives&lt;/strong&gt; lead to inefficient and ineffective representation learning. In urban surveillance, &lt;strong&gt;spatiotemporal discontinuity&lt;/strong&gt; is the norm, not the exception. A siren is often heard before the ambulance appears; a crash sound precedes the visual collision. By rigidly enforcing temporal alignment, traditional models discard these meaningful but asynchronous correlations as &lt;strong&gt;false negatives&lt;/strong&gt;, actively unlearning the causal structure of reality.&lt;/p&gt;
+&lt;p&gt;Furthermore, traditional methods suffer from an &lt;strong&gt;information bottleneck&lt;/strong&gt;: by relying on a single positive pair (the exact timestamp), the model learns only the &lt;strong&gt;minimal sufficient&lt;/strong&gt; features needed to match that pair, discarding rich semantic details essential for generalization.&lt;/p&gt;
+&lt;p&gt;Instead of treating asynchronous signals as errors to be filtered, I utilized them as &lt;strong&gt;semantic anchors&lt;/strong&gt;. I developed the &lt;strong&gt;Embedding-based Pair Generation&lt;/strong&gt; (EPG) mechanism, which operates on a simple premise: if two signals share high similarity in the latent space, they belong to the same event regardless of their timestamp.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Pair Re-evaluation&lt;/strong&gt;: EPG actively retrieves these &amp;ldquo;misaligned&amp;rdquo; samples from the memory bank and re-labels them as positive pairs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-Positive Contrastive Loss&lt;/strong&gt;: By forcing the model to recognize multiple, time-scattered instances of the same event, we break the information bottleneck. This compels the encoder to capture richer, more robust features rather than just the minimal cues needed for temporal alignment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This approach successfully &lt;strong&gt;transformed the chaotic charateristics&lt;/strong&gt; of surveillance data from a performance bottleneck &lt;strong&gt;into a source of data augmentation&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt;: &lt;br&gt;Achieved a 10% improvement over state-of-the-art baselines (TACMA, MAViL) in audio-visual event localization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rich in Information&lt;/strong&gt;: &lt;br&gt;The proposed EPG and the multi-positive loss force the model to capture dense, semantic features. This learnt representation is general-purpose, successfully powering multiple downstream tasks including event localization, anomaly detection, and query-guided event search without retraining.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt;: &lt;br&gt;Such versatility dramatically improves the scalability of edge deployments. Instead of installing separate, heavy models for each function, a single lightweight encoder can now serve multiple analytical tasks simultaneously.&lt;/li&gt;
+&lt;li&gt;The results has been published in &lt;a href=&#34;http://localhost:1313/publication/2025-rai/&#34;&gt;&lt;em&gt;Frontiers in Robotics and AI, 1st author&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;transferability-assessment-br&#34;&gt;Transferability Assessment: &lt;br&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Navigating Without a Map: The &amp;ldquo;Source-Free&amp;rdquo; Compass&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One of the greatest hurdle in large-scale deployment is &lt;strong&gt;domain shift&lt;/strong&gt;: a model trained on a sunny day in Ghent often fails miserably on a rainy night in Taipei. In an ideal world, we would access the original training data (source data) to bridge this gap, and the well-annotated target data during the evalutaion. But in the real world, strict privacy regulations (like GDPR) often lock this data away. Engineers are forced to deploy models into new, unseen environments while effectively flying blind, unable to predict which model will survive the shift.&lt;/p&gt;
+&lt;p&gt;To solve this, I leveraged the underexplored potentional of an unlikely guide: Randomness. I proposed a novel assessment framework using &lt;strong&gt;Randomly Initialized Neural Networks&lt;/strong&gt; (RINNs). My research revealed that while random networks contain no knowledge, their statistical structure provides a consistent, unbiased &amp;ldquo;universal ruler.&amp;rdquo; By measuring the &lt;strong&gt;Centered Kernel Alignment&lt;/strong&gt; (CKA) between a pre-trained model and a set of random networks, I derived a &amp;ldquo;fingerprint&amp;rdquo; of the model&amp;rsquo;s structural adaptability. This allows us to assess model compatibility with a new environment without ever touching the restricted source data or requiring ground-truth labels.&lt;/p&gt;
+&lt;p&gt;This turns model selection from a guessing game into a precise science.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Task-Agnostic Validation&lt;/strong&gt;: I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;High Correlation&lt;/strong&gt;: Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operational Efficiency&lt;/strong&gt;: It acts as a &amp;ldquo;Source-Free Compass,&amp;rdquo; allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The results has been published in &lt;a href=&#34;http://localhost:1313/publication/wang-2025-source/&#34;&gt;&lt;em&gt;Sensors, 1st author&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     
@@ -476,7 +629,7 @@ The results confirmed the superiority of this method. The EPG-trained representa
 
 
 
-&lt;div id=&#34;chart-396784152&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-394271568&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -494,7 +647,7 @@ The results confirmed the superiority of this method. The EPG-trained representa
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-396784152&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-394271568&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

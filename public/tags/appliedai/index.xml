@@ -13,17 +13,17 @@
     </image>
     
     <item>
-      <title>Taiwanese at Ghent Survivor Kit - A Serverless LLM-Agent Deployment</title>
+      <title>Taiwanese in Ghent, The Survivor Kit - A Serverless LLM-Agent Deployment</title>
       <link>http://localhost:1313/project-applied/ugentapp/</link>
       <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-applied/ugentapp/</guid>
       <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
-&lt;p&gt;&lt;strong&gt;TW@Ghent Survivor Kit : AI-Powered Community Platform&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Taiwanese in Ghent, The Survivor Kit : AI-Powered Community Platform&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;A serverless, AI-driven information hub designed to automate community management and solve information fragmentation for international students.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;motivation--product-philosophy&#34;&gt;Motivation &amp;amp; Product Philosophy&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;TW@Ghent Survivor Kit&lt;/strong&gt; is a comprehensive survival guide platform.
+&lt;p&gt;&lt;strong&gt;Taiwanese in Ghent, The Survivor Kit&lt;/strong&gt; is a comprehensive survival guide platform.
 Originally engineered for students, I collaborated with the current president of UGent Taiwanese Student Association (TSA) to redefine the product roadmap, expanding its scope to serve the entire Taiwanese expatriate community. This ensured the system aligned with actual operational needs rather than just technical novelty.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;I built this not just as a developer, but as the former President who identified the root cause of platform failure.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I recognized that previous platforms failed due to &lt;strong&gt;high operational friction&lt;/strong&gt;. To solve this, I set a strict constraint: &lt;strong&gt;The system must be &amp;ldquo;low-maintenance&amp;rdquo; and operable by non-tech staff.&lt;/strong&gt; This drove the decision to adopt a &lt;em&gt;serverless architecture&lt;/em&gt; combined with &lt;em&gt;autonomous AI agents&lt;/em&gt;, allowing for rapid iteration and a &amp;ldquo;set-and-forget&amp;rdquo; operational model.&lt;/p&gt;

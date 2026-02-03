@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orchestration | Wei-Cheng Wang&#39;s Personal Website</title>
+    <link>https://example.com/tags/orchestration/</link>
+      <atom:link href="https://example.com/tags/orchestration/index.xml" rel="self" type="application/rss+xml" />
+    <description>Orchestration</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
+      <title>Orchestration</title>
+      <link>https://example.com/tags/orchestration/</link>
+    </image>
+    
+    <item>
+      <title>Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory</title>
+      <link>https://example.com/project-applied/job_hunter/</link>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project-applied/job_hunter/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Agentic Career Orchestrator: Multi-Agent LLM System for Strategic Job Triage &amp;amp; Advisory&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An ROI-driven, local-first AI ecosystem designed to augment human judgment through semantic filtering and strategic advisory in high-noise job markets, while preserving data sovereignty.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Current Status: v2 Stable Release (Jan 2026) – full 5‑phase multi‑agent pipeline operational; ongoing prompt refinement, no major architecture changes planned.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;p&gt;Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game. The core friction lies in the extremely low &lt;strong&gt;signal-to-noise ratio&lt;/strong&gt; inherent in modern recruitment platforms.&lt;/p&gt;
+&lt;p&gt;After defending my doctoral thesis, I found myself navigating a market where a single &amp;ldquo;Machine Learning Engineer&amp;rdquo; posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between &amp;ldquo;nice-to-have&amp;rdquo; and &amp;ldquo;required&amp;rdquo; qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.&lt;/p&gt;
+&lt;p&gt;The real challenge, therefore, isn&amp;rsquo;t just about finding jobs: it&amp;rsquo;s about &lt;strong&gt;verification&lt;/strong&gt; and &lt;strong&gt;strategic triage&lt;/strong&gt;. Manually reviewing hundreds of listings to validate market salaries or check research alignment is exhausting and error-prone. I needed more than a search engine; I needed an &lt;strong&gt;ROI-driven intelligent assistant&lt;/strong&gt; that understands context to filter out the noise, allowing me to allocate my limited cognitive bandwidth exclusively to high-leverage opportunities.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;impact--core-philosophy&#34;&gt;Impact &amp;amp; Core Philosophy&lt;/h3&gt;
+&lt;p&gt;Since deployment, this system has transformed job hunting from a chaotic volume game into a disciplined strategic campaign.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Compressed Time-to-Decision:&lt;/strong&gt; By automating the &lt;em&gt;Observe-Orient-Decide-Act&lt;/em&gt; of job filtering, it reduces complex risk assessment from days to&amp;hellip;less days, allowing me to focus bandwidth exclusively on high-leverage opportunities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deep Semantic Qualification:&lt;/strong&gt; Moving beyond rigid keyword matching, the system evaluates &lt;strong&gt;contextual fit&lt;/strong&gt;: automatically distinguishing between generic &amp;ldquo;Machine Learning Engineering&amp;rdquo; roles and research-oriented positions that truly align with my Ph.D. expertise.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uncovered Asymmetric Opportunities:&lt;/strong&gt; By &lt;strong&gt;aggregating independent assessments&lt;/strong&gt; from the a Multi-Agent Council, the system synthesizes non-obvious connections, such as bridging my &lt;strong&gt;audio-visual surveillance&lt;/strong&gt; background to &lt;strong&gt;fintech anomaly detection&lt;/strong&gt;, that rigid keyword filters typically discard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The core philosophy is unyielding: &lt;strong&gt;to build a system that empowers executive decision-making, not replaces it.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I develop this ecosystem not to automatically generate resumes or cover letters for mass applying, but as a &lt;strong&gt;specialized analyst team&lt;/strong&gt; to reduce the burden from repetitive but non-productive works. My aim is by defining the strategic criteria and delegating the ground-level research to the agents, the analyst team handle the preliminary debates and data crunching. This structure allows me to step back from the &amp;ldquo;grunt work&amp;rdquo; and focus entirely on the final strategic call, ensuring that every application is tailored with authentic human intuition but backed by machine-speed intelligence.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;research-context-the-dual-purpose&#34;&gt;Research Context: The Dual Purpose&lt;/h3&gt;
+&lt;p&gt;Beyond its immediate utility, this project serves as a &lt;strong&gt;Proof of Concept&lt;/strong&gt; for integrating system-level engineering into the academic research workflow.&lt;/p&gt;
+&lt;p&gt;Although my core research lies in deep learning rather than system engineering, my past works urge me to think my research from a bigger picture. Consequently, &lt;em&gt;importing robust engineering tooling into the research loop&lt;/em&gt; seems to be an effective strategy to accelerate the Proof-of-Concept cycle. By validating the &lt;strong&gt;Mixture-of-Advisors&lt;/strong&gt; framework here, this project explores how we can leverage &amp;ldquo;system thinking&amp;rdquo; to orchestrate complex models (like video generators and LoRAs) as distinct agents. This project serves as an architectural pilot for physically‑aware synthetic surveillance data generation, validating the &lt;em&gt;Mixture‑of‑Advisors&lt;/em&gt; orchestration pattern before applying it to video generators and task‑specific LoRAs.&lt;/p&gt;
+&lt;p&gt;Beyond its immediate utility, this project serves as a &lt;strong&gt;PoC&lt;/strong&gt; for integrating system-level engineering into the academic research workflow.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;system-evolution-from-linear-script-to-dynamic-orchestration&#34;&gt;System Evolution: From Linear Script to Dynamic Orchestration&lt;/h3&gt;
+&lt;p&gt;While the core objective remains unchanged (identifying high-fit opportunities from a sea of noise) the architectural approach has fundamentally shifted from a rigid linear protocol to a dynamic resource orchestration.&lt;/p&gt;
+&lt;h4 id=&#34;v1-linear-execution-legacy&#34;&gt;v1: Linear Execution (Legacy)&lt;/h4&gt;
+&lt;p&gt;v1 operated as a &lt;strong&gt;single monolithic script&lt;/strong&gt; that enforced a &amp;ldquo;One-Size-Fits-All&amp;rdquo; protocol. Every Job Description, regardless of its domain (Academic, Startup, Big Tech), was forced through the exact same processing sequence (Step A → B → C).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rigid Protocol:&lt;/strong&gt; The system lacked the autonomy to deviate. It applied the same generic analysis prompts to a &amp;ldquo;Research Scientist&amp;rdquo; role as it did to a &amp;ldquo;Backend Engineer&amp;rdquo; role.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Inefficiency:&lt;/strong&gt; It could not dynamically allocate resources: wasting tokens on irrelevant checks while missing domain-specific nuances that required deeper investigation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;v1 was a static procedure: it executed steps blindly, focusing on process completion rather than strategic adaptability.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;v2-adaptive-resource-orchestration&#34;&gt;v2: Adaptive Resource Orchestration&lt;/h4&gt;
+&lt;p&gt;v2 refactors the system into a &lt;strong&gt;flexible multi-agent ecosystem&lt;/strong&gt;. Instead of a fixed linear path, it employs a &lt;strong&gt;Router Agent&lt;/strong&gt; to analyze the context of each JD and dynamically &amp;ldquo;spin up&amp;rdquo; the necessary agents, allocating computational resources only where they yield the highest ROI.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 1: Observation (Tool-Augmented Grounding)&lt;/strong&gt;
+Before analysis begins, the system proactively invokes external tools (Salary APIs, arXiv retrieval) to ground the JD in reality, ensuring subsequent agents operate on verified data rather than assumptions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 2: Orientation (Gatekeeping)&lt;/strong&gt;
+A lightweight Triage Agent performs a rapid &amp;ldquo;Survival Check.&amp;rdquo; It instantly discards non-viable roles (Visa/Language constraints) &lt;em&gt;before&lt;/em&gt; expensive reasoning agents are instantiated, optimizing the computational budget.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 3: Decision (Context-Aware Council)&lt;/strong&gt;
+This is the core architectural shift. The system &lt;strong&gt;dynamically assembles a Council of Advisors&lt;/strong&gt; specific to the role.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;For a Research Scientist Role:&lt;/em&gt; It spins up the &lt;strong&gt;🔬 Academic Reviewer&lt;/strong&gt;, assessing the domain gap between my research and the target field.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;For an Early-Stage Founding Engineer:&lt;/em&gt; It activates the &lt;strong&gt;🚀 Startup Veteran&lt;/strong&gt; (analyzing equity potential &amp;amp; risk) and &lt;strong&gt;🏗️ System Architect&lt;/strong&gt; (assessing scalability requirements).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Technical Advantage:&lt;/strong&gt; By creating specialized agents, we ensure &lt;strong&gt;Context Isolation&lt;/strong&gt;. This prevents &amp;ldquo;Context Pollution&amp;rdquo;, where an LLM gets confused by irrelevant information (e.g., applying corporate HR standards to a scrappy startup role). Each agent sees &lt;em&gt;only&lt;/em&gt; what it needs to see, ensuring the signal remains pure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 4 – Strategy War Room (Clustering &amp;amp; ROI)&lt;/strong&gt;
+The system steps back from single JDs and enters a war‑room view across all dossiers. It clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster, producing a ranked “battle plan” that prioritizes where limited effort should be invested first.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 5 – Briefing &amp;amp; War Room Editor&lt;/strong&gt;
+Finally, a briefing agent synthesizes per‑cluster guidance into concise strategy briefs, while the war‑room editor generates structured tables and bullet‑level action items instead of full ghostwritten documents. It suggests narrative angles, surfaces reusable experience blocks, and prepares checklists of edits so that I stay in control of the final wording while the system handles the pattern‑matching and retrieval work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The evolution mirrors the transition from a hard‑coded script to an intelligent orchestrator:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;v1 was process‑centric (“run every file through these 3 steps”), whereas v2 is resource‑centric (“analyze the target, deploy the right agents, and synthesize the strategy”).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;the-architectural-shift&#34;&gt;The Architectural Shift&lt;/h4&gt;
+&lt;p&gt;The evolution mirrors the transition from a &lt;strong&gt;Hard-coded Script&lt;/strong&gt; to an &lt;strong&gt;Intelligent Orchestrator&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;v1 Approach:&lt;/strong&gt; &lt;em&gt;Process-Centric.&lt;/em&gt; &amp;ldquo;Run every file through these 3 steps.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v2 Approach:&lt;/strong&gt; &lt;em&gt;Resource-Centric.&lt;/em&gt; &amp;ldquo;Analyze the target, deploy the right agents, and synthesize the strategy.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By moving from linear execution to dynamic orchestration, v2 ensures that every decision is backed by the right experts, adapting the system&amp;rsquo;s behavior to the chaos of the real-world market.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LLM &amp;amp; Orchestration:&lt;/strong&gt; Python 3.11, Google Generative AI SDK (Gemini API), semantic routing via a Smart Model Gateway.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Models&lt;/strong&gt;: Gemma‑3‑27b‑it for logic &amp;amp; extraction; Gemini‑2.5‑Flash for long‑context strategic synthesis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory &amp;amp; RAG:&lt;/strong&gt; ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Docker Compose, .env‑based local path binding, local‑first storage of CVs and history.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;technical-architecture--implementation&#34;&gt;Technical Architecture &amp;amp; Implementation&lt;/h3&gt;
+&lt;h4 id=&#34;system-architecture-overview&#34;&gt;System Architecture Overview&lt;/h4&gt;
+&lt;p&gt;The v2 system implements a &lt;strong&gt;multi-phase, multi-agent orchestration pipeline&lt;/strong&gt; with clear separation of concerns. Unlike monolithic single-script approaches, each phase is encapsulated as an independent module with dedicated agents, enabling modular development and targeted optimization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Core Design Principles:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Phase-Based Pipeline:&lt;/strong&gt; Five sequential phases (Intel → Triage → Council → War Room → Briefing) with explicit data contracts between stages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid Model Gateway:&lt;/strong&gt; A cost-aware routing layer that intelligently switches between quota-friendly models (Gemma) for extraction/filtering and high-capacity models (Gemini Flash) for deep reasoning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Knowledge Layer:&lt;/strong&gt; A local vector database designed for the semantic retrieval of reusable CV sections per JD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;implementation-stack&#34;&gt;Implementation Stack&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Core Infrastructure:&lt;/strong&gt; Python 3.11, Google Generative AI SDK, Docker Compose.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Output:&lt;/strong&gt; Enforced JSON schemas ensure reliable agent communication and metadata parsing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid Inference Layer:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Workhorse (Gemma 3-27B-it):&lt;/strong&gt; Handles ~90% of the workload, including JD parsing, keyword extraction, triage filtering, and initial gap analysis. Chosen for its high Rate-Limit (RPD) and efficiency.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Heavy Lifter (Gemini 2.5 Flash):&lt;/strong&gt; Activated only for tasks requiring massive context windows or deep reasoning, such as deep RAG retrieval and strategic synthesis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Smart Gateway:&lt;/strong&gt; A router that selects the appropriate model based on task complexity and real-time daily quota availability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory &amp;amp; Knowledge:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vector Store:&lt;/strong&gt; ChromaDB with MiniLM embeddings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Indexing:&lt;/strong&gt; Personal CV, academic papers, and historical applications.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Purpose:&lt;/strong&gt; Enables the system to retrieve relevant experience blocks and reusable resume snippets for each specific JD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;multi-agent-architecture&#34;&gt;Multi-Agent Architecture&lt;/h4&gt;
+&lt;p&gt;The system executes a structured workflow to ensure comprehensive coverage:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 1: Intelligence Gathering (The Scout)&lt;/strong&gt;
+Parses raw JDs (with text extraction caching) and invokes external tools (e.g., arXiv API for research group validation, Mock Salary Validator).&lt;br&gt;
+Output: An Enriched Dossier containing external context (team credibility, market salary band).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 2: Triage &amp;amp; Gatekeeping (The Gatekeeper)&lt;/strong&gt;
+Enforces hard constraints (Visa, PhD relevance, Salary floor).&lt;br&gt;
+Output: A structured triage decision. Only “playable” JDs proceed to the Council, saving compute resources.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 3: Mixture-of-Advisors (The Council)&lt;/strong&gt;
+Router Agent: Dynamically selects multiple advisors within relevant field per JD (e.g., Academic Analyst and Leadership for senior research roles).&lt;br&gt;
+Context Isolation: Each advisor has a dedicated persona definition and memory state, preventing context pollution.&lt;br&gt;
+Output: Per-advisor scores and rationales stored in dossier metadata for downstream aggregation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 4: Strategy War Room (Clustering &amp;amp; ROI)&lt;/strong&gt;
+In Phase 4, the system steps back from single JDs and enters a War Room view across all dossiers. Instead of treating each role as an isolated decision, it clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster.
+For each cluster, the War Room agent looks at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rewrite effort: how much real editing is needed beyond a 5‑minute tweak.&lt;/li&gt;
+&lt;li&gt;Reusability: whether a single narrative rewrite can unlock multiple similar roles.&lt;/li&gt;
+&lt;li&gt;Strategic leverage: whether this cluster advances my long‑term trajectory (e.g., research scientist track vs. generic MLE).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The output of Phase 4 is a ranked “battle plan”: a prioritized queue of clusters with concrete reasons for why they deserve attention now versus later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phase 5: Briefing &amp;amp; War Room Editor&lt;/strong&gt;
+Phase 5 turns strategy into execution support rather than a ghostwriter. The Briefing agent synthesizes per‑cluster guidance into a concise strategy brief: which project angles to foreground, which gaps to acknowledge, and which phrasing patterns are reusable across roles.&lt;/p&gt;
+&lt;p&gt;Instead of generating full resumes or cover letters, the War Room Editor produces structured tables and bullet‑level action items that I can copy into my own documents as needed. It surfaces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Suggested narrative angles per cluster and per JD (e.g., for Job A, frame my audio‑visual surveillance work as a privacy‑preserving mechanism; for Job B, emphasize high‑throughput anomaly detection).&lt;/li&gt;
+&lt;li&gt;Phrases and experience blocks retrieved from my CV/history that are safe to reuse.&lt;/li&gt;
+&lt;li&gt;A short checklist of edits for each application (what to add, what to cut, what to reframe).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This keeps the human firmly in control of the final wording while letting the system handle the tedious pattern‑matching and retrieval work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cost--efficiency-optimization&#34;&gt;Cost &amp;amp; Efficiency Optimization&lt;/h4&gt;
+&lt;p&gt;The architecture is strictly &lt;strong&gt;ROI-Driven&lt;/strong&gt;, prioritizing resource allocation to minimize waste:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aggressive Caching:&lt;/strong&gt; JD text extraction and intermediate reasoning steps are cached locally to avoid redundant API calls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;History Reusability:&lt;/strong&gt; The RAG module is designed to &lt;strong&gt;retrieve reusable sentences&lt;/strong&gt; from past successful applications, reducing the manual effort in rewriting the same sentence over and over again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#featured.png&#34;&gt;&lt;strong&gt;System Architecture Diagram&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/Agentic-Career-Orchestrator/tree/main&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator/tree/da11a9e245a28ab4bedd10d37e1fa9b6064f9d61/examples&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Analysis Sample&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Example of Analysis Report of a Fake JD.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

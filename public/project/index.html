@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 12, 2026 --><html lang="en-us" dir="ltr"
+<!-- Last Published: February 4, 2026 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -599,6 +599,10 @@
   
   
   
+  
+  
+  
+  
     
       
       
@@ -843,20 +847,6 @@
           
           href="/project/"
         >Projects</a
-        >
-      </li>
-      
-      
-      
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
-          href="/post/mission/"
-        >Research Philosophy</a
         >
       </li>
       
@@ -1118,7 +1108,7 @@ While my Ph.D. trained me to dissect complex problems with academic rigor, my dr
       class="relative block aspect-video"
       href="/project-applied/job_hunter/" >
 
-      <img alt="Agentic Career Orchestrator - Multi-Agent LLM System for Intelligent Job Matching"
+      <img alt="Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage & Advisory"
            class="object-fill transition-all"
            data-nimg="fill"
            decoding="async"
@@ -1131,37 +1121,67 @@ While my Ph.D. trained me to dissect complex problems with academic rigor, my dr
     <div class="">
       <div class="flex gap-3">
         
-        <a href="/tags/llm-agent/"><span
-          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">LLM Agent</span></a>
+        <a href="/tags/mixture-of-agents/"><span
+          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Mixture of Agents</span></a>
         
       </div>
       
       <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
         href="/project-applied/job_hunter/" ><span
-        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Agentic Career Orchestrator - Multi-Agent LLM System for Intelligent Job Matching
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
           </span></a>
       </h2>
       
       <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
         href="/project-applied/job_hunter/" >
-        Agentic Career Orchestrator: Multi-Agent LLM System for Intelligent Job Matching
-A local-first, hybrid AI ecosystem designed to automate strategic decision-making and semantic filtering in high-noise job markets while preserving data sovereignty.
-Motivation Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game.
+        Agentic Career Orchestrator: Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
+An ROI-driven, local-first AI ecosystem designed to augment human judgment through semantic filtering and strategic advisory in high-noise job markets, while preserving data sovereignty.
+Current Status: v2 Stable Release (Jan 2026) – full 5‑phase multi‑agent pipeline operational; ongoing prompt refinement, no major architecture changes planned.
+Motivation Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game. The core friction lies in the extremely low signal-to-noise ratio inherent in modern recruitment platforms.
 After defending my doctoral thesis, I found myself navigating a market where a single “Machine Learning Engineer” posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between “nice-to-have” and “required” qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.
-The real challenge isn’t just about finding jobs: it’s identifying the right 3-5 opportunities buried among hundreds of irrelevant listings. Manually reviewing every job description is exhausting and error-prone. I needed an intelligent system that understands context, not just keywords.
-Impact &amp; Core Philosophy Since deployment, this system has:
-Reduced manual screening time, allowing focus on high-fit applications Prevented 12&#43; wasted submissions to visa-incompatible positions before application Identified non-obvious matches: roles where my audio privacy research applies to healthcare compliance systems The core philosophy is straightforward: AI should amplify human judgment, not replace it. This system doesn’t auto-apply to jobs-it functions as an intelligent research assistant that surfaces insights I would miss and learns from my decisions. It represents a collaboration between human intuition and machine pattern recognition.
-Research Context: This project serves dual purposes. While addressing my immediate career challenge, it validates an architectural pattern I’m exploring for post-doctoral research on agentic workflows in synthetic surveillance data generation.
-Tech Stack AI &amp; Orchestration: Python, Google Gemma-3-12b, Semantic Routing Memory &amp; RAG: ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization Infrastructure: Docker Compose (Containerization), Environment Variables Management Architecture: Local-First, Hybrid Cloud Inference, Event-Driven Ingestion Technical Architecture &amp; Implementation 1. Multi-Persona Reasoning Engine (Game-Theoretic Decision) Instead of a single generic prompt, the system orchestrates three distinct AI agents to simulate a “War Room” debate, reducing hallucination and bias:
-Blind-Spot Radar: Scans for hidden costs, legacy code risks, and physical/supply chain bottlenecks. Devil’s Advocate: Performs “Pre-mortem” analysis to predict failure scenarios (e.g., “Why will this application fail?”). The Strategist: Synthesizes conflict into actionable advice, aligning the user’s specific “About Me” values (Visa, Salary, Tech Preferences) with market reality. 2. Closed-Loop History RAG (The “War Room” Module) Implemented a V1.1 History Recall Mechanism to turn past failures into future assets:
-Vectorized Battle Archive: Automatically indexes past JDs, Resume versions, and Outcomes (Reject/Offer) into a local ChromaDB. Semantic Trigger: When a new JD is analyzed, the system performs a similarity search. If a similar past role is found, it proactively retrieves the previous outcome (e.g., “Rejected due to lack of 3D experience”). Lazy Loading: Utilizes a two-stage retrieval process—checking vector similarity first, then dynamically parsing the specific historical Resume snippet only when a match is found to optimize token usage. 3. Local-First Hybrid Infrastructure Designed to balance state-of-the-art reasoning with strict privacy controls:
-Multimodal Ingestion Pipeline: A robust ETL pipeline capable of processing raw PDFs and performing OCR on image-based JDs (using Gemini Flash with rate-limiting protection). Data Sovereignty: All long-term memory (Vector DB) and sensitive documents (CVs) reside in local Docker volumes. The cloud LLM receives only “Minimal Viable Context” for ephemeral inference, preventing third-party profiling. Key Results &amp; Impact Efficiency: Reduced time-to-decision for complex job applications from hours to minutes by automating semantic filtering and risk assessment. Closed-Loop Learning: Achieved a system that “remembers” past rejections, preventing the repetition of strategic errors across different applications. Research Validation: Successfully demonstrated the viability of Agentic Workflows for handling unstructured, constraint-heavy data, serving as a foundational prototype for future synthetic data generation research. Resources System Architecture Diagram GitHub Repository Analysis Sample - Example of Analysis Report of a Fake JD. </a></p>
+The real challenge, therefore, isn’t just about finding jobs: it’s about verification and strategic triage. Manually reviewing hundreds of listings to validate market salaries or check research alignment is exhausting and error-prone. I needed more than a search engine; I needed an ROI-driven intelligent assistant that understands context to filter out the noise, allowing me to allocate my limited cognitive bandwidth exclusively to high-leverage opportunities.
+Impact &amp; Core Philosophy Since deployment, this system has transformed job hunting from a chaotic volume game into a disciplined strategic campaign.
+Compressed Time-to-Decision: By automating the Observe-Orient-Decide-Act of job filtering, it reduces complex risk assessment from days to…less days, allowing me to focus bandwidth exclusively on high-leverage opportunities. Deep Semantic Qualification: Moving beyond rigid keyword matching, the system evaluates contextual fit: automatically distinguishing between generic “Machine Learning Engineering” roles and research-oriented positions that truly align with my Ph.D. expertise. Uncovered Asymmetric Opportunities: By aggregating independent assessments from the a Multi-Agent Council, the system synthesizes non-obvious connections, such as bridging my audio-visual surveillance background to fintech anomaly detection, that rigid keyword filters typically discard. The core philosophy is unyielding: to build a system that empowers executive decision-making, not replaces it.
+I develop this ecosystem not to automatically generate resumes or cover letters for mass applying, but as a specialized analyst team to reduce the burden from repetitive but non-productive works. My aim is by defining the strategic criteria and delegating the ground-level research to the agents, the analyst team handle the preliminary debates and data crunching. This structure allows me to step back from the “grunt work” and focus entirely on the final strategic call, ensuring that every application is tailored with authentic human intuition but backed by machine-speed intelligence.
+Research Context: The Dual Purpose Beyond its immediate utility, this project serves as a Proof of Concept for integrating system-level engineering into the academic research workflow.
+Although my core research lies in deep learning rather than system engineering, my past works urge me to think my research from a bigger picture. Consequently, importing robust engineering tooling into the research loop seems to be an effective strategy to accelerate the Proof-of-Concept cycle. By validating the Mixture-of-Advisors framework here, this project explores how we can leverage “system thinking” to orchestrate complex models (like video generators and LoRAs) as distinct agents. This project serves as an architectural pilot for physically‑aware synthetic surveillance data generation, validating the Mixture‑of‑Advisors orchestration pattern before applying it to video generators and task‑specific LoRAs.
+Beyond its immediate utility, this project serves as a PoC for integrating system-level engineering into the academic research workflow.
+System Evolution: From Linear Script to Dynamic Orchestration While the core objective remains unchanged (identifying high-fit opportunities from a sea of noise) the architectural approach has fundamentally shifted from a rigid linear protocol to a dynamic resource orchestration.
+v1: Linear Execution (Legacy) v1 operated as a single monolithic script that enforced a “One-Size-Fits-All” protocol. Every Job Description, regardless of its domain (Academic, Startup, Big Tech), was forced through the exact same processing sequence (Step A → B → C).
+Rigid Protocol: The system lacked the autonomy to deviate. It applied the same generic analysis prompts to a “Research Scientist” role as it did to a “Backend Engineer” role. Resource Inefficiency: It could not dynamically allocate resources: wasting tokens on irrelevant checks while missing domain-specific nuances that required deeper investigation. v1 was a static procedure: it executed steps blindly, focusing on process completion rather than strategic adaptability.
+v2: Adaptive Resource Orchestration v2 refactors the system into a flexible multi-agent ecosystem. Instead of a fixed linear path, it employs a Router Agent to analyze the context of each JD and dynamically “spin up” the necessary agents, allocating computational resources only where they yield the highest ROI.
+Phase 1: Observation (Tool-Augmented Grounding) Before analysis begins, the system proactively invokes external tools (Salary APIs, arXiv retrieval) to ground the JD in reality, ensuring subsequent agents operate on verified data rather than assumptions.
+Phase 2: Orientation (Gatekeeping) A lightweight Triage Agent performs a rapid “Survival Check.” It instantly discards non-viable roles (Visa/Language constraints) before expensive reasoning agents are instantiated, optimizing the computational budget.
+Phase 3: Decision (Context-Aware Council) This is the core architectural shift. The system dynamically assembles a Council of Advisors specific to the role.
+For a Research Scientist Role: It spins up the 🔬 Academic Reviewer, assessing the domain gap between my research and the target field. For an Early-Stage Founding Engineer: It activates the 🚀 Startup Veteran (analyzing equity potential &amp; risk) and 🏗️ System Architect (assessing scalability requirements). The Technical Advantage: By creating specialized agents, we ensure Context Isolation. This prevents “Context Pollution”, where an LLM gets confused by irrelevant information (e.g., applying corporate HR standards to a scrappy startup role). Each agent sees only what it needs to see, ensuring the signal remains pure. Phase 4 – Strategy War Room (Clustering &amp; ROI) The system steps back from single JDs and enters a war‑room view across all dossiers. It clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster, producing a ranked “battle plan” that prioritizes where limited effort should be invested first.
+Phase 5 – Briefing &amp; War Room Editor Finally, a briefing agent synthesizes per‑cluster guidance into concise strategy briefs, while the war‑room editor generates structured tables and bullet‑level action items instead of full ghostwritten documents. It suggests narrative angles, surfaces reusable experience blocks, and prepares checklists of edits so that I stay in control of the final wording while the system handles the pattern‑matching and retrieval work.
+The evolution mirrors the transition from a hard‑coded script to an intelligent orchestrator:
+v1 was process‑centric (“run every file through these 3 steps”), whereas v2 is resource‑centric (“analyze the target, deploy the right agents, and synthesize the strategy”).
+The Architectural Shift The evolution mirrors the transition from a Hard-coded Script to an Intelligent Orchestrator:
+v1 Approach: Process-Centric. “Run every file through these 3 steps.” v2 Approach: Resource-Centric. “Analyze the target, deploy the right agents, and synthesize the strategy.” By moving from linear execution to dynamic orchestration, v2 ensures that every decision is backed by the right experts, adapting the system’s behavior to the chaos of the real-world market.
+Tech Stack LLM &amp; Orchestration: Python 3.11, Google Generative AI SDK (Gemini API), semantic routing via a Smart Model Gateway. Models: Gemma‑3‑27b‑it for logic &amp; extraction; Gemini‑2.5‑Flash for long‑context strategic synthesis. Memory &amp; RAG: ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization Infrastructure: Docker Compose, .env‑based local path binding, local‑first storage of CVs and history. Technical Architecture &amp; Implementation System Architecture Overview The v2 system implements a multi-phase, multi-agent orchestration pipeline with clear separation of concerns. Unlike monolithic single-script approaches, each phase is encapsulated as an independent module with dedicated agents, enabling modular development and targeted optimization.
+Core Design Principles:
+Phase-Based Pipeline: Five sequential phases (Intel → Triage → Council → War Room → Briefing) with explicit data contracts between stages. Hybrid Model Gateway: A cost-aware routing layer that intelligently switches between quota-friendly models (Gemma) for extraction/filtering and high-capacity models (Gemini Flash) for deep reasoning. Structured Knowledge Layer: A local vector database designed for the semantic retrieval of reusable CV sections per JD. Implementation Stack Core Infrastructure: Python 3.11, Google Generative AI SDK, Docker Compose. Structured Output: Enforced JSON schemas ensure reliable agent communication and metadata parsing. Hybrid Inference Layer: The Workhorse (Gemma 3-27B-it): Handles ~90% of the workload, including JD parsing, keyword extraction, triage filtering, and initial gap analysis. Chosen for its high Rate-Limit (RPD) and efficiency. The Heavy Lifter (Gemini 2.5 Flash): Activated only for tasks requiring massive context windows or deep reasoning, such as deep RAG retrieval and strategic synthesis. Smart Gateway: A router that selects the appropriate model based on task complexity and real-time daily quota availability. Memory &amp; Knowledge: Vector Store: ChromaDB with MiniLM embeddings. Indexing: Personal CV, academic papers, and historical applications. Purpose: Enables the system to retrieve relevant experience blocks and reusable resume snippets for each specific JD. Multi-Agent Architecture The system executes a structured workflow to ensure comprehensive coverage:
+Phase 1: Intelligence Gathering (The Scout) Parses raw JDs (with text extraction caching) and invokes external tools (e.g., arXiv API for research group validation, Mock Salary Validator).
+Output: An Enriched Dossier containing external context (team credibility, market salary band).
+Phase 2: Triage &amp; Gatekeeping (The Gatekeeper) Enforces hard constraints (Visa, PhD relevance, Salary floor).
+Output: A structured triage decision. Only “playable” JDs proceed to the Council, saving compute resources.
+Phase 3: Mixture-of-Advisors (The Council) Router Agent: Dynamically selects multiple advisors within relevant field per JD (e.g., Academic Analyst and Leadership for senior research roles).
+Context Isolation: Each advisor has a dedicated persona definition and memory state, preventing context pollution.
+Output: Per-advisor scores and rationales stored in dossier metadata for downstream aggregation.
+Phase 4: Strategy War Room (Clustering &amp; ROI) In Phase 4, the system steps back from single JDs and enters a War Room view across all dossiers. Instead of treating each role as an isolated decision, it clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster. For each cluster, the War Room agent looks at:
+Rewrite effort: how much real editing is needed beyond a 5‑minute tweak. Reusability: whether a single narrative rewrite can unlock multiple similar roles. Strategic leverage: whether this cluster advances my long‑term trajectory (e.g., research scientist track vs. generic MLE). The output of Phase 4 is a ranked “battle plan”: a prioritized queue of clusters with concrete reasons for why they deserve attention now versus later.
+Phase 5: Briefing &amp; War Room Editor Phase 5 turns strategy into execution support rather than a ghostwriter. The Briefing agent synthesizes per‑cluster guidance into a concise strategy brief: which project angles to foreground, which gaps to acknowledge, and which phrasing patterns are reusable across roles.
+Instead of generating full resumes or cover letters, the War Room Editor produces structured tables and bullet‑level action items that I can copy into my own documents as needed. It surfaces:
+Suggested narrative angles per cluster and per JD (e.g., for Job A, frame my audio‑visual surveillance work as a privacy‑preserving mechanism; for Job B, emphasize high‑throughput anomaly detection). Phrases and experience blocks retrieved from my CV/history that are safe to reuse. A short checklist of edits for each application (what to add, what to cut, what to reframe). This keeps the human firmly in control of the final wording while letting the system handle the tedious pattern‑matching and retrieval work.
+Cost &amp; Efficiency Optimization The architecture is strictly ROI-Driven, prioritizing resource allocation to minimize waste:
+Aggressive Caching: JD text extraction and intermediate reasoning steps are cached locally to avoid redundant API calls. History Reusability: The RAG module is designed to retrieve reusable sentences from past successful applications, reducing the manual effort in rewriting the same sentence over and over again. Resources System Architecture Diagram GitHub Repository Analysis Sample - Example of Analysis Report of a Fake JD. </a></p>
       </div>
       <div class="flex-none">
         <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
           
           
-          <time class="truncate text-sm" datetime="2026-01-11">Jan 11, 2026</time>
+          <time class="truncate text-sm" datetime="2026-01-21">Jan 21, 2026</time>
         </div>
       </div>
 
@@ -1457,7 +1477,7 @@ My academic journey at Ghent University and NCKU centered on analyzing real-worl
       class="relative block aspect-video"
       href="/project-research/phd/" >
 
-      <img alt="Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street"
+      <img alt="From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance"
            class="object-fill transition-all"
            data-nimg="fill"
            decoding="async"
@@ -1470,27 +1490,38 @@ My academic journey at Ghent University and NCKU centered on analyzing real-worl
     <div class="">
       <div class="flex gap-3">
         
-        <a href="/tags/unsupervised-learning/"><span
-          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Unsupervised Learning</span></a>
+        <a href="/tags/lab-to-street/"><span
+          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Lab to Street</span></a>
         
       </div>
       
       <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
         href="/project-research/phd/" ><span
-        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Transferable and Privacy-friendly Deep Learning Techniques for Audio-Visual Urban Surveillance - From Lab to Street
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance
           </span></a>
       </h2>
       
       <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
         href="/project-research/phd/" >
-        Bridging the gap between academic models and real-world deployment.
-My Ph.D. research tackles the critical bottlenecks that prevent deep learning models from moving “from lab to street”: privacy risks, data scarcity, and environmental domain shifts. I proposed a unified framework for urban surveillance that balances performance with ethical compliance and robustness.
+        “AI is here they say.” We have witnessed how artificial intelligence has reshaped our perception of the world in the past years. AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.
+My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.
 The dissertation is built upon three core technical pillars:
-Privacy-Friendly Visual Analysis: Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.
-Audio-Visual Representation Learning: Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.
-Transferability Assessment: Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.
-(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)
-(Details to be followed)</a></p>
+Privacy-Friendly Sensing Framework Audio-Visual Representation Learning Source-Free Unsupervised Transferability Assessment (This research culminated in a Ph.D. degree from Ghent University.) Privacy-Friendly Sensing Framework The “Opt-in” Mechanism: From Audio to Visual
+Traditional privacy protection is fundamentally reactive (Opt-out). Users are forced to play an infinite game of whack-a-mole, trying to list every sensitive attribute they want to hide. However, raw data is inherently “bundled”: a simple voice command carries not just the semantic content, but also speaker’s gender, emotion, and identity. In the real world, it is impossible to exhaustively list and block every potential leakage. This “collect first, sanitize later” approach violates the core principle of GDPR, leaving users vulnerable to future, unforeseen extraction techniques.
+Addressing the trade-off between utility and privacy. I proposed a fundamental inversion of this paradigm. Instead of asking “what should we hide?”, my framework asks “what is strictly necessary?”. Using adversarial learning, I trained an on-edge obfuscator adapted from a generative architecture (CycleGAN-VC2), designed to protect attributes like speaker identity, emotion, and gender while maintaining compatibility with downstream models (e.g., DeepSpeech2).This model acts as a digital sieve that actively strips away the “bundled” sensitive attributes (like identity) at the signal level, while selectively preserving only the features required for the authorized task (e.g., speech recognition). It transforms privacy from a passive policy into an active, mathematical constraint.
+Crucially, this framework solves the deployment bottleneck. The obfuscated data remains mathematically compatible with off-the-shelf models. This means service providers can “plug-in” this privacy module at the edge without needing to retrain their massive backend models. It offers a source-free, scalable path to GDPR compliance that protects users without dismantling the existing AI infrastructure.
+Experiments on four speech datasets demonstrate that the framework suppresses unauthorized attribute recognition to near-random chance levels, while incurring a minimal performance drop (only 2-6%) on authorized tasks.
+Audio Domain: Published in IEEE Pervasive Computing (1st author). Visual Domain: The core “opt-in” logic proved robust enough to be adapted to the visual domain, validating its cross-modal universality. Published in Applied Intelligence (2nd author). Audio-Visual Representation Learning: The Paradox of Misalignment: Turning False Negatives into Semantic Anchors
+Contrastive learning is an effective way to learn representation without labels. Yet, conventional contrastive learning on multimodal data, such as surveillance, suffers from false negatives.
+When two ambulance cars occur at different times during the night, the temporal coherence constraint used by traditional contrastive learning treats them as unrelated events. These false negatives lead to inefficient and ineffective representation learning. In urban surveillance, spatiotemporal discontinuity is the norm, not the exception. A siren is often heard before the ambulance appears; a crash sound precedes the visual collision. By rigidly enforcing temporal alignment, traditional models discard these meaningful but asynchronous correlations as false negatives, actively unlearning the causal structure of reality.
+Furthermore, traditional methods suffer from an information bottleneck: by relying on a single positive pair (the exact timestamp), the model learns only the minimal sufficient features needed to match that pair, discarding rich semantic details essential for generalization.
+Instead of treating asynchronous signals as errors to be filtered, I utilized them as semantic anchors. I developed the Embedding-based Pair Generation (EPG) mechanism, which operates on a simple premise: if two signals share high similarity in the latent space, they belong to the same event regardless of their timestamp.
+Dynamic Pair Re-evaluation: EPG actively retrieves these “misaligned” samples from the memory bank and re-labels them as positive pairs. Multi-Positive Contrastive Loss: By forcing the model to recognize multiple, time-scattered instances of the same event, we break the information bottleneck. This compels the encoder to capture richer, more robust features rather than just the minimal cues needed for temporal alignment. This approach successfully transformed the chaotic charateristics of surveillance data from a performance bottleneck into a source of data augmentation.
+Performance: Achieved a 10% improvement over state-of-the-art baselines (TACMA, MAViL) in audio-visual event localization. Rich in Information: The proposed EPG and the multi-positive loss force the model to capture dense, semantic features. This learnt representation is general-purpose, successfully powering multiple downstream tasks including event localization, anomaly detection, and query-guided event search without retraining. Scalability: Such versatility dramatically improves the scalability of edge deployments. Instead of installing separate, heavy models for each function, a single lightweight encoder can now serve multiple analytical tasks simultaneously. The results has been published in Frontiers in Robotics and AI, 1st author. Transferability Assessment: Navigating Without a Map: The “Source-Free” Compass
+One of the greatest hurdle in large-scale deployment is domain shift: a model trained on a sunny day in Ghent often fails miserably on a rainy night in Taipei. In an ideal world, we would access the original training data (source data) to bridge this gap, and the well-annotated target data during the evalutaion. But in the real world, strict privacy regulations (like GDPR) often lock this data away. Engineers are forced to deploy models into new, unseen environments while effectively flying blind, unable to predict which model will survive the shift.
+To solve this, I leveraged the underexplored potentional of an unlikely guide: Randomness. I proposed a novel assessment framework using Randomly Initialized Neural Networks (RINNs). My research revealed that while random networks contain no knowledge, their statistical structure provides a consistent, unbiased “universal ruler.” By measuring the Centered Kernel Alignment (CKA) between a pre-trained model and a set of random networks, I derived a “fingerprint” of the model’s structural adaptability. This allows us to assess model compatibility with a new environment without ever touching the restricted source data or requiring ground-truth labels.
+This turns model selection from a guessing game into a precise science.
+Task-Agnostic Validation: I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection. High Correlation: Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance. Operational Efficiency: It acts as a “Source-Free Compass,” allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty. The results has been published in Sensors, 1st author.</a></p>
       </div>
       <div class="flex-none">
         <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
@@ -1914,7 +1945,7 @@ Chien-Yu Chiou, Wang Wei-Cheng, Shueh-Chou Lu, Chun-Rong Huang, Pau-Choo Chung, 
 
 
 <div class="container px-8 mx-auto xl:px-5 py-5 lg:py-8 max-w-[500px] justify-center">
-  <div class="grid gap-10 md:grid-cols-3 lg:gap-10">
+  <div class="grid gap-10 md:grid-cols-1 lg:gap-10">
 
 
   

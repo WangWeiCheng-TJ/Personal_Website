@@ -1,0 +1,2263 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: February 3, 2026 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="system">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.3.1" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Wang Wei-Cheng" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Agentic Career Orchestrator: Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
+An ROI-driven, local-first AI ecosystem designed to augment human judgment through semantic filtering and strategic advisory in high-noise job markets, while preserving data sovereignty.
+Current Status: v2 Stable Release (Jan 2026) – full 5‑phase multi‑agent pipeline operational; ongoing prompt refinement, no major architecture changes planned.
+Motivation Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game. The core friction lies in the extremely low signal-to-noise ratio inherent in modern recruitment platforms.
+After defending my doctoral thesis, I found myself navigating a market where a single &ldquo;Machine Learning Engineer&rdquo; posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between &ldquo;nice-to-have&rdquo; and &ldquo;required&rdquo; qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.
+The real challenge, therefore, isn&rsquo;t just about finding jobs: it&rsquo;s about verification and strategic triage. Manually reviewing hundreds of listings to validate market salaries or check research alignment is exhausting and error-prone. I needed more than a search engine; I needed an ROI-driven intelligent assistant that understands context to filter out the noise, allowing me to allocate my limited cognitive bandwidth exclusively to high-leverage opportunities.
+Impact &amp; Core Philosophy Since deployment, this system has transformed job hunting from a chaotic volume game into a disciplined strategic campaign.
+Compressed Time-to-Decision: By automating the Observe-Orient-Decide-Act of job filtering, it reduces complex risk assessment from days to&hellip;less days, allowing me to focus bandwidth exclusively on high-leverage opportunities. Deep Semantic Qualification: Moving beyond rigid keyword matching, the system evaluates contextual fit: automatically distinguishing between generic &ldquo;Machine Learning Engineering&rdquo; roles and research-oriented positions that truly align with my Ph.D. expertise. Uncovered Asymmetric Opportunities: By aggregating independent assessments from the a Multi-Agent Council, the system synthesizes non-obvious connections, such as bridging my audio-visual surveillance background to fintech anomaly detection, that rigid keyword filters typically discard. The core philosophy is unyielding: to build a system that empowers executive decision-making, not replaces it.
+I develop this ecosystem not to automatically generate resumes or cover letters for mass applying, but as a specialized analyst team to reduce the burden from repetitive but non-productive works. My aim is by defining the strategic criteria and delegating the ground-level research to the agents, the analyst team handle the preliminary debates and data crunching. This structure allows me to step back from the &ldquo;grunt work&rdquo; and focus entirely on the final strategic call, ensuring that every application is tailored with authentic human intuition but backed by machine-speed intelligence.
+Research Context: The Dual Purpose Beyond its immediate utility, this project serves as a Proof of Concept for integrating system-level engineering into the academic research workflow.
+Although my core research lies in deep learning rather than system engineering, my past works urge me to think my research from a bigger picture. Consequently, importing robust engineering tooling into the research loop seems to be an effective strategy to accelerate the Proof-of-Concept cycle. By validating the Mixture-of-Advisors framework here, this project explores how we can leverage &ldquo;system thinking&rdquo; to orchestrate complex models (like video generators and LoRAs) as distinct agents. This project serves as an architectural pilot for physically‑aware synthetic surveillance data generation, validating the Mixture‑of‑Advisors orchestration pattern before applying it to video generators and task‑specific LoRAs.
+Beyond its immediate utility, this project serves as a PoC for integrating system-level engineering into the academic research workflow.
+System Evolution: From Linear Script to Dynamic Orchestration While the core objective remains unchanged (identifying high-fit opportunities from a sea of noise) the architectural approach has fundamentally shifted from a rigid linear protocol to a dynamic resource orchestration.
+v1: Linear Execution (Legacy) v1 operated as a single monolithic script that enforced a &ldquo;One-Size-Fits-All&rdquo; protocol. Every Job Description, regardless of its domain (Academic, Startup, Big Tech), was forced through the exact same processing sequence (Step A → B → C).
+Rigid Protocol: The system lacked the autonomy to deviate. It applied the same generic analysis prompts to a &ldquo;Research Scientist&rdquo; role as it did to a &ldquo;Backend Engineer&rdquo; role. Resource Inefficiency: It could not dynamically allocate resources: wasting tokens on irrelevant checks while missing domain-specific nuances that required deeper investigation. v1 was a static procedure: it executed steps blindly, focusing on process completion rather than strategic adaptability.
+v2: Adaptive Resource Orchestration v2 refactors the system into a flexible multi-agent ecosystem. Instead of a fixed linear path, it employs a Router Agent to analyze the context of each JD and dynamically &ldquo;spin up&rdquo; the necessary agents, allocating computational resources only where they yield the highest ROI.
+Phase 1: Observation (Tool-Augmented Grounding) Before analysis begins, the system proactively invokes external tools (Salary APIs, arXiv retrieval) to ground the JD in reality, ensuring subsequent agents operate on verified data rather than assumptions.
+Phase 2: Orientation (Gatekeeping) A lightweight Triage Agent performs a rapid &ldquo;Survival Check.&rdquo; It instantly discards non-viable roles (Visa/Language constraints) before expensive reasoning agents are instantiated, optimizing the computational budget.
+Phase 3: Decision (Context-Aware Council) This is the core architectural shift. The system dynamically assembles a Council of Advisors specific to the role.
+For a Research Scientist Role: It spins up the 🔬 Academic Reviewer, assessing the domain gap between my research and the target field. For an Early-Stage Founding Engineer: It activates the 🚀 Startup Veteran (analyzing equity potential &amp; risk) and 🏗️ System Architect (assessing scalability requirements). The Technical Advantage: By creating specialized agents, we ensure Context Isolation. This prevents &ldquo;Context Pollution&rdquo;, where an LLM gets confused by irrelevant information (e.g., applying corporate HR standards to a scrappy startup role). Each agent sees only what it needs to see, ensuring the signal remains pure. Phase 4 – Strategy War Room (Clustering &amp; ROI) The system steps back from single JDs and enters a war‑room view across all dossiers. It clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster, producing a ranked “battle plan” that prioritizes where limited effort should be invested first.
+Phase 5 – Briefing &amp; War Room Editor Finally, a briefing agent synthesizes per‑cluster guidance into concise strategy briefs, while the war‑room editor generates structured tables and bullet‑level action items instead of full ghostwritten documents. It suggests narrative angles, surfaces reusable experience blocks, and prepares checklists of edits so that I stay in control of the final wording while the system handles the pattern‑matching and retrieval work.
+The evolution mirrors the transition from a hard‑coded script to an intelligent orchestrator:
+v1 was process‑centric (“run every file through these 3 steps”), whereas v2 is resource‑centric (“analyze the target, deploy the right agents, and synthesize the strategy”).
+The Architectural Shift The evolution mirrors the transition from a Hard-coded Script to an Intelligent Orchestrator:
+v1 Approach: Process-Centric. &ldquo;Run every file through these 3 steps.&rdquo; v2 Approach: Resource-Centric. &ldquo;Analyze the target, deploy the right agents, and synthesize the strategy.&rdquo; By moving from linear execution to dynamic orchestration, v2 ensures that every decision is backed by the right experts, adapting the system&rsquo;s behavior to the chaos of the real-world market.
+Tech Stack LLM &amp; Orchestration: Python 3.11, Google Generative AI SDK (Gemini API), semantic routing via a Smart Model Gateway. Models: Gemma‑3‑27b‑it for logic &amp; extraction; Gemini‑2.5‑Flash for long‑context strategic synthesis. Memory &amp; RAG: ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization Infrastructure: Docker Compose, .env‑based local path binding, local‑first storage of CVs and history. Technical Architecture &amp; Implementation System Architecture Overview The v2 system implements a multi-phase, multi-agent orchestration pipeline with clear separation of concerns. Unlike monolithic single-script approaches, each phase is encapsulated as an independent module with dedicated agents, enabling modular development and targeted optimization.
+Core Design Principles:
+Phase-Based Pipeline: Five sequential phases (Intel → Triage → Council → War Room → Briefing) with explicit data contracts between stages. Hybrid Model Gateway: A cost-aware routing layer that intelligently switches between quota-friendly models (Gemma) for extraction/filtering and high-capacity models (Gemini Flash) for deep reasoning. Structured Knowledge Layer: A local vector database designed for the semantic retrieval of reusable CV sections per JD. Implementation Stack Core Infrastructure: Python 3.11, Google Generative AI SDK, Docker Compose. Structured Output: Enforced JSON schemas ensure reliable agent communication and metadata parsing. Hybrid Inference Layer: The Workhorse (Gemma 3-27B-it): Handles ~90% of the workload, including JD parsing, keyword extraction, triage filtering, and initial gap analysis. Chosen for its high Rate-Limit (RPD) and efficiency. The Heavy Lifter (Gemini 2.5 Flash): Activated only for tasks requiring massive context windows or deep reasoning, such as deep RAG retrieval and strategic synthesis. Smart Gateway: A router that selects the appropriate model based on task complexity and real-time daily quota availability. Memory &amp; Knowledge: Vector Store: ChromaDB with MiniLM embeddings. Indexing: Personal CV, academic papers, and historical applications. Purpose: Enables the system to retrieve relevant experience blocks and reusable resume snippets for each specific JD. Multi-Agent Architecture The system executes a structured workflow to ensure comprehensive coverage:
+Phase 1: Intelligence Gathering (The Scout) Parses raw JDs (with text extraction caching) and invokes external tools (e.g., arXiv API for research group validation, Mock Salary Validator).
+Output: An Enriched Dossier containing external context (team credibility, market salary band).
+Phase 2: Triage &amp; Gatekeeping (The Gatekeeper) Enforces hard constraints (Visa, PhD relevance, Salary floor).
+Output: A structured triage decision. Only “playable” JDs proceed to the Council, saving compute resources.
+Phase 3: Mixture-of-Advisors (The Council) Router Agent: Dynamically selects multiple advisors within relevant field per JD (e.g., Academic Analyst and Leadership for senior research roles).
+Context Isolation: Each advisor has a dedicated persona definition and memory state, preventing context pollution.
+Output: Per-advisor scores and rationales stored in dossier metadata for downstream aggregation.
+Phase 4: Strategy War Room (Clustering &amp; ROI) In Phase 4, the system steps back from single JDs and enters a War Room view across all dossiers. Instead of treating each role as an isolated decision, it clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster. For each cluster, the War Room agent looks at:
+Rewrite effort: how much real editing is needed beyond a 5‑minute tweak. Reusability: whether a single narrative rewrite can unlock multiple similar roles. Strategic leverage: whether this cluster advances my long‑term trajectory (e.g., research scientist track vs. generic MLE). The output of Phase 4 is a ranked “battle plan”: a prioritized queue of clusters with concrete reasons for why they deserve attention now versus later.
+Phase 5: Briefing &amp; War Room Editor Phase 5 turns strategy into execution support rather than a ghostwriter. The Briefing agent synthesizes per‑cluster guidance into a concise strategy brief: which project angles to foreground, which gaps to acknowledge, and which phrasing patterns are reusable across roles.
+Instead of generating full resumes or cover letters, the War Room Editor produces structured tables and bullet‑level action items that I can copy into my own documents as needed. It surfaces:
+Suggested narrative angles per cluster and per JD (e.g., for Job A, frame my audio‑visual surveillance work as a privacy‑preserving mechanism; for Job B, emphasize high‑throughput anomaly detection). Phrases and experience blocks retrieved from my CV/history that are safe to reuse. A short checklist of edits for each application (what to add, what to cut, what to reframe). This keeps the human firmly in control of the final wording while letting the system handle the tedious pattern‑matching and retrieval work.
+Cost &amp; Efficiency Optimization The architecture is strictly ROI-Driven, prioritizing resource allocation to minimize waste:
+Aggressive Caching: JD text extraction and intermediate reasoning steps are cached locally to avoid redundant API calls. History Reusability: The RAG module is designed to retrieve reusable sentences from past successful applications, reducing the manual effort in rewriting the same sentence over and over again. Resources System Architecture Diagram GitHub Repository Analysis Sample - Example of Analysis Report of a Fake JD. " />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://example.com/project-applied/job_hunter/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/emerald.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.40d365a5c94bd94585e708f7c92e5782e00a8d8eefc348f5d2f21a80bb7783c8.css" rel="stylesheet" />
+  
+
+  
+  
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZQYLMST6R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-CZQYLMST6R', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu3247630877640252165.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu4166356570829923896.png" />
+
+  <link rel="canonical" href="https://example.com/project-applied/job_hunter/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Wei-Cheng Wang&#39;s Personal Website" />
+  <meta property="og:url" content="https://example.com/project-applied/job_hunter/" />
+  <meta property="og:title" content="Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory | Wei-Cheng Wang&#39;s Personal Website" />
+  <meta property="og:description" content="
+Agentic Career Orchestrator: Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
+An ROI-driven, local-first AI ecosystem designed to augment human judgment through semantic filtering and strategic advisory in high-noise job markets, while preserving data sovereignty.
+
+Current Status: v2 Stable Release (Jan 2026) – full 5‑phase multi‑agent pipeline operational; ongoing prompt refinement, no major architecture changes planned.
+
+Motivation
+Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game. The core friction lies in the extremely low signal-to-noise ratio inherent in modern recruitment platforms.
+After defending my doctoral thesis, I found myself navigating a market where a single &ldquo;Machine Learning Engineer&rdquo; posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between &ldquo;nice-to-have&rdquo; and &ldquo;required&rdquo; qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.
+The real challenge, therefore, isn&rsquo;t just about finding jobs: it&rsquo;s about verification and strategic triage. Manually reviewing hundreds of listings to validate market salaries or check research alignment is exhausting and error-prone. I needed more than a search engine; I needed an ROI-driven intelligent assistant that understands context to filter out the noise, allowing me to allocate my limited cognitive bandwidth exclusively to high-leverage opportunities.
+
+Impact &amp; Core Philosophy
+Since deployment, this system has transformed job hunting from a chaotic volume game into a disciplined strategic campaign.
+
+Compressed Time-to-Decision: By automating the Observe-Orient-Decide-Act of job filtering, it reduces complex risk assessment from days to&hellip;less days, allowing me to focus bandwidth exclusively on high-leverage opportunities.
+Deep Semantic Qualification: Moving beyond rigid keyword matching, the system evaluates contextual fit: automatically distinguishing between generic &ldquo;Machine Learning Engineering&rdquo; roles and research-oriented positions that truly align with my Ph.D. expertise.
+Uncovered Asymmetric Opportunities: By aggregating independent assessments from the a Multi-Agent Council, the system synthesizes non-obvious connections, such as bridging my audio-visual surveillance background to fintech anomaly detection, that rigid keyword filters typically discard.
+
+The core philosophy is unyielding: to build a system that empowers executive decision-making, not replaces it.
+I develop this ecosystem not to automatically generate resumes or cover letters for mass applying, but as a specialized analyst team to reduce the burden from repetitive but non-productive works. My aim is by defining the strategic criteria and delegating the ground-level research to the agents, the analyst team handle the preliminary debates and data crunching. This structure allows me to step back from the &ldquo;grunt work&rdquo; and focus entirely on the final strategic call, ensuring that every application is tailored with authentic human intuition but backed by machine-speed intelligence.
+
+Research Context: The Dual Purpose
+Beyond its immediate utility, this project serves as a Proof of Concept for integrating system-level engineering into the academic research workflow.
+Although my core research lies in deep learning rather than system engineering, my past works urge me to think my research from a bigger picture. Consequently, importing robust engineering tooling into the research loop seems to be an effective strategy to accelerate the Proof-of-Concept cycle. By validating the Mixture-of-Advisors framework here, this project explores how we can leverage &ldquo;system thinking&rdquo; to orchestrate complex models (like video generators and LoRAs) as distinct agents. This project serves as an architectural pilot for physically‑aware synthetic surveillance data generation, validating the Mixture‑of‑Advisors orchestration pattern before applying it to video generators and task‑specific LoRAs.
+Beyond its immediate utility, this project serves as a PoC for integrating system-level engineering into the academic research workflow.
+
+System Evolution: From Linear Script to Dynamic Orchestration
+While the core objective remains unchanged (identifying high-fit opportunities from a sea of noise) the architectural approach has fundamentally shifted from a rigid linear protocol to a dynamic resource orchestration.
+v1: Linear Execution (Legacy)
+v1 operated as a single monolithic script that enforced a &ldquo;One-Size-Fits-All&rdquo; protocol. Every Job Description, regardless of its domain (Academic, Startup, Big Tech), was forced through the exact same processing sequence (Step A → B → C).
+
+Rigid Protocol: The system lacked the autonomy to deviate. It applied the same generic analysis prompts to a &ldquo;Research Scientist&rdquo; role as it did to a &ldquo;Backend Engineer&rdquo; role.
+Resource Inefficiency: It could not dynamically allocate resources: wasting tokens on irrelevant checks while missing domain-specific nuances that required deeper investigation.
+
+
+v1 was a static procedure: it executed steps blindly, focusing on process completion rather than strategic adaptability.
+
+v2: Adaptive Resource Orchestration
+v2 refactors the system into a flexible multi-agent ecosystem. Instead of a fixed linear path, it employs a Router Agent to analyze the context of each JD and dynamically &ldquo;spin up&rdquo; the necessary agents, allocating computational resources only where they yield the highest ROI.
+
+
+Phase 1: Observation (Tool-Augmented Grounding)
+Before analysis begins, the system proactively invokes external tools (Salary APIs, arXiv retrieval) to ground the JD in reality, ensuring subsequent agents operate on verified data rather than assumptions.
+
+
+Phase 2: Orientation (Gatekeeping)
+A lightweight Triage Agent performs a rapid &ldquo;Survival Check.&rdquo; It instantly discards non-viable roles (Visa/Language constraints) before expensive reasoning agents are instantiated, optimizing the computational budget.
+
+
+Phase 3: Decision (Context-Aware Council)
+This is the core architectural shift. The system dynamically assembles a Council of Advisors specific to the role.
+
+For a Research Scientist Role: It spins up the 🔬 Academic Reviewer, assessing the domain gap between my research and the target field.
+For an Early-Stage Founding Engineer: It activates the 🚀 Startup Veteran (analyzing equity potential &amp; risk) and 🏗️ System Architect (assessing scalability requirements).
+The Technical Advantage: By creating specialized agents, we ensure Context Isolation. This prevents &ldquo;Context Pollution&rdquo;, where an LLM gets confused by irrelevant information (e.g., applying corporate HR standards to a scrappy startup role). Each agent sees only what it needs to see, ensuring the signal remains pure.
+
+
+
+Phase 4 – Strategy War Room (Clustering &amp; ROI)
+The system steps back from single JDs and enters a war‑room view across all dossiers. It clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster, producing a ranked “battle plan” that prioritizes where limited effort should be invested first.
+
+
+Phase 5 – Briefing &amp; War Room Editor
+Finally, a briefing agent synthesizes per‑cluster guidance into concise strategy briefs, while the war‑room editor generates structured tables and bullet‑level action items instead of full ghostwritten documents. It suggests narrative angles, surfaces reusable experience blocks, and prepares checklists of edits so that I stay in control of the final wording while the system handles the pattern‑matching and retrieval work.
+
+
+The evolution mirrors the transition from a hard‑coded script to an intelligent orchestrator:
+
+v1 was process‑centric (“run every file through these 3 steps”), whereas v2 is resource‑centric (“analyze the target, deploy the right agents, and synthesize the strategy”).
+
+
+The Architectural Shift
+The evolution mirrors the transition from a Hard-coded Script to an Intelligent Orchestrator:
+
+v1 Approach: Process-Centric. &ldquo;Run every file through these 3 steps.&rdquo;
+v2 Approach: Resource-Centric. &ldquo;Analyze the target, deploy the right agents, and synthesize the strategy.&rdquo;
+
+By moving from linear execution to dynamic orchestration, v2 ensures that every decision is backed by the right experts, adapting the system&rsquo;s behavior to the chaos of the real-world market.
+
+Tech Stack
+
+LLM &amp; Orchestration: Python 3.11, Google Generative AI SDK (Gemini API), semantic routing via a Smart Model Gateway.
+Models: Gemma‑3‑27b‑it for logic &amp; extraction; Gemini‑2.5‑Flash for long‑context strategic synthesis.
+Memory &amp; RAG: ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization
+Infrastructure: Docker Compose, .env‑based local path binding, local‑first storage of CVs and history.
+
+
+Technical Architecture &amp; Implementation
+System Architecture Overview
+The v2 system implements a multi-phase, multi-agent orchestration pipeline with clear separation of concerns. Unlike monolithic single-script approaches, each phase is encapsulated as an independent module with dedicated agents, enabling modular development and targeted optimization.
+Core Design Principles:
+
+Phase-Based Pipeline: Five sequential phases (Intel → Triage → Council → War Room → Briefing) with explicit data contracts between stages.
+Hybrid Model Gateway: A cost-aware routing layer that intelligently switches between quota-friendly models (Gemma) for extraction/filtering and high-capacity models (Gemini Flash) for deep reasoning.
+Structured Knowledge Layer: A local vector database designed for the semantic retrieval of reusable CV sections per JD.
+
+Implementation Stack
+
+Core Infrastructure: Python 3.11, Google Generative AI SDK, Docker Compose.
+Structured Output: Enforced JSON schemas ensure reliable agent communication and metadata parsing.
+Hybrid Inference Layer:
+
+The Workhorse (Gemma 3-27B-it): Handles ~90% of the workload, including JD parsing, keyword extraction, triage filtering, and initial gap analysis. Chosen for its high Rate-Limit (RPD) and efficiency.
+The Heavy Lifter (Gemini 2.5 Flash): Activated only for tasks requiring massive context windows or deep reasoning, such as deep RAG retrieval and strategic synthesis.
+Smart Gateway: A router that selects the appropriate model based on task complexity and real-time daily quota availability.
+
+
+Memory &amp; Knowledge:
+
+Vector Store: ChromaDB with MiniLM embeddings.
+Indexing: Personal CV, academic papers, and historical applications.
+Purpose: Enables the system to retrieve relevant experience blocks and reusable resume snippets for each specific JD.
+
+
+
+Multi-Agent Architecture
+The system executes a structured workflow to ensure comprehensive coverage:
+
+
+Phase 1: Intelligence Gathering (The Scout)
+Parses raw JDs (with text extraction caching) and invokes external tools (e.g., arXiv API for research group validation, Mock Salary Validator).
+Output: An Enriched Dossier containing external context (team credibility, market salary band).
+
+
+Phase 2: Triage &amp; Gatekeeping (The Gatekeeper)
+Enforces hard constraints (Visa, PhD relevance, Salary floor).
+Output: A structured triage decision. Only “playable” JDs proceed to the Council, saving compute resources.
+
+
+Phase 3: Mixture-of-Advisors (The Council)
+Router Agent: Dynamically selects multiple advisors within relevant field per JD (e.g., Academic Analyst and Leadership for senior research roles).
+Context Isolation: Each advisor has a dedicated persona definition and memory state, preventing context pollution.
+Output: Per-advisor scores and rationales stored in dossier metadata for downstream aggregation.
+
+
+Phase 4: Strategy War Room (Clustering &amp; ROI)
+In Phase 4, the system steps back from single JDs and enters a War Room view across all dossiers. Instead of treating each role as an isolated decision, it clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster.
+For each cluster, the War Room agent looks at:
+
+Rewrite effort: how much real editing is needed beyond a 5‑minute tweak.
+Reusability: whether a single narrative rewrite can unlock multiple similar roles.
+Strategic leverage: whether this cluster advances my long‑term trajectory (e.g., research scientist track vs. generic MLE).
+
+The output of Phase 4 is a ranked “battle plan”: a prioritized queue of clusters with concrete reasons for why they deserve attention now versus later.
+
+
+Phase 5: Briefing &amp; War Room Editor
+Phase 5 turns strategy into execution support rather than a ghostwriter. The Briefing agent synthesizes per‑cluster guidance into a concise strategy brief: which project angles to foreground, which gaps to acknowledge, and which phrasing patterns are reusable across roles.
+Instead of generating full resumes or cover letters, the War Room Editor produces structured tables and bullet‑level action items that I can copy into my own documents as needed. It surfaces:
+
+Suggested narrative angles per cluster and per JD (e.g., for Job A, frame my audio‑visual surveillance work as a privacy‑preserving mechanism; for Job B, emphasize high‑throughput anomaly detection).
+Phrases and experience blocks retrieved from my CV/history that are safe to reuse.
+A short checklist of edits for each application (what to add, what to cut, what to reframe).
+
+This keeps the human firmly in control of the final wording while letting the system handle the tedious pattern‑matching and retrieval work.
+
+
+Cost &amp; Efficiency Optimization
+The architecture is strictly ROI-Driven, prioritizing resource allocation to minimize waste:
+
+Aggressive Caching: JD text extraction and intermediate reasoning steps are cached locally to avoid redundant API calls.
+History Reusability: The RAG module is designed to retrieve reusable sentences from past successful applications, reducing the manual effort in rewriting the same sentence over and over again.
+
+
+Resources
+
+System Architecture Diagram
+GitHub Repository
+Analysis Sample - Example of Analysis Report of a Fake JD.
+
+" /><meta property="og:image" content="https://example.com/project-applied/job_hunter/featured.png" />
+    <meta property="twitter:image" content="https://example.com/project-applied/job_hunter/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2026-01-21T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2026-01-21T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  <title>Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory | Wei-Cheng Wang&#39;s Personal Website</title>
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+  </style>
+
+  
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+
+<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      baseUrl: window.hbb.pagefind.baseUrl,
+      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.8c8ea06bd0420f5067e52fa727b9f92303757322ba4431774153d59a9735eadb.js"
+    integrity="sha256-jI6ga9BCD1Bn5S&#43;nJ7n5IwN1cyK6RDF3QVPVmpc16ts="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+      
+    
+  
+
+
+
+
+</head>
+
+
+
+<link rel="stylesheet" href="/css/custom.css" type="text/css">
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Wei-Cheng Wang&#39;s Personal Website">
+            
+            
+              
+              <img
+                fetchpriority="high"
+                decoding="async"
+                class=""
+                width="206"
+                height="36"
+                src="/media/Elf_white_hu7399649101897331904.webp"
+                alt="Wei-Cheng Wang&#39;s Personal Website" />
+            
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/"
+        >Bio</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/publication/"
+        >Papers</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/experience/"
+        >Experience</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/project/"
+        >Projects</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      
+
+
+
+
+
+<div class="mx-auto flex max-w-screen-xl">
+  
+
+
+
+<aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] lg:hidden xl:block">
+  
+  <div class="px-4 pt-4 lg:hidden">
+    
+    
+  </div>
+  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
+    <ul class="flex flex-col gap-1 lg:hidden">
+      
+      
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/event/"
+    
+  >Recent &amp; Upcoming Talks
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/event/example/"
+    
+  >Example Talk
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-applied/"
+    
+  >Project-Applieds
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/project-applied/job_hunter/"
+    
+  >Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
+    </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#"
+                class="hb-docs-link"
+              ></a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-applied/ugentapp/"
+    
+  >Taiwanese in Ghent, The Survivor Kit - A Serverless LLM-Agent Deployment
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project/"
+    
+  >Projects
+    </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-research/"
+    
+  >Project-Researches
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-research/phd/"
+    
+  >From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-research/sensecity/"
+    
+  >SensCity - Acoustic Surveillance in Real-World
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-research/prephd/"
+    
+  >Intelligent Video Analytics &amp; Surveillance Systems
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-research/drivermonitor/"
+    
+  >Multimodal Driver Monitoring &amp; Temporal Face Analysis
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/"
+    
+  >Publications
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/wang-2025-source/"
+    
+  >Source-Free Model Transferability Assessment for Smart Surveillance via Randomly Initialized Networks
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2025-rai/"
+    
+  >Embedding-based pair generation for contrastive representation learning in audio-visual surveillance data
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/de-2024-privacy/"
+    
+  >Privacy-preserving visual analysis: training video obfuscation models without sensitive labels
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2022-pc/"
+    
+  >An Opt-in Framework for Privacy Protection in Audio-Based Applications
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/deconinck-2022-selectivemanipulationdisentangledrepresentations/"
+    
+  >Selective manipulation of disentangled representations for privacy-aware facial image processing
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2020-tits/"
+    
+  >Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2018-icip/"
+    
+  >Clustering Trajectories in Heterogeneous Representations for Video Event Detection
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2018-tip/"
+    
+  >USEAQ: Ultra-Fast Superpixel Extraction via Adaptive Sampling From Quantized Regions
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2018-tcsvt/"
+    
+  >Spatiotemporal Coherence-Based Annotation Placement for Surveillance Videos
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2017-icmva/"
+    
+  >Event based surveillance video synopsis using trajectory kinematics descriptors
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2015-snpd/"
+    
+  >Video gender recognition using temporal coherent face descriptor
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/2015-iscas/"
+    
+  >Trajectory kinematics descriptor for trajectory clustering in surveillance videos
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/"
+    
+  >Blog
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/get-started/"
+    
+  >🎉 Easily create your own simple yet highly customizable blog
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/second-brain/"
+    
+  >🧠 Sharpen your thinking with a second brain
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/data-visualization/"
+    
+  >📈 Communicate your results effectively with the best data visualizations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/teach-courses/"
+    
+  >👩🏼‍🏫 Teach academic courses
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/project-management/"
+    
+  >✅ Manage your projects
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/mission/"
+    
+  >Research Philosophy
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/experience/"
+    
+  >Experience
+    </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/"
+    
+  >Teaching
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/js/"
+    
+  >Learn JavaScript
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/python/"
+    
+  >Learn Python
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-tech/"
+    
+  >Project-Teches
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project-tech/sysnopsis/"
+    
+  >Bridging the gap between lab research and market value.
+    </a>
+              
+            </li></ul>
+      </div></li>
+    </ul>
+
+    <div class="max-xl:hidden h-0 w-64 shrink-0"></div></div>
+
+</aside>
+  
+
+<nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#motivation">Motivation</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#impact--core-philosophy">Impact &amp; Core Philosophy</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#research-context-the-dual-purpose">Research Context: The Dual Purpose</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#system-evolution-from-linear-script-to-dynamic-orchestration">System Evolution: From Linear Script to Dynamic Orchestration</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#v1-linear-execution-legacy">v1: Linear Execution (Legacy)</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#v2-adaptive-resource-orchestration">v2: Adaptive Resource Orchestration</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#the-architectural-shift">The Architectural Shift</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#tech-stack">Tech Stack</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#technical-architecture--implementation">Technical Architecture &amp; Implementation</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#system-architecture-overview">System Architecture Overview</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#implementation-stack">Implementation Stack</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#multi-agent-architecture">Multi-Agent Architecture</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#cost--efficiency-optimization">Cost &amp; Efficiency Optimization</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#resources">Resources</a>
+      </li></ul>
+
+  
+  
+    
+    
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </nav>
+
+
+  <article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+    <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+
+      
+
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory</h1>
+
+      <div class="mt-4 mb-16">
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jan 21, 2026</span>
+        
+
+        
+        <span class="mx-1">·</span>
+        <span class="mx-1">
+          10 min read
+        </span>
+        
+        </div>
+
+        <div class="mt-3">
+          
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 354px;">
+        <div style="position: relative">
+          <img src="/project-applied/job_hunter/featured_hu4184575732392528997.webp" width="720" height="354" alt="" class="featured-image">
+          
+        </div>
+      </div>
+      
+
+      
+      
+
+      <div class="prose prose-slate lg:prose-xl dark:prose-invert">
+        <div style="text-align: justify;">
+<p><strong>Agentic Career Orchestrator: Multi-Agent LLM System for Strategic Job Triage &amp; Advisory</strong></p>
+<p>An ROI-driven, local-first AI ecosystem designed to augment human judgment through semantic filtering and strategic advisory in high-noise job markets, while preserving data sovereignty.</p>
+<blockquote>
+<p>Current Status: v2 Stable Release (Jan 2026) – full 5‑phase multi‑agent pipeline operational; ongoing prompt refinement, no major architecture changes planned.</p>
+</blockquote>
+<h3 id="motivation">Motivation</h3>
+<p>Job hunting as a Ph.D. graduate is fundamentally a semantic search problem disguised as a volume game. The core friction lies in the extremely low <strong>signal-to-noise ratio</strong> inherent in modern recruitment platforms.</p>
+<p>After defending my doctoral thesis, I found myself navigating a market where a single &ldquo;Machine Learning Engineer&rdquo; posting could mean anything from data pipeline maintenance to cutting-edge research implementation. Traditional keyword-based searches fail spectacularly: they cannot capture nuances like visa sponsorship policies, distinguish between &ldquo;nice-to-have&rdquo; and &ldquo;required&rdquo; qualifications, or recognize that my background in audio-visual surveillance directly transfers to anomaly detection in fintech.</p>
+<p>The real challenge, therefore, isn&rsquo;t just about finding jobs: it&rsquo;s about <strong>verification</strong> and <strong>strategic triage</strong>. Manually reviewing hundreds of listings to validate market salaries or check research alignment is exhausting and error-prone. I needed more than a search engine; I needed an <strong>ROI-driven intelligent assistant</strong> that understands context to filter out the noise, allowing me to allocate my limited cognitive bandwidth exclusively to high-leverage opportunities.</p>
+<hr>
+<h3 id="impact--core-philosophy">Impact &amp; Core Philosophy</h3>
+<p>Since deployment, this system has transformed job hunting from a chaotic volume game into a disciplined strategic campaign.</p>
+<ul>
+<li><strong>Compressed Time-to-Decision:</strong> By automating the <em>Observe-Orient-Decide-Act</em> of job filtering, it reduces complex risk assessment from days to&hellip;less days, allowing me to focus bandwidth exclusively on high-leverage opportunities.</li>
+<li><strong>Deep Semantic Qualification:</strong> Moving beyond rigid keyword matching, the system evaluates <strong>contextual fit</strong>: automatically distinguishing between generic &ldquo;Machine Learning Engineering&rdquo; roles and research-oriented positions that truly align with my Ph.D. expertise.</li>
+<li><strong>Uncovered Asymmetric Opportunities:</strong> By <strong>aggregating independent assessments</strong> from the a Multi-Agent Council, the system synthesizes non-obvious connections, such as bridging my <strong>audio-visual surveillance</strong> background to <strong>fintech anomaly detection</strong>, that rigid keyword filters typically discard.</li>
+</ul>
+<p>The core philosophy is unyielding: <strong>to build a system that empowers executive decision-making, not replaces it.</strong></p>
+<p>I develop this ecosystem not to automatically generate resumes or cover letters for mass applying, but as a <strong>specialized analyst team</strong> to reduce the burden from repetitive but non-productive works. My aim is by defining the strategic criteria and delegating the ground-level research to the agents, the analyst team handle the preliminary debates and data crunching. This structure allows me to step back from the &ldquo;grunt work&rdquo; and focus entirely on the final strategic call, ensuring that every application is tailored with authentic human intuition but backed by machine-speed intelligence.</p>
+<hr>
+<h3 id="research-context-the-dual-purpose">Research Context: The Dual Purpose</h3>
+<p>Beyond its immediate utility, this project serves as a <strong>Proof of Concept</strong> for integrating system-level engineering into the academic research workflow.</p>
+<p>Although my core research lies in deep learning rather than system engineering, my past works urge me to think my research from a bigger picture. Consequently, <em>importing robust engineering tooling into the research loop</em> seems to be an effective strategy to accelerate the Proof-of-Concept cycle. By validating the <strong>Mixture-of-Advisors</strong> framework here, this project explores how we can leverage &ldquo;system thinking&rdquo; to orchestrate complex models (like video generators and LoRAs) as distinct agents. This project serves as an architectural pilot for physically‑aware synthetic surveillance data generation, validating the <em>Mixture‑of‑Advisors</em> orchestration pattern before applying it to video generators and task‑specific LoRAs.</p>
+<p>Beyond its immediate utility, this project serves as a <strong>PoC</strong> for integrating system-level engineering into the academic research workflow.</p>
+<hr>
+<h3 id="system-evolution-from-linear-script-to-dynamic-orchestration">System Evolution: From Linear Script to Dynamic Orchestration</h3>
+<p>While the core objective remains unchanged (identifying high-fit opportunities from a sea of noise) the architectural approach has fundamentally shifted from a rigid linear protocol to a dynamic resource orchestration.</p>
+<h4 id="v1-linear-execution-legacy">v1: Linear Execution (Legacy)</h4>
+<p>v1 operated as a <strong>single monolithic script</strong> that enforced a &ldquo;One-Size-Fits-All&rdquo; protocol. Every Job Description, regardless of its domain (Academic, Startup, Big Tech), was forced through the exact same processing sequence (Step A → B → C).</p>
+<ul>
+<li><strong>Rigid Protocol:</strong> The system lacked the autonomy to deviate. It applied the same generic analysis prompts to a &ldquo;Research Scientist&rdquo; role as it did to a &ldquo;Backend Engineer&rdquo; role.</li>
+<li><strong>Resource Inefficiency:</strong> It could not dynamically allocate resources: wasting tokens on irrelevant checks while missing domain-specific nuances that required deeper investigation.</li>
+</ul>
+<blockquote>
+<p><em>v1 was a static procedure: it executed steps blindly, focusing on process completion rather than strategic adaptability.</em></p>
+</blockquote>
+<h4 id="v2-adaptive-resource-orchestration">v2: Adaptive Resource Orchestration</h4>
+<p>v2 refactors the system into a <strong>flexible multi-agent ecosystem</strong>. Instead of a fixed linear path, it employs a <strong>Router Agent</strong> to analyze the context of each JD and dynamically &ldquo;spin up&rdquo; the necessary agents, allocating computational resources only where they yield the highest ROI.</p>
+<ol>
+<li>
+<p><strong>Phase 1: Observation (Tool-Augmented Grounding)</strong>
+Before analysis begins, the system proactively invokes external tools (Salary APIs, arXiv retrieval) to ground the JD in reality, ensuring subsequent agents operate on verified data rather than assumptions.</p>
+</li>
+<li>
+<p><strong>Phase 2: Orientation (Gatekeeping)</strong>
+A lightweight Triage Agent performs a rapid &ldquo;Survival Check.&rdquo; It instantly discards non-viable roles (Visa/Language constraints) <em>before</em> expensive reasoning agents are instantiated, optimizing the computational budget.</p>
+</li>
+<li>
+<p><strong>Phase 3: Decision (Context-Aware Council)</strong>
+This is the core architectural shift. The system <strong>dynamically assembles a Council of Advisors</strong> specific to the role.</p>
+<ul>
+<li><em>For a Research Scientist Role:</em> It spins up the <strong>🔬 Academic Reviewer</strong>, assessing the domain gap between my research and the target field.</li>
+<li><em>For an Early-Stage Founding Engineer:</em> It activates the <strong>🚀 Startup Veteran</strong> (analyzing equity potential &amp; risk) and <strong>🏗️ System Architect</strong> (assessing scalability requirements).</li>
+<li><strong>The Technical Advantage:</strong> By creating specialized agents, we ensure <strong>Context Isolation</strong>. This prevents &ldquo;Context Pollution&rdquo;, where an LLM gets confused by irrelevant information (e.g., applying corporate HR standards to a scrappy startup role). Each agent sees <em>only</em> what it needs to see, ensuring the signal remains pure.</li>
+</ul>
+</li>
+<li>
+<p><strong>Phase 4 – Strategy War Room (Clustering &amp; ROI)</strong>
+The system steps back from single JDs and enters a war‑room view across all dossiers. It clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster, producing a ranked “battle plan” that prioritizes where limited effort should be invested first.</p>
+</li>
+<li>
+<p><strong>Phase 5 – Briefing &amp; War Room Editor</strong>
+Finally, a briefing agent synthesizes per‑cluster guidance into concise strategy briefs, while the war‑room editor generates structured tables and bullet‑level action items instead of full ghostwritten documents. It suggests narrative angles, surfaces reusable experience blocks, and prepares checklists of edits so that I stay in control of the final wording while the system handles the pattern‑matching and retrieval work.</p>
+</li>
+</ol>
+<p>The evolution mirrors the transition from a hard‑coded script to an intelligent orchestrator:</p>
+<blockquote>
+<p>v1 was process‑centric (“run every file through these 3 steps”), whereas v2 is resource‑centric (“analyze the target, deploy the right agents, and synthesize the strategy”).</p>
+</blockquote>
+<hr>
+<h4 id="the-architectural-shift">The Architectural Shift</h4>
+<p>The evolution mirrors the transition from a <strong>Hard-coded Script</strong> to an <strong>Intelligent Orchestrator</strong>:</p>
+<ul>
+<li><strong>v1 Approach:</strong> <em>Process-Centric.</em> &ldquo;Run every file through these 3 steps.&rdquo;</li>
+<li><strong>v2 Approach:</strong> <em>Resource-Centric.</em> &ldquo;Analyze the target, deploy the right agents, and synthesize the strategy.&rdquo;</li>
+</ul>
+<p>By moving from linear execution to dynamic orchestration, v2 ensures that every decision is backed by the right experts, adapting the system&rsquo;s behavior to the chaos of the real-world market.</p>
+<hr>
+<h3 id="tech-stack">Tech Stack</h3>
+<ul>
+<li><strong>LLM &amp; Orchestration:</strong> Python 3.11, Google Generative AI SDK (Gemini API), semantic routing via a Smart Model Gateway.</li>
+<li><strong>Models</strong>: Gemma‑3‑27b‑it for logic &amp; extraction; Gemini‑2.5‑Flash for long‑context strategic synthesis.</li>
+<li><strong>Memory &amp; RAG:</strong> ChromaDB (all-MiniLM-L6-v2), Recursive Character Splitting, JSON/Markdown Serialization</li>
+<li><strong>Infrastructure:</strong> Docker Compose, .env‑based local path binding, local‑first storage of CVs and history.</li>
+</ul>
+<hr>
+<h3 id="technical-architecture--implementation">Technical Architecture &amp; Implementation</h3>
+<h4 id="system-architecture-overview">System Architecture Overview</h4>
+<p>The v2 system implements a <strong>multi-phase, multi-agent orchestration pipeline</strong> with clear separation of concerns. Unlike monolithic single-script approaches, each phase is encapsulated as an independent module with dedicated agents, enabling modular development and targeted optimization.</p>
+<p><strong>Core Design Principles:</strong></p>
+<ul>
+<li><strong>Phase-Based Pipeline:</strong> Five sequential phases (Intel → Triage → Council → War Room → Briefing) with explicit data contracts between stages.</li>
+<li><strong>Hybrid Model Gateway:</strong> A cost-aware routing layer that intelligently switches between quota-friendly models (Gemma) for extraction/filtering and high-capacity models (Gemini Flash) for deep reasoning.</li>
+<li><strong>Structured Knowledge Layer:</strong> A local vector database designed for the semantic retrieval of reusable CV sections per JD.</li>
+</ul>
+<h4 id="implementation-stack">Implementation Stack</h4>
+<ul>
+<li><strong>Core Infrastructure:</strong> Python 3.11, Google Generative AI SDK, Docker Compose.</li>
+<li><strong>Structured Output:</strong> Enforced JSON schemas ensure reliable agent communication and metadata parsing.</li>
+<li><strong>Hybrid Inference Layer:</strong>
+<ul>
+<li><strong>The Workhorse (Gemma 3-27B-it):</strong> Handles ~90% of the workload, including JD parsing, keyword extraction, triage filtering, and initial gap analysis. Chosen for its high Rate-Limit (RPD) and efficiency.</li>
+<li><strong>The Heavy Lifter (Gemini 2.5 Flash):</strong> Activated only for tasks requiring massive context windows or deep reasoning, such as deep RAG retrieval and strategic synthesis.</li>
+<li><strong>Smart Gateway:</strong> A router that selects the appropriate model based on task complexity and real-time daily quota availability.</li>
+</ul>
+</li>
+<li><strong>Memory &amp; Knowledge:</strong>
+<ul>
+<li><strong>Vector Store:</strong> ChromaDB with MiniLM embeddings.</li>
+<li><strong>Indexing:</strong> Personal CV, academic papers, and historical applications.</li>
+<li><strong>Purpose:</strong> Enables the system to retrieve relevant experience blocks and reusable resume snippets for each specific JD.</li>
+</ul>
+</li>
+</ul>
+<h4 id="multi-agent-architecture">Multi-Agent Architecture</h4>
+<p>The system executes a structured workflow to ensure comprehensive coverage:</p>
+<ul>
+<li>
+<p><strong>Phase 1: Intelligence Gathering (The Scout)</strong>
+Parses raw JDs (with text extraction caching) and invokes external tools (e.g., arXiv API for research group validation, Mock Salary Validator).<br>
+Output: An Enriched Dossier containing external context (team credibility, market salary band).</p>
+</li>
+<li>
+<p><strong>Phase 2: Triage &amp; Gatekeeping (The Gatekeeper)</strong>
+Enforces hard constraints (Visa, PhD relevance, Salary floor).<br>
+Output: A structured triage decision. Only “playable” JDs proceed to the Council, saving compute resources.</p>
+</li>
+<li>
+<p><strong>Phase 3: Mixture-of-Advisors (The Council)</strong>
+Router Agent: Dynamically selects multiple advisors within relevant field per JD (e.g., Academic Analyst and Leadership for senior research roles).<br>
+Context Isolation: Each advisor has a dedicated persona definition and memory state, preventing context pollution.<br>
+Output: Per-advisor scores and rationales stored in dossier metadata for downstream aggregation.</p>
+</li>
+<li>
+<p><strong>Phase 4: Strategy War Room (Clustering &amp; ROI)</strong>
+In Phase 4, the system steps back from single JDs and enters a War Room view across all dossiers. Instead of treating each role as an isolated decision, it clusters opportunities by similarity patterns (domain, seniority, tech stack, narrative angle) and estimates the ROI of working on each cluster.
+For each cluster, the War Room agent looks at:</p>
+<ul>
+<li>Rewrite effort: how much real editing is needed beyond a 5‑minute tweak.</li>
+<li>Reusability: whether a single narrative rewrite can unlock multiple similar roles.</li>
+<li>Strategic leverage: whether this cluster advances my long‑term trajectory (e.g., research scientist track vs. generic MLE).</li>
+</ul>
+<p>The output of Phase 4 is a ranked “battle plan”: a prioritized queue of clusters with concrete reasons for why they deserve attention now versus later.</p>
+</li>
+<li>
+<p><strong>Phase 5: Briefing &amp; War Room Editor</strong>
+Phase 5 turns strategy into execution support rather than a ghostwriter. The Briefing agent synthesizes per‑cluster guidance into a concise strategy brief: which project angles to foreground, which gaps to acknowledge, and which phrasing patterns are reusable across roles.</p>
+<p>Instead of generating full resumes or cover letters, the War Room Editor produces structured tables and bullet‑level action items that I can copy into my own documents as needed. It surfaces:</p>
+<ul>
+<li>Suggested narrative angles per cluster and per JD (e.g., for Job A, frame my audio‑visual surveillance work as a privacy‑preserving mechanism; for Job B, emphasize high‑throughput anomaly detection).</li>
+<li>Phrases and experience blocks retrieved from my CV/history that are safe to reuse.</li>
+<li>A short checklist of edits for each application (what to add, what to cut, what to reframe).</li>
+</ul>
+<p>This keeps the human firmly in control of the final wording while letting the system handle the tedious pattern‑matching and retrieval work.</p>
+</li>
+</ul>
+<h4 id="cost--efficiency-optimization">Cost &amp; Efficiency Optimization</h4>
+<p>The architecture is strictly <strong>ROI-Driven</strong>, prioritizing resource allocation to minimize waste:</p>
+<ul>
+<li><strong>Aggressive Caching:</strong> JD text extraction and intermediate reasoning steps are cached locally to avoid redundant API calls.</li>
+<li><strong>History Reusability:</strong> The RAG module is designed to <strong>retrieve reusable sentences</strong> from past successful applications, reducing the manual effort in rewriting the same sentence over and over again.</li>
+</ul>
+<hr>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="#featured.png"><strong>System Architecture Diagram</strong></a></li>
+<li><a href="https://github.com/WangWeiCheng-TJ/Agentic-Career-Orchestrator/tree/main" target="_blank" rel="noopener"><strong>GitHub Repository</strong></a></li>
+<li><a href="https://github.com/WangWeiCheng-TJ/Local-LLM-Decision-Orchestrator/tree/da11a9e245a28ab4bedd10d37e1fa9b6064f9d61/examples" target="_blank" rel="noopener"><strong>Analysis Sample</strong></a> - <em>Example of Analysis Report of a Fake JD.</em></li>
+</ul>
+</div>
+      </div>
+
+      
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2026-01-21T00:00:00.000Z">
+    <span>Last updated on</span>
+    Jan 21, 2026</time>
+
+      <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
+        
+        <div class="max-w-prose print:hidden">
+  
+  
+
+  
+
+<div class="flex justify-center">
+  
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/mixture-of-agents/">Mixture of Agents</a>
+  
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/llm-agent/">LLM Agent</a>
+  
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/rag/">RAG</a>
+  
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/career-tech/">Career Tech</a>
+  
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/orchestration/">Orchestration</a>
+  
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/vector-database/">Vector Database</a>
+  
+</div>
+
+
+  
+<section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fproject-applied%2Fjob_hunter%2F&amp;text=Agentic&#43;Career&#43;Orchestrator&#43;-&#43;Multi-Agent&#43;LLM&#43;System&#43;for&#43;Strategic&#43;Job&#43;Triage&#43;%26&#43;Advisory"
+    title="X"
+    aria-label="X"
+    id="share-link-x"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fproject-applied%2Fjob_hunter%2F&amp;t=Agentic&#43;Career&#43;Orchestrator&#43;-&#43;Multi-Agent&#43;LLM&#43;System&#43;for&#43;Strategic&#43;Job&#43;Triage&#43;%26&#43;Advisory"
+    title="Facebook"
+    aria-label="Facebook"
+    id="share-link-facebook"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+    
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="mailto:?subject=Agentic%20Career%20Orchestrator%20-%20Multi-Agent%20LLM%20System%20for%20Strategic%20Job%20Triage%20%26%20Advisory&amp;body=https%3A%2F%2Fexample.com%2Fproject-applied%2Fjob_hunter%2F"
+    title="Email"
+    aria-label="Email"
+    id="share-link-email"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fproject-applied%2Fjob_hunter%2F&amp;title=Agentic&#43;Career&#43;Orchestrator&#43;-&#43;Multi-Agent&#43;LLM&#43;System&#43;for&#43;Strategic&#43;Job&#43;Triage&#43;%26&#43;Advisory"
+    title="LinkedIn"
+    aria-label="LinkedIn"
+    id="share-link-linkedin"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="whatsapp://send?text=Agentic&#43;Career&#43;Orchestrator&#43;-&#43;Multi-Agent&#43;LLM&#43;System&#43;for&#43;Strategic&#43;Job&#43;Triage&#43;%26&#43;Advisory%20https%3A%2F%2Fexample.com%2Fproject-applied%2Fjob_hunter%2F"
+    title="WhatsApp"
+    aria-label="WhatsApp"
+    id="share-link-whatsapp"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="m187.58 144.84-32-16a8 8 0 0 0-8 .5l-14.69 9.8a40.55 40.55 0 0 1-16-16l9.8-14.69a8 8 0 0 0 .5-8l-16-32A8 8 0 0 0 104 64a40 40 0 0 0-40 40 88.1 88.1 0 0 0 88 88 40 40 0 0 0 40-40 8 8 0 0 0-4.42-7.16ZM152 176a72.08 72.08 0 0 1-72-72 24 24 0 0 1 19.29-23.54l11.48 23L101 118a8 8 0 0 0-.73 7.51 56.47 56.47 0 0 0 30.15 30.15A8 8 0 0 0 138 155l14.61-9.74 23 11.48A24 24 0 0 1 152 176ZM128 24a104 104 0 0 0-91.82 152.88l-11.35 34.05a16 16 0 0 0 20.24 20.24l34.05-11.35A104 104 0 1 0 128 24Zm0 192a87.87 87.87 0 0 1-44.06-11.81 8 8 0 0 0-6.54-.67L40 216l12.47-37.4a8 8 0 0 0-.66-6.54A88 88 0 1 1 128 216Z"/></svg>
+  </a>
+  
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+
+<div class="flex pt-12 pb-4">
+  
+  
+  <img
+    class="mr-4 h-24 w-24 rounded-full"
+    width="96"
+    height="96"
+    alt="Wang Wei-Cheng"
+  src="/author/wang-wei-cheng/avatar_hu2718395765640346209.jpeg"
+  loading="lazy"
+  />
+  
+  <div class="place-self-center">
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Authors
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      <a href="https://example.com/" class="no-underline">
+      Wang Wei-Cheng
+      </a>
+    </div>
+
+    
+    <div class="text-sm font-bold text-neutral-700 dark:text-neutral-300">
+    Ph.D.
+    </div>
+    
+
+
+    
+
+    <div class="text-2xl sm:text-lg pt-1">
+
+      
+<div class="flex flex-wrap text-neutral-500 dark:text-neutral-300">
+  
+    
+    
+    
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="mailto:tienjiwang@gmail.com"
+      
+      aria-label="At-Symbol"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="https://www.linkedin.com/in/wang-wc"
+      target="_blank" rel="noopener" rel="me noopener noreferrer"
+      aria-label="Brands/Linkedin"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="https://scholar.google.com/citations?user=sQEO6jUAAAAJ&amp;hl=zh-TW"
+      target="_blank" rel="noopener" rel="me noopener noreferrer"
+      aria-label="Academicons/Google-Scholar"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M343.759 106.662V79.43L363.524 64h-213.89L20.476 176.274h85.656a82.339 82.339 0 0 0-.219 6.225c0 20.845 7.22 38.087 21.672 51.861c14.453 13.797 32.252 20.648 53.327 20.648c4.923 0 9.75-.368 14.438-1.024c-2.907 6.5-4.374 12.523-4.374 18.142c0 9.875 4.499 20.43 13.467 31.642c-39.234 2.67-68.061 9.732-86.437 21.163c-10.531 6.5-19 14.704-25.39 24.531c-6.391 9.9-9.578 20.515-9.578 31.962c0 9.648 2.062 18.336 6.219 26.062c4.156 7.726 9.578 14.07 16.312 18.984c6.718 4.968 14.469 9.101 23.219 12.469c8.734 3.344 17.406 5.718 26.061 7.062A167.052 167.052 0 0 0 180.555 448c13.469 0 26.953-1.734 40.547-5.187c13.562-3.485 26.28-8.642 38.171-15.493c11.86-6.805 21.515-16.086 28.922-27.718c7.39-11.68 11.094-24.805 11.094-39.336c0-11.016-2.25-21.039-6.75-30.14c-4.468-9.073-9.938-16.542-16.452-22.345c-6.501-5.813-13-11.155-19.516-15.968c-6.5-4.845-12-9.75-16.468-14.813c-4.485-5.046-6.735-10.054-6.735-14.984c0-4.921 1.734-9.672 5.216-14.265c3.455-4.61 7.674-9.048 12.61-13.306c4.937-4.25 9.875-8.968 14.796-14.133c4.922-5.147 9.141-11.827 12.61-20.008c3.485-8.18 5.203-17.445 5.203-27.757c0-13.453-2.547-24.46-7.547-33.314c-.594-1.022-1.218-1.803-1.875-3.022l56.907-46.672v17.119c-7.393.93-6.624 5.345-6.624 10.635V245.96c0 5.958 4.875 10.834 10.834 10.834h3.989c5.958 0 10.833-4.875 10.833-10.834V117.293c0-5.277.778-9.688-6.561-10.63zm-107.36 222.48c1.14.75 3.704 2.78 7.718 6.038c4.05 3.243 6.797 5.695 8.266 7.414a443.553 443.553 0 0 1 6.376 7.547c2.813 3.375 4.718 6.304 5.718 8.734c1 2.477 2.016 5.461 3.047 8.946a38.27 38.27 0 0 1 1.485 10.562c0 17.048-6.564 29.68-19.656 37.859c-13.125 8.18-28.767 12.274-46.938 12.274c-9.187 0-18.203-1.093-27.063-3.196c-8.843-2.116-17.311-5.336-25.39-9.601c-8.078-4.258-14.577-10.204-19.5-17.797c-4.938-7.64-7.407-16.415-7.407-26.25c0-10.32 2.797-19.29 8.422-26.906c5.594-7.625 12.938-13.391 22.032-17.315c9.063-3.946 18.25-6.742 27.562-8.398a157.865 157.865 0 0 1 28.438-2.555c4.47 0 7.936.25 10.405.696c.455.219 3.032 2.07 7.735 5.563c4.704 3.462 7.625 5.595 8.75 6.384zm-3.359-100.579c-7.406 8.86-17.734 13.288-30.953 13.288c-11.86 0-22.298-4.764-31.266-14.312c-9-9.523-15.422-20.328-19.344-32.43c-3.937-12.109-5.906-23.984-5.906-35.648c0-13.694 3.596-25.352 10.781-34.976c7.187-9.65 17.5-14.485 30.938-14.485c11.875 0 22.374 5.038 31.437 15.157c9.094 10.085 15.61 21.413 19.517 33.968c3.922 12.54 5.873 24.53 5.873 35.984c0 13.446-3.702 24.61-11.076 33.454z"/></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="https://orcid.org/0000-0002-0912-8532"
+      target="_blank" rel="noopener" rel="me noopener noreferrer"
+      aria-label="Academicons/Orcid"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M336.62 194.538c-7.13-3.328-13.866-5.56-20.253-6.614c-6.365-1.095-16.574-1.612-30.71-1.612h-36.704v152.747h37.634c14.673 0 26.081-1.013 34.224-3.017c8.142-2.004 14.921-4.526 20.356-7.626a69.448 69.448 0 0 0 14.942-11.388c14.488-14.714 21.742-33.273 21.742-55.717c0-22.052-7.44-40.052-22.341-53.982c-5.498-5.166-11.822-9.444-18.89-12.793zM256 8C119.022 8 8 119.042 8 256s111.022 248 248 248s248-111.042 248-248S392.978 8 256 8Zm-82.336 357.513h-29.389V160.148h29.389zM158.95 138.696c-11.14 0-20.213-9.01-20.213-20.212c0-11.118 9.052-20.191 20.213-20.191c11.18 0 20.232 9.052 20.232 20.191a20.194 20.194 0 0 1-20.232 20.212zm241.386 163.597c-5.29 12.545-12.834 23.581-22.65 33.088c-9.982 9.837-21.597 17.194-34.844 22.196c-7.75 3.017-14.839 5.063-21.307 6.117c-6.49 1.013-18.828 1.509-37.076 1.509h-64.956V160.148h69.233c27.962 0 50.034 4.154 66.32 12.545c16.265 8.37 29.181 20.728 38.792 36.972c9.61 16.265 14.425 34.018 14.425 53.196c.023 13.765-2.666 26.908-7.936 39.432z"/></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="https://github.com/WangWeiCheng-TJ"
+      target="_blank" rel="noopener" rel="me noopener noreferrer"
+      aria-label="Brands/Github"
+    ><svg style="height: 1em;" fill="currentColor" viewBox="3 3 18 18"><path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path></svg></a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+  
+    
+    
+    
+      
+      
+    
+<div class="pt-1 no-prose w-full">
+  <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+  <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
+    <div class="">
+      
+    </div>
+    <div class="">
+      
+        <a class="group flex text-right no-underline" href="/project-applied/ugentapp/">
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            >Taiwanese in Ghent, The Survivor Kit - A Serverless LLM-Agent Deployment</span
+            >
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+                Jan 6, 2026
+              
+            </span>
+          </span>
+          <span
+            class="mt-[-0.3rem] ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline">&rarr;</span></span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+
+</div>
+
+      </div>
+
+    </main>
+  </article>
+</div>
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by text-center">
+    © 2026 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by text-center">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

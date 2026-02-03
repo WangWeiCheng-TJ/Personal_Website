@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project-Researches | Wei-Cheng Wang&#39;s Personal Website</title>
+    <link>https://example.com/project-research/</link>
+      <atom:link href="https://example.com/project-research/index.xml" rel="self" type="application/rss+xml" />
+    <description>Project-Researches</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
+      <title>Project-Researches</title>
+      <link>https://example.com/project-research/</link>
+    </image>
+    
+    <item>
+      <title>From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance</title>
+      <link>https://example.com/project-research/phd/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project-research/phd/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;AI is here they say.&lt;/em&gt;&amp;rdquo; &lt;br&gt;
+We have witnessed how artificial intelligence has reshaped our perception of the world in the past years.
+AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.&lt;/p&gt;
+&lt;p&gt;My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.&lt;/p&gt;
+&lt;p&gt;The dissertation is built upon three core technical pillars:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#audio-visual-representation-learning&#34;&gt;Audio-Visual Representation Learning&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#transferability-assessment&#34;&gt;Source-Free Unsupervised Transferability Assessment&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &amp;ldquo;&lt;strong&gt;Opt-in&lt;/strong&gt;&amp;rdquo; Mechanism: From Audio to Visual&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Traditional privacy protection is fundamentally reactive (Opt-out). Users are forced to play an infinite game of &lt;em&gt;whack-a-mole&lt;/em&gt;, trying to list every sensitive attribute they want to hide.
+However, raw data is inherently &lt;strong&gt;&amp;ldquo;bundled&amp;rdquo;&lt;/strong&gt;: a simple voice command carries not just the semantic content, but also speaker&amp;rsquo;s gender, emotion, and identity. In the real world, it is impossible to exhaustively list and block every potential leakage. This &amp;ldquo;collect first, sanitize later&amp;rdquo; approach violates the core principle of &lt;strong&gt;GDPR&lt;/strong&gt;, leaving users vulnerable to future, unforeseen extraction techniques.&lt;/p&gt;
+&lt;p&gt;Addressing the trade-off between utility and privacy. I developed source-free and label-free obfuscation techniques that allow models to detect anomalies while stripping away sensitive biometric information, ensuring compliance with strict regulations like GDPR.&lt;/p&gt;
+&lt;p&gt;We pioneered a domain-agnostic, source-free, &amp;ldquo;&lt;strong&gt;opt-in&lt;/strong&gt;&amp;rdquo; mechanism using adversarial training. Originally designed for acoustic data (&lt;a href=&#34;https://example.com/publication/2022-pc/&#34;&gt;&lt;em&gt;IEEE Pervasive Computing, 1st author&lt;/em&gt;&lt;/a&gt;), this mechanism actively strips task-irrelevant biometric signatures at the feature level while preserving task applicability. The mechanism proved to be robust that we successfully adapted it to the visual domain (&lt;a href=&#34;https://example.com/publication/de-2024-privacy/&#34;&gt;&lt;em&gt;Applied Intelligence, 2nd author&lt;/em&gt;&lt;/a&gt;), validating its capability to protect both voice and facial privacy without redesigning the core logic.&lt;/p&gt;
+&lt;h3 id=&#34;audio-visual-representation-learning-br&#34;&gt;Audio-Visual Representation Learning: &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;Overcoming the reliance on expensive manual labels. I introduced contrastive learning frameworks that leverage the natural synchronization of sight and sound to learn robust feature representations in a self-supervised manner.&lt;/p&gt;
+&lt;h3 id=&#34;transferability-assessment-br&#34;&gt;Transferability Assessment: &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;Ensuring reliability in changing environments. I designed metrics to assess model transferability across different camera views and domains without requiring access to source data, enabling safer and more predictable deployment in the wild.&lt;/p&gt;
+&lt;p&gt;(This research culminated in a Ph.D. degree from Ghent University and 5 publications in top-tier journals/conferences.)&lt;/p&gt;
+&lt;p&gt;(Details to be followed)&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>SensCity - Acoustic Surveillance in Real-World</title>
+      <link>https://example.com/project-research/sensecity/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project-research/sensecity/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Why &amp;ldquo;Off-the-Shelf&amp;rdquo; Fails in the Wild:&lt;/strong&gt;&lt;br&gt;
+Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on &lt;em&gt;raw, unprocessed urban audio&lt;/em&gt; remains largely unverified.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Mission:&lt;/strong&gt;&lt;br&gt;
+In collaboration with &lt;em&gt;AsaSense&lt;/em&gt;, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to &lt;em&gt;stress-test&lt;/em&gt; two dominant paradigms: anomaly detection and sound tagging, and identify &lt;em&gt;why&lt;/em&gt; conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.&lt;/p&gt;
+&lt;h3 id=&#34;operational-context-the-senscity-testbed&#34;&gt;Operational Context (The SensCity Testbed)&lt;/h3&gt;
+&lt;p&gt;This project leveraged a real-world infrastructure to diagnose algorithmic limitations:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Raw Data Ingestion:&lt;/strong&gt;&lt;br&gt;
+Unlike academic datasets, the SensCity sensor network captures the &amp;ldquo;messy&amp;rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Audit:&lt;/strong&gt;&lt;br&gt;
+We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to &lt;em&gt;contextual blindness&lt;/em&gt; (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Conclusion:&lt;/strong&gt;&lt;br&gt;
+Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, &lt;em&gt;Context-Specific Modeling&lt;/em&gt; (sensor-specific baselines) is a prerequisite for operational reliability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proposed Resolution:&lt;/strong&gt;&lt;br&gt;
+Based on these findings, we formulated a &lt;em&gt;Context-Aware Design Framework&lt;/em&gt;, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;core-methodologies&#34;&gt;Core Methodologies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Source:&lt;/strong&gt; High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent &amp;amp; Rotterdam).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diagnosis Method:&lt;/strong&gt; Cross-context evaluation (Spatial &amp;amp; Temporal Domain Shift).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Algorithmic Focus:&lt;/strong&gt; Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architecture Design:&lt;/strong&gt; Feasibility analysis of &lt;em&gt;Hybrid Edge-Cloud&lt;/em&gt; pipelines to mitigate bandwidth bottlenecks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;technical-analysis--innovations&#34;&gt;Technical Analysis &amp;amp; Innovations&lt;/h3&gt;
+&lt;h4 id=&#34;1-diagnosing-the-generalization-fallacy&#34;&gt;1. Diagnosing the &amp;ldquo;Generalization Fallacy&amp;rdquo;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on &amp;ldquo;winter data&amp;rdquo; failed catastrophically during summer evenings due to changed human activity patterns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Solution:&lt;/strong&gt; Proposed a &lt;em&gt;Context-Specific Modeling&lt;/em&gt; approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-the-limits-of-semantic-tagging&#34;&gt;2. The Limits of Semantic Tagging&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Finding:&lt;/strong&gt; Standard sound taggers (trained on AudioSet) struggle with the &lt;em&gt;Open-Set Nature&lt;/em&gt; of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Proposal:&lt;/strong&gt; Suggested moving from &amp;ldquo;rigid classification&amp;rdquo; to &amp;ldquo;&lt;em&gt;unsupervised deviation detection&lt;/em&gt;&amp;rdquo; at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-architectural-scalability-edge-vs-cloud&#34;&gt;3. Architectural Scalability (Edge vs. Cloud)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Analysis:&lt;/strong&gt; Analyzed the trade-off between &lt;em&gt;transmission cost&lt;/em&gt; and &lt;em&gt;detection latency&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; Proposed a &lt;em&gt;&amp;ldquo;Filter-then-Forward&amp;rdquo;&lt;/em&gt; architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;outcomes--impact&#34;&gt;Outcomes &amp;amp; Impact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Empirical Evidence:&lt;/strong&gt; Provided one of the first comprehensive studies on the &lt;em&gt;limitations of transfer learning&lt;/em&gt; in acoustic surveillance using real-world, longitudinal data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Design Guidelines:&lt;/strong&gt; The findings established the foundation for &lt;em&gt;Privacy-Preserved &amp;amp; Adaptive Surveillance&lt;/em&gt;, directly influencing the design of subsequent research on privacy in surveillance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strategic Value:&lt;/strong&gt; Delivered critical insights to the industrial partner (AsaSense) on avoiding &amp;ldquo;technical debt&amp;rdquo; by pivoting from global models to adaptive, edge-based learning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Chapter 2: The AsaSense Project&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Detailed analysis of deployment constraints and algorithmic failures.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Intelligent Video Analytics &amp; Surveillance Systems</title>
+      <link>https://example.com/project-research/prephd/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project-research/prephd/</guid>
+      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;Extracting insights from chaos without labeled data.&lt;/p&gt;
+&lt;p&gt;This research project focuses on the unsupervised understanding of surveillance video, tackling the full pipeline from raw pixel processing to user-centric visualization.&lt;/p&gt;
+&lt;p&gt;The core analysis module leverages background modeling to extract foreground entities, constructing trajectory kinematics descriptors to capture motion patterns. By applying unsupervised clustering on these spatiotemporal features, the system automatically distinguishes between normal routines and anomalous events without requiring manual annotations.&lt;/p&gt;
+&lt;p&gt;Beyond detection, my Master&amp;rsquo;s thesis addressed the challenge of information presentation. I formulated the dynamic annotation placement as a spatiotemporal optimization problem. By enforcing coherence constraints, the algorithm calculates optimal label positions that maximize readability while minimizing occlusion of critical visual information, ensuring a seamless monitoring experience.&lt;/p&gt;
+&lt;p&gt;(Details and visual results to be followed)&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multimodal Driver Monitoring &amp; Temporal Face Analysis</title>
+      <link>https://example.com/project-research/drivermonitor/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project-research/drivermonitor/</guid>
+      <description>&lt;hr&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;p&gt;Multimodal Driver Safety System &amp;amp; Robust Face Analysis&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A holistic driver monitoring framework developed with ARTC, fusing visual temporal dynamics and ECG signals to enable early anomaly detection and proactive safety intervention.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;From Passive Recording to Proactive Intervention:&lt;/strong&gt;&lt;br&gt;
+Standard recognition models often fail in real-world cockpits due to inter-personal variability. A generic model struggles to distinguish between a driver&amp;rsquo;s natural features (e.g., droopy eyelids) and fatigue.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Goal:&lt;/strong&gt; &lt;br&gt;
+To build a safety-critical system capable of &lt;em&gt;early detection&lt;/em&gt; of compromised states by combining &lt;em&gt;non-intrusive visual monitoring&lt;/em&gt; with physiological signals (ECG), reducing false alarms and ensuring timely intervention.&lt;/p&gt;
+&lt;h3 id=&#34;operational-user-scenario-how-it-works&#34;&gt;Operational User Scenario (How it Works)&lt;/h3&gt;
+&lt;p&gt;To address the variability mentioned above, the system operates in a three-stage safety loop:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Initialization (The &amp;ldquo;Handshake&amp;rdquo;):&lt;/strong&gt; When the driver starts the car, the system silently records a short &amp;ldquo;calibration sequence&amp;rdquo; to learn their current appearance (e.g., wearing sunglasses, heavy makeup, or fatigue). This establishes a &lt;strong&gt;Personalized Normal Driving Model (PNDM)&lt;/strong&gt; for the specific trip.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Monitoring:&lt;/strong&gt; As the vehicle moves through changing environments (e.g., entering a dark tunnel or facing high-beam glare), the &lt;strong&gt;alignment-free visual descriptor&lt;/strong&gt; maintains robust tracking without being confused by lighting shifts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proactive Intervention:&lt;/strong&gt; If the driver shows signs of drowsiness (e.g., prolonged eye closure) &lt;em&gt;AND&lt;/em&gt; the ECG sensor detects physiological fatigue, the system triggers a &lt;strong&gt;multi-stage alert&lt;/strong&gt;—first warning the driver, and in critical cases, notifying fleet management or emergency services.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;core-methodologies&#34;&gt;Core Methodologies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Visual Algorithms:&lt;/strong&gt; Temporal Coherent Face Descriptor (alignment-free, robust to lighting).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Integration:&lt;/strong&gt; Multimodal Sensor Fusion (Vision + ECG).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modeling Strategy:&lt;/strong&gt; Sparse Representation-based Classification with &lt;em&gt;online dictionary learning&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation:&lt;/strong&gt; Co-developed and tested with the Automotive Research &amp;amp; Testing Center (ARTC).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;technical-architecture--innovations&#34;&gt;Technical Architecture &amp;amp; Innovations&lt;/h3&gt;
+&lt;h4 id=&#34;1-personalized-calibration-user-centric-design&#34;&gt;1. Personalized Calibration (User-Centric Design)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; &lt;br&gt;
+Drivers look different every day. Pre-trained generic models fail when users change appearance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Solution:&lt;/strong&gt; &lt;br&gt;
+Implemented a &lt;em&gt;rapid initialization phase&lt;/em&gt; that builds a dynamic baseline for each trip. The algorithm detects anomalies based on &lt;em&gt;relative deviation&lt;/em&gt; from this baseline, effectively filtering out noise from accessories or facial structure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-robust-temporal-modeling-visual-subsystem&#34;&gt;2. Robust Temporal Modeling (Visual Subsystem)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Alignment-Free:&lt;/strong&gt; &lt;br&gt;
+By leveraging &lt;em&gt;temporal consistency&lt;/em&gt; across continuous frames, we eliminated the need for fragile face alignment steps, ensuring stability even under rapid head movements.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lighting Invariance:&lt;/strong&gt; &lt;br&gt;
+Utilized &lt;em&gt;intensity contrast descriptors&lt;/em&gt; to maintain accuracy in challenging lighting conditions (e.g., nighttime driving validated in NCKU-driver database).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-proactive-safety-trigger-system-level&#34;&gt;3. Proactive Safety Trigger (System Level)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Multimodal Logic:&lt;/strong&gt; &lt;br&gt;
+Designed the visual module to work in tandem with ECG sensors. While ECG detects physiological drops in alertness, our visual module confirms behavioral lapses (e.g., nodding off).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;/strong&gt; &lt;br&gt;
+This cross-verification significantly reduces false positives, ensuring that alerts are only triggered for genuine safety risks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;outcomes--validation&#34;&gt;Outcomes &amp;amp; Validation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Industry Collaboration:&lt;/strong&gt; Co-developed with &lt;em&gt;ARTC&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Award-Winning:&lt;/strong&gt; Secured &lt;em&gt;Second Place&lt;/em&gt; at the &lt;em&gt;International ICT Innovative Services Awards&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance:&lt;/strong&gt; Achieved &lt;em&gt;real-time performance&lt;/em&gt; and superior accuracy over state-of-the-art baselines in nighttime scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;p&gt;Publications: &lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wang Wei-Cheng&lt;/strong&gt;, Ru-Yun Hsu, Chun-Rong Huang, Li-You Syu (2015). &lt;a href=&#34;https://example.com/publication/2015-snpd&#34;&gt;Video gender recognition using temporal coherent face descriptor.&lt;/a&gt; &lt;em&gt;IEEE/ACIS SNPD 2015&lt;/em&gt;.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Chien-Yu Chiou, &lt;strong&gt;Wang Wei-Cheng&lt;/strong&gt;, Shueh-Chou Lu, Chun-Rong Huang, Pau-Choo Chung, Yun-Yang Lai (2019). &lt;a href=&#34;https://example.com/publication/2020-tits&#34;&gt;Driver Monitoring Using Sparse Representation With Part-Based Temporal Face Descriptors.&lt;/a&gt;  &lt;em&gt;IEEE T-ITS&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
