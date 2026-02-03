@@ -299,13 +299,12 @@ Originally engineered for students, I collaborated with the current president of
 &lt;p&gt;&amp;ldquo;&lt;em&gt;AI is here they say.&lt;/em&gt;&amp;rdquo; &lt;br&gt;
 We have witnessed how artificial intelligence has reshaped our perception of the world in the past years.
 AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.&lt;/p&gt;
-&lt;p&gt;My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.&lt;/p&gt;
-&lt;p&gt;The dissertation is built upon three core technical pillars:&lt;/p&gt;
+&lt;p&gt;This part of my Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: &lt;strong&gt;privacy risks&lt;/strong&gt;, &lt;strong&gt;data scarcity&lt;/strong&gt;, and &lt;strong&gt;environmental domain shifts&lt;/strong&gt;. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.&lt;/p&gt;
+&lt;p&gt;The dissertation is built upon three core technical pillars, and culminated in a Ph.D. degree from Ghent University:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#audio-visual-representation-learning&#34;&gt;Audio-Visual Representation Learning&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#transferability-assessment&#34;&gt;Source-Free Unsupervised Transferability Assessment&lt;/a&gt; &lt;br&gt;
-(This research culminated in a Ph.D. degree from Ghent University.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#transferability-assessment&#34;&gt;Source-Free Unsupervised Transferability Assessment&lt;/a&gt; &lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;privacy-friendly-sensing-framework&#34;&gt;Privacy-Friendly Sensing Framework&lt;/h3&gt;
@@ -354,9 +353,12 @@ The core &amp;ldquo;opt-in&amp;rdquo; logic proved robust enough to be adapted t
 &lt;p&gt;To solve this, I leveraged the underexplored potentional of an unlikely guide: Randomness. I proposed a novel assessment framework using &lt;strong&gt;Randomly Initialized Neural Networks&lt;/strong&gt; (RINNs). My research revealed that while random networks contain no knowledge, their statistical structure provides a consistent, unbiased &amp;ldquo;universal ruler.&amp;rdquo; By measuring the &lt;strong&gt;Centered Kernel Alignment&lt;/strong&gt; (CKA) between a pre-trained model and a set of random networks, I derived a &amp;ldquo;fingerprint&amp;rdquo; of the model&amp;rsquo;s structural adaptability. This allows us to assess model compatibility with a new environment without ever touching the restricted source data or requiring ground-truth labels.&lt;/p&gt;
 &lt;p&gt;This turns model selection from a guessing game into a precise science.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Task-Agnostic Validation&lt;/strong&gt;: I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;High Correlation&lt;/strong&gt;: Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Operational Efficiency&lt;/strong&gt;: It acts as a &amp;ldquo;Source-Free Compass,&amp;rdquo; allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Task-Agnostic Validation&lt;/strong&gt;: &lt;br&gt;
+I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;High Correlation&lt;/strong&gt;: &lt;br&gt;
+Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operational Efficiency&lt;/strong&gt;: &lt;br&gt;
+It acts as a &amp;ldquo;Source-Free Compass,&amp;rdquo; allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The results has been published in &lt;a href=&#34;http://localhost:1313/publication/wang-2025-source/&#34;&gt;&lt;em&gt;Sensors, 1st author&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;</description>

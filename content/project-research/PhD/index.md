@@ -14,13 +14,13 @@ tags:
 We have witnessed how artificial intelligence has reshaped our perception of the world in the past years. 
 AlphaFold 2 achieved decades of work within a few weeks on predicting protein structures to accelerate medical breakthroughs. Meanwhile, GNoME discovered 380k new structures within a few months, which is equivalent to 800 years of work using the traditional way. However, we have also seen some domains struggle to apply state-of-the-art research to real-world applications. Surveillance, the chaotic, unscripted environment of our streets, constrained by privacy, scarcity, and unpredictability, is one of them.
 
-My Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: privacy risks, data scarcity, and environmental domain shifts. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.
+This part of my Ph.D. research tackles the critical bottlenecks and bridges the gap between academic research and real-world deployment on different aspects: **privacy risks**, **data scarcity**, and **environmental domain shifts**. This project is not merely a collection of frameworks designed to extract marginal accuracy gains on scripted datasets; it is about how we can adapt advanced models to handle the chaotic, constrained, and unscripted disorder of the real world.
 
-The dissertation is built upon three core technical pillars:
+The dissertation is built upon three core technical pillars, and culminated in a Ph.D. degree from Ghent University:
 * [Privacy-Friendly Sensing Framework](#privacy-friendly-sensing-framework) <br>
 * [Audio-Visual Representation Learning](#audio-visual-representation-learning) <br>
 * [Source-Free Unsupervised Transferability Assessment](#transferability-assessment) <br>
-(This research culminated in a Ph.D. degree from Ghent University.)
+
 ---
 
 
@@ -73,9 +73,12 @@ One of the greatest hurdle in large-scale deployment is **domain shift**: a mode
 To solve this, I leveraged the underexplored potentional of an unlikely guide: Randomness. I proposed a novel assessment framework using **Randomly Initialized Neural Networks** (RINNs). My research revealed that while random networks contain no knowledge, their statistical structure provides a consistent, unbiased "universal ruler." By measuring the **Centered Kernel Alignment** (CKA) between a pre-trained model and a set of random networks, I derived a "fingerprint" of the model's structural adaptability. This allows us to assess model compatibility with a new environment without ever touching the restricted source data or requiring ground-truth labels.
 
 This turns model selection from a guessing game into a precise science.
- - **Task-Agnostic Validation**: I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection.
- - **High Correlation**: Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance. 
- - **Operational Efficiency**: It acts as a "Source-Free Compass," allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty.
+ - **Task-Agnostic Validation**: <br>
+ I validated this metric across a spectrum of real-world surveillance tasks, ranging from object tagging and event classification to the more abstract anomaly detection.
+ - **High Correlation**: <br>
+ Evaluating on diverse real-world datasets, my metric achieved a Kendall’s $\tau$ correlation of 0.95 with actual model performance. 
+ - **Operational Efficiency**: <br>
+ It acts as a "Source-Free Compass," allowing engineers to instantly identify the best-suited model for a specific camera feed before deployment, ensuring reliability while strictly respecting data sovereignty.
 
 The results has been published in [_Sensors, 1st author_](/publication/wang-2025-source/).
 
