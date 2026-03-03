@@ -107,7 +107,7 @@ work:
       - Organized and executed multiple cultural and social events to foster community engagement and support for students and residents.
       - Initiated and established a city-wide mentor-mentee program during the pandemic, creating a structured support network for new and existing members.
 
-  - position: Editor
+  - position: Tech Contributing Editor
     company_name: Taipei Representative Office in the EU and Belgium, Science and Technology Division.
     company_url: ''
     company_logo: ''
@@ -115,7 +115,9 @@ work:
     date_end: 2022-05-21
     summary: |
       Key Achievements:
-      - Analyzed and reported on key AI technology and policy developments within the European Union, translating complex technical information into concise strategic briefing reports.
+      - Appointed under the Global Research Network Linkage Program to bridge the technology information gap between the European Union and Taiwan's enterprise and government sectors. 
+      - Analyzed key AI technology and policy developments within the European Union, translating complex technical frameworks into concise strategic briefing reports for government and enterprise stakeholders.
+      - Synthesized high-level EU technical projects into actionable intelligence, demonstrating a strong grasp of the European tech landscape and B2B tech communication.
 
   - position: Research Assistant
     company_name: Computer Vision Lab, Academia Sinica in Taiwan
