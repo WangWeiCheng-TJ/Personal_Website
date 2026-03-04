@@ -21,7 +21,7 @@ sections:
         Beyond theory, I actively adopt emerging paradigms such as agentic workflows to rapidly architect Proofs of Concepts (PoCs) that are not just theoretically sound, but operationally viable.
         </p>
       # Show a call-to-action button under your biography? (optional)
-      button:
+      button2:
         text: Download CV (Research-focused)
         url: uploads/General_CV_0204.pdf
       button:
