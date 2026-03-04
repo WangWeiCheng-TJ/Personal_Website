@@ -1,5 +1,5 @@
 ---
-title: SensCity - Acoustic Surveillance in Real-World
+title: SenseCity - Acoustic Surveillance in Real-World
 date: 2021-06-30
 tags:
   - Urban Acoustic Surveillance
@@ -11,9 +11,9 @@ tags:
 ---
 <div style="text-align: justify;">
 
-SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance
+SenseCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance
 
-> **A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.**
+> **A strategic research collaboration with the SenseCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.**
 
 ### The Research Gap & Motivation
 **Why "Off-the-Shelf" Fails in the Wild:**<br>
@@ -22,10 +22,10 @@ Most acoustic surveillance systems are validated on clean, curated datasets. How
 **Our Mission:**<br>
 In collaboration with _AsaSense_, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to _stress-test_ two dominant paradigms: anomaly detection and sound tagging, and identify *why* conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.
 
-### Operational Context (The SensCity Testbed)
+### Operational Context (The SenseCity Testbed)
 This project leveraged a real-world infrastructure to diagnose algorithmic limitations:
 1.  **Raw Data Ingestion:**<br>
-    Unlike academic datasets, the SensCity sensor network captures the "messy" reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.
+    Unlike academic datasets, the SenseCity sensor network captures the "messy" reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.
 2.  **System Audit:**<br>
     We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to _contextual blindness_ (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.
 3.  **Core Conclusion:**<br>
