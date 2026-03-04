@@ -22,8 +22,11 @@ sections:
         </p>
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download CV
+        text: Download CV (Research-focused)
         url: uploads/General_CV_0204.pdf
+      button:
+        text: Download CV (Industry-focused)
+        url: uploads/AppliedScientist_0304.pdf
     design:
       css_class: dark
       background:
