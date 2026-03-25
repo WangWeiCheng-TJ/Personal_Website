@@ -22,8 +22,8 @@ sections:
         </p>
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download CV (Industry-focused)
-        url: uploads/Wei-Cheng Wang Resume.pdf
+        text: Download CV
+        url: uploads/AppliedScientist_0325.pdf
     design:
       css_class: dark
       background:
