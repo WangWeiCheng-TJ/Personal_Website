@@ -23,7 +23,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/AppliedScientist_0325.pdf
+        url: uploads/WeiChengWang_CV_0327.pdf
     design:
       css_class: dark
       background:

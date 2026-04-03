@@ -29,7 +29,7 @@ I recognized that previous platforms failed due to **high operational friction**
 * **Scope:** Requirement Analysis → System Architecture → AI Agent Development → CI/CD
 
 ### Tech Stack
-* **AI & NLP:** Python, Gemma 3 4B (LLM), Feedparser (RSS), Prompt Engineering
+* **AI & NLP:** Python, Gemma 4 27B (LLM), Feedparser (RSS), Prompt Engineering
 * **Backend / CMS:** Google Sheets API (NoSQL/CMS), Google Apps Script, Event-Driven ETL
 * **Frontend:** Next.js 14 (App Router), TypeScript, Tailwind CSS, ISR
 * **Infrastructure:** Vercel (Serverless), GitHub Actions (CI/CD), Docker
@@ -41,8 +41,8 @@ I recognized that previous platforms failed due to **high operational friction**
 #### 1. AI-Driven Intelligence Pipeline (Event-Driven ETL)
 The core innovation is an automated pipeline that monitors, analyzes, and translates local news without human intervention, effectively functioning as a _domain-specific AI agent_:
 * **Data Ingestion:** A Python-based agent continuously monitors municipal RSS feeds (stad.gent) and emergency alerts.
-* **LLM Integration (Gemma 3 4B):**
-    * Deployed **Gemma 3 4B** to perform semantic analysis on raw Dutch texts.
+* **LLM Integration (Gemma 4 27B):**
+    * Deployed **Gemma 4 27B** to perform semantic analysis on raw Dutch texts.
     * **Structured Prompt Engineering:** Designed rigorous prompt templates to enforce valid JSON output from the LLM. Tasks include: Importance Grading (Level 1-3), Audience Classification (Student vs. Resident), Traditional Chinese Translation, and Summarization.
     * **Robustness:** Implemented retry logic with exponential backoff to handle API rate limits and ensure pipeline reliability.
 * **ETL Execution:** Structured data is automatically validated and written back to the Google Sheets CMS, triggering frontend updates.
@@ -71,7 +71,7 @@ Designed a cost-efficient architecture suitable for long-term operation:
 * [**Live Website**](https://ugenttsasurvivorkit.vercel.app/)
 * [**GitHub Repository**](https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit)
 * [**AI Agent Source Code**](https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/daily_news_agent.py) - *Python agent for scraping and LLM processing.*
-* [**Prompt Engineering Templates**](https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt) - *Structured prompts for Gemma 3-4B.*
+* [**Prompt Engineering Templates**](https://github.com/WangWeiCheng-TJ/UGentTSA-SurvivorKit/blob/main/prompts/news_analysis.txt) - *Structured prompts for Gemma 4-27B.*
 
 </div>
 
