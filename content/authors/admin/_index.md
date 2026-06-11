@@ -11,7 +11,7 @@ last_name: Wang
 
 # Status emoji
 status:
-  icon: ☕️
+  # icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,12 +20,17 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Ph.D.
+role: | 
+  Ph.D. <br> Identifying where lab-validated ML breaks in the field.
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: IDLab, Department of Information and Technology, Ghent University-imec
-    url: https://decide.ugent.be/
+  - name: |
+      Based in Ghent until August 2026, returning to Taiwan thereafter.
+  - name: |
+      Open to AS / RE roles, remote interviews available now.
+  # - name: IDLab, Department of Information and Technology, Ghent University-imec
+  #   url: https://decide.ugent.be/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.

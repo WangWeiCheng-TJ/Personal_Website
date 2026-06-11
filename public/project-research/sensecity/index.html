@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: February 3, 2026 --><html lang="en-us" dir="ltr"
+<!-- Last Published: June 11, 2026 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -41,18 +41,7 @@
   
     
   
-  <meta name="description" content="SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance
-A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.
-The Research Gap &amp; Motivation Why &ldquo;Off-the-Shelf&rdquo; Fails in the Wild:
-Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on raw, unprocessed urban audio remains largely unverified.
-Our Mission:
-In collaboration with AsaSense, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to stress-test two dominant paradigms: anomaly detection and sound tagging, and identify why conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.
-Operational Context (The SensCity Testbed) This project leveraged a real-world infrastructure to diagnose algorithmic limitations:
-Raw Data Ingestion:
-Unlike academic datasets, the SensCity sensor network captures the &ldquo;messy&rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations. System Audit:
-We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to contextual blindness (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure. Core Conclusion:
-Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, Context-Specific Modeling (sensor-specific baselines) is a prerequisite for operational reliability. Proposed Resolution:
-Based on these findings, we formulated a Context-Aware Design Framework, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life. Core Methodologies Data Source: High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent &amp; Rotterdam). Diagnosis Method: Cross-context evaluation (Spatial &amp; Temporal Domain Shift). Algorithmic Focus: Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models. Architecture Design: Feasibility analysis of Hybrid Edge-Cloud pipelines to mitigate bandwidth bottlenecks. Technical Analysis &amp; Innovations 1. Diagnosing the &ldquo;Generalization Fallacy&rdquo; The Problem: We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on &ldquo;winter data&rdquo; failed catastrophically during summer evenings due to changed human activity patterns. The Solution: Proposed a Context-Specific Modeling approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval. 2. The Limits of Semantic Tagging The Finding: Standard sound taggers (trained on AudioSet) struggle with the Open-Set Nature of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment. The Proposal: Suggested moving from &ldquo;rigid classification&rdquo; to &ldquo;unsupervised deviation detection&rdquo; at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter. 3. Architectural Scalability (Edge vs. Cloud) Analysis: Analyzed the trade-off between transmission cost and detection latency. Recommendation: Proposed a &ldquo;Filter-then-Forward&rdquo; architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy. Outcomes &amp; Impact Empirical Evidence: Provided one of the first comprehensive studies on the limitations of transfer learning in acoustic surveillance using real-world, longitudinal data. Design Guidelines: The findings established the foundation for Privacy-Preserved &amp; Adaptive Surveillance, directly influencing the design of subsequent research on privacy in surveillance. Strategic Value: Delivered critical insights to the industrial partner (AsaSense) on avoiding &ldquo;technical debt&rdquo; by pivoting from global models to adaptive, edge-based learning. Resources Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints and algorithmic failures. " />
+  <meta name="description" content="A two-year industrial collaboration with AsaSense, deploying a context-aware acoustic surveillance system across Ghent and Rotterdam at 5000&#43; hour scale. The study surfaced concrete lab-to-field failure modes that anchored three subsequent PhD research lines." />
 
   
   <link rel="alternate" hreflang="en-us" href="http://localhost:1313/project-research/sensecity/" />
@@ -195,65 +184,8 @@ Based on these findings, we formulated a Context-Aware Design Framework, advocat
   
   <meta property="og:site_name" content="Wei-Cheng Wang&#39;s Personal Website" />
   <meta property="og:url" content="http://localhost:1313/project-research/sensecity/" />
-  <meta property="og:title" content="SensCity - Acoustic Surveillance in Real-World | Wei-Cheng Wang&#39;s Personal Website" />
-  <meta property="og:description" content="
-SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance
-
-A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.
-
-The Research Gap &amp; Motivation
-Why &ldquo;Off-the-Shelf&rdquo; Fails in the Wild:
-Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on raw, unprocessed urban audio remains largely unverified.
-Our Mission:
-In collaboration with AsaSense, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to stress-test two dominant paradigms: anomaly detection and sound tagging, and identify why conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.
-Operational Context (The SensCity Testbed)
-This project leveraged a real-world infrastructure to diagnose algorithmic limitations:
-
-Raw Data Ingestion:
-Unlike academic datasets, the SensCity sensor network captures the &ldquo;messy&rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.
-System Audit:
-We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to contextual blindness (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.
-Core Conclusion:
-Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, Context-Specific Modeling (sensor-specific baselines) is a prerequisite for operational reliability.
-Proposed Resolution:
-Based on these findings, we formulated a Context-Aware Design Framework, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life.
-
-
-Core Methodologies
-
-Data Source: High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent &amp; Rotterdam).
-Diagnosis Method: Cross-context evaluation (Spatial &amp; Temporal Domain Shift).
-Algorithmic Focus: Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models.
-Architecture Design: Feasibility analysis of Hybrid Edge-Cloud pipelines to mitigate bandwidth bottlenecks.
-
-Technical Analysis &amp; Innovations
-1. Diagnosing the &ldquo;Generalization Fallacy&rdquo;
-
-The Problem: We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on &ldquo;winter data&rdquo; failed catastrophically during summer evenings due to changed human activity patterns.
-The Solution: Proposed a Context-Specific Modeling approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval.
-
-2. The Limits of Semantic Tagging
-
-The Finding: Standard sound taggers (trained on AudioSet) struggle with the Open-Set Nature of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment.
-The Proposal: Suggested moving from &ldquo;rigid classification&rdquo; to &ldquo;unsupervised deviation detection&rdquo; at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter.
-
-3. Architectural Scalability (Edge vs. Cloud)
-
-Analysis: Analyzed the trade-off between transmission cost and detection latency.
-Recommendation: Proposed a &ldquo;Filter-then-Forward&rdquo; architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy.
-
-Outcomes &amp; Impact
-
-Empirical Evidence: Provided one of the first comprehensive studies on the limitations of transfer learning in acoustic surveillance using real-world, longitudinal data.
-Design Guidelines: The findings established the foundation for Privacy-Preserved &amp; Adaptive Surveillance, directly influencing the design of subsequent research on privacy in surveillance.
-Strategic Value: Delivered critical insights to the industrial partner (AsaSense) on avoiding &ldquo;technical debt&rdquo; by pivoting from global models to adaptive, edge-based learning.
-
-
-Resources
-
-Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints and algorithmic failures.
-
-" /><meta property="og:image" content="http://localhost:1313/project-research/sensecity/featured.png" />
+  <meta property="og:title" content="SenseCity: 5000-Hour Real-World Acoustic Surveillance Study | Wei-Cheng Wang&#39;s Personal Website" />
+  <meta property="og:description" content="A two-year industrial collaboration with AsaSense, deploying a context-aware acoustic surveillance system across Ghent and Rotterdam at 5000&#43; hour scale. The study surfaced concrete lab-to-field failure modes that anchored three subsequent PhD research lines." /><meta property="og:image" content="http://localhost:1313/project-research/sensecity/featured.png" />
     <meta property="twitter:image" content="http://localhost:1313/project-research/sensecity/featured.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -262,7 +194,7 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
         content="2021-06-30T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-06-30T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2026-06-11T00:00:00&#43;00:00">
   
 
   
@@ -272,7 +204,7 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
   
 
 
-  <title>SensCity - Acoustic Surveillance in Real-World | Wei-Cheng Wang&#39;s Personal Website</title>
+  <title>SenseCity: 5000-Hour Real-World Acoustic Surveillance Study | Wei-Cheng Wang&#39;s Personal Website</title>
 
   
   
@@ -312,7 +244,6 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
   
   
   
-  
     
       
       
@@ -584,24 +515,16 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
         
       
     
-      
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-      
-    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -689,6 +612,7 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
         
       
     
+  
   
 
 
@@ -885,7 +809,7 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
           class="nav-link "
           
           href="/publication/"
-        >Papers</a
+        >Publication</a
         >
       </li>
       
@@ -1032,9 +956,9 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
         <ul class="hb-sidebar-list"><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/project-applied/job_hunter/"
+    href="/project-applied/multi_agent_poc/"
     
-  >Agentic Career Orchestrator - Multi-Agent LLM System for Strategic Job Triage &amp; Advisory
+  >Multi-Agent Orchestration PoC: Validating Design Decisions Before TPU Scale
     </a>
               
             </li><li class="flex flex-col "><a
@@ -1077,14 +1001,44 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/project-research/sensecity/"
     
-  >SensCity - Acoustic Surveillance in Real-World
+  >SenseCity: 5000-Hour Real-World Acoustic Surveillance Study
     </a>
   
     <ul class="hb-sidebar-mobile-toc"><li>
               <a
-                href="#"
+                href="#why-the-study-existed"
                 class="hb-docs-link"
-              ></a>
+              >Why the study existed</a>
+            </li>
+          <li>
+              <a
+                href="#system-architecture"
+                class="hb-docs-link"
+              >System architecture</a>
+            </li>
+          <li>
+              <a
+                href="#what-the-study-surfaced"
+                class="hb-docs-link"
+              >What the study surfaced</a>
+            </li>
+          <li>
+              <a
+                href="#outcomes"
+                class="hb-docs-link"
+              >Outcomes</a>
+            </li>
+          <li>
+              <a
+                href="#continue-reading"
+                class="hb-docs-link"
+              >Continue Reading</a>
+            </li>
+          <li>
+              <a
+                href="#resources"
+                class="hb-docs-link"
+              >Resources</a>
             </li>
           </ul>
   
@@ -1352,31 +1306,22 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
 
   <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#the-research-gap--motivation">The Research Gap &amp; Motivation</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#why-the-study-existed">Why the study existed</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#operational-context-the-senscity-testbed">Operational Context (The SensCity Testbed)</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#system-architecture">System architecture</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#core-methodologies">Core Methodologies</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#what-the-study-surfaced">What the study surfaced</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#technical-analysis--innovations">Technical Analysis &amp; Innovations</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#outcomes">Outcomes</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#1-diagnosing-the-generalization-fallacy">1. Diagnosing the “Generalization Fallacy”</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#continue-reading">Continue Reading</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#2-the-limits-of-semantic-tagging">2. The Limits of Semantic Tagging</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#3-architectural-scalability-edge-vs-cloud">3. Architectural Scalability (Edge vs. Cloud)</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#outcomes--impact">Outcomes &amp; Impact</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#resources">Resources</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#resources">Resources</a>
       </li></ul>
 
   
@@ -1409,7 +1354,7 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
 
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">SensCity - Acoustic Surveillance in Real-World</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">SenseCity: 5000-Hour Real-World Acoustic Surveillance Study</h1>
 
       <div class="mt-4 mb-16">
       <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jun 30, 2021</span>
@@ -1464,69 +1409,40 @@ Chapter 2: The AsaSense Project - Detailed analysis of deployment constraints an
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
         <div style="text-align: justify;">
-<p>SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance</p>
 <blockquote>
-<p><strong>A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.</strong></p>
+<p>A two-year industrial collaboration with AsaSense. The collaboration provided access to more than 5000 hours of continuous, uncurated audio recorded from an acoustic surveillance network across multiple sites in Ghent and Rotterdam.</p>
 </blockquote>
-<h3 id="the-research-gap--motivation">The Research Gap &amp; Motivation</h3>
-<p><strong>Why &ldquo;Off-the-Shelf&rdquo; Fails in the Wild:</strong><br>
-Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on <em>raw, unprocessed urban audio</em> remains largely unverified.</p>
-<p><strong>Our Mission:</strong><br>
-In collaboration with <em>AsaSense</em>, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to <em>stress-test</em> two dominant paradigms: anomaly detection and sound tagging, and identify <em>why</em> conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.</p>
-<h3 id="operational-context-the-senscity-testbed">Operational Context (The SensCity Testbed)</h3>
-<p>This project leveraged a real-world infrastructure to diagnose algorithmic limitations:</p>
-<ol>
-<li><strong>Raw Data Ingestion:</strong><br>
-Unlike academic datasets, the SensCity sensor network captures the &ldquo;messy&rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.</li>
-<li><strong>System Audit:</strong><br>
-We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to <em>contextual blindness</em> (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.</li>
-<li><strong>Core Conclusion:</strong><br>
-Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, <em>Context-Specific Modeling</em> (sensor-specific baselines) is a prerequisite for operational reliability.</li>
-<li><strong>Proposed Resolution:</strong><br>
-Based on these findings, we formulated a <em>Context-Aware Design Framework</em>, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life.</li>
-</ol>
-<hr>
-<h3 id="core-methodologies">Core Methodologies</h3>
+<h2 id="why-the-study-existed">Why the study existed</h2>
+<p>Most acoustic surveillance models are validated on curated benchmark datasets. Whether the same models hold up on raw, uninterrupted urban audio is a separate question that benchmarks cannot answer. The SenseCity collaboration provided access to that kind of stream: long-term, uncurated recordings from a real sensor network, with all the wind, overlap, and non-stationary background that benchmark data smooths out. The goal was not to deploy a model but to find out which paradigms break under those conditions, and why.</p>
+<h2 id="system-architecture">System architecture</h2>
+<p>Cloud-side event tagging across a continuous 5000+ hour stream is economically out of reach. The deployed pipeline addressed this by running on-device unsupervised anomaly detection as a first-pass filter, and escalating only flagged events to cloud-side analysis. This reduced downstream event-tagging workload by approximately 90 percent and made city-scale deployment viable.</p>
+<p>The on-device stage uses unsupervised deep autoregressive modeling rather than supervised classification, because the taxonomy of &ldquo;interesting events&rdquo; is not known in advance at deployment time. The cloud-side stage applies pre-trained tagging models to the filtered stream as an enrichment layer rather than a primary filter.</p>
+<h2 id="what-the-study-surfaced">What the study surfaced</h2>
+<p>The study exposed two structural problems that benchmark evaluation had smoothed out:</p>
+<p><strong>1. Context drift across deployment sites.</strong> Models trained on one site degraded sharply when applied to another, and a model fit to one time window failed under predictable seasonal and weekly shifts. The drift was not noise; it was structural across space and time, and global models could not absorb it.</p>
+<p><strong>2. The impossibility of enumerating in advance.</strong> Three observations turned out to share this same underlying problem. Pre-trained taggers fail on open-set events because the categories that matter at a site cannot be enumerated up front, and they are partly site-conditional. Privacy boundaries cannot be defended by enumerating sensitive attributes, because the attack surface is open-ended and changes as new extractors emerge, and what counts as sensitive is itself jurisdiction-dependent. And at deployment time, the downstream tasks a model will actually be asked to perform are not known when the encoder is trained, which rules out task-specific representations.</p>
+<p>These two problems motivated the three method-level research directions in the subsequent PhD work: representation learning for general-purpose multi-task deployment, source-free transferability that does not assume access to source data or labelled targets, and opt-in privacy in place of enumerable defenses.</p>
+<h2 id="outcomes">Outcomes</h2>
 <ul>
-<li><strong>Data Source:</strong> High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent &amp; Rotterdam).</li>
-<li><strong>Diagnosis Method:</strong> Cross-context evaluation (Spatial &amp; Temporal Domain Shift).</li>
-<li><strong>Algorithmic Focus:</strong> Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models.</li>
-<li><strong>Architecture Design:</strong> Feasibility analysis of <em>Hybrid Edge-Cloud</em> pipelines to mitigate bandwidth bottlenecks.</li>
+<li>Empirical evidence on how transfer learning behaves on real-world, longitudinal acoustic streams, drawn from one of the few studies with access to data at this scale and duration</li>
+<li>A context-aware deployment design that reduced cloud-side event-tagging workload by approximately 90 percent through edge-side filtering</li>
+<li>Two structural problems that became the empirical foundation for the subsequent PhD research line: context drift, and the impossibility of enumerating downstream tasks, attack surfaces, and event categories in advance</li>
 </ul>
-<h3 id="technical-analysis--innovations">Technical Analysis &amp; Innovations</h3>
-<h4 id="1-diagnosing-the-generalization-fallacy">1. Diagnosing the &ldquo;Generalization Fallacy&rdquo;</h4>
+<h2 id="continue-reading">Continue Reading</h2>
 <ul>
-<li><strong>The Problem:</strong> We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on &ldquo;winter data&rdquo; failed catastrophically during summer evenings due to changed human activity patterns.</li>
-<li><strong>The Solution:</strong> Proposed a <em>Context-Specific Modeling</em> approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval.</li>
+<li><a href="/project-research/phd/"><strong>Subsequent PhD Research Line</strong></a></li>
 </ul>
-<h4 id="2-the-limits-of-semantic-tagging">2. The Limits of Semantic Tagging</h4>
+<h2 id="resources">Resources</h2>
 <ul>
-<li><strong>The Finding:</strong> Standard sound taggers (trained on AudioSet) struggle with the <em>Open-Set Nature</em> of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment.</li>
-<li><strong>The Proposal:</strong> Suggested moving from &ldquo;rigid classification&rdquo; to &ldquo;<em>unsupervised deviation detection</em>&rdquo; at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter.</li>
-</ul>
-<h4 id="3-architectural-scalability-edge-vs-cloud">3. Architectural Scalability (Edge vs. Cloud)</h4>
-<ul>
-<li><strong>Analysis:</strong> Analyzed the trade-off between <em>transmission cost</em> and <em>detection latency</em>.</li>
-<li><strong>Recommendation:</strong> Proposed a <em>&ldquo;Filter-then-Forward&rdquo;</em> architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy.</li>
-</ul>
-<h3 id="outcomes--impact">Outcomes &amp; Impact</h3>
-<ul>
-<li><strong>Empirical Evidence:</strong> Provided one of the first comprehensive studies on the <em>limitations of transfer learning</em> in acoustic surveillance using real-world, longitudinal data.</li>
-<li><strong>Design Guidelines:</strong> The findings established the foundation for <em>Privacy-Preserved &amp; Adaptive Surveillance</em>, directly influencing the design of subsequent research on privacy in surveillance.</li>
-<li><strong>Strategic Value:</strong> Delivered critical insights to the industrial partner (AsaSense) on avoiding &ldquo;technical debt&rdquo; by pivoting from global models to adaptive, edge-based learning.</li>
-</ul>
-<hr>
-<h3 id="resources">Resources</h3>
-<ul>
-<li><a href="https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5" target="_blank" rel="noopener"><strong>Chapter 2: The AsaSense Project</strong></a> - <em>Detailed analysis of deployment constraints and algorithmic failures.</em></li>
+<li><a href="https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5" target="_blank" rel="noopener"><strong>PhD Thesis Chapter 2</strong></a><br>   <em>Detailed analysis of deployment constraints and algorithmic failures.</em></li>
 </ul>
 </div>
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2021-06-30T00:00:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2026-06-11T00:00:00.000Z">
     <span>Last updated on</span>
-    Jun 30, 2021</time>
+    Jun 11, 2026</time>
 
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
         
@@ -1538,17 +1454,15 @@ Based on these findings, we formulated a <em>Context-Aware Design Framework</em>
 
 <div class="flex justify-center">
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/urban-acoustic-surveillance/">Urban Acoustic Surveillance</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/acoustic-surveillance/">Acoustic Surveillance</a>
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/unsupervised-learning/">Unsupervised Learning</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/real-world-deployment/">Real-World Deployment</a>
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/domain-adaptation/">Domain Adaptation</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/anomaly-detection/">Anomaly Detection</a>
   
   <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/edge-cloud-architecture/">Edge-Cloud Architecture</a>
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/python/pytorch/">Python/Pytorch</a>
-  
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/generative-models/">Generative Models</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/industrial-collaboration/">Industrial Collaboration</a>
   
 </div>
 
@@ -1566,7 +1480,7 @@ Based on these findings, we formulated a <em>Context-Aware Design Framework</em>
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F&amp;text=SensCity&#43;-&#43;Acoustic&#43;Surveillance&#43;in&#43;Real-World"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F&amp;text=SenseCity%3A&#43;5000-Hour&#43;Real-World&#43;Acoustic&#43;Surveillance&#43;Study"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1584,7 +1498,7 @@ Based on these findings, we formulated a <em>Context-Aware Design Framework</em>
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F&amp;t=SensCity&#43;-&#43;Acoustic&#43;Surveillance&#43;in&#43;Real-World"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F&amp;t=SenseCity%3A&#43;5000-Hour&#43;Real-World&#43;Acoustic&#43;Surveillance&#43;Study"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1604,7 +1518,7 @@ Based on these findings, we formulated a <em>Context-Aware Design Framework</em>
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=SensCity%20-%20Acoustic%20Surveillance%20in%20Real-World&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F"
+    href="mailto:?subject=SenseCity%3A%205000-Hour%20Real-World%20Acoustic%20Surveillance%20Study&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1622,7 +1536,7 @@ Based on these findings, we formulated a <em>Context-Aware Design Framework</em>
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F&amp;title=SensCity&#43;-&#43;Acoustic&#43;Surveillance&#43;in&#43;Real-World"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F&amp;title=SenseCity%3A&#43;5000-Hour&#43;Real-World&#43;Acoustic&#43;Surveillance&#43;Study"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1640,7 +1554,7 @@ Based on these findings, we formulated a <em>Context-Aware Design Framework</em>
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=SensCity&#43;-&#43;Acoustic&#43;Surveillance&#43;in&#43;Real-World%20http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F"
+    href="whatsapp://send?text=SenseCity%3A&#43;5000-Hour&#43;Real-World&#43;Acoustic&#43;Surveillance&#43;Study%20http%3A%2F%2Flocalhost%3A1313%2Fproject-research%2Fsensecity%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -1697,7 +1611,7 @@ Based on these findings, we formulated a <em>Context-Aware Design Framework</em>
 
     
     <div class="text-sm font-bold text-neutral-700 dark:text-neutral-300">
-    Ph.D.
+    Ph.D. <br> Identifying where lab-validated ML breaks in the field.
     </div>
     
 

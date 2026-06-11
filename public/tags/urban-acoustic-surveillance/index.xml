@@ -13,25 +13,25 @@
     </image>
     
     <item>
-      <title>SensCity - Acoustic Surveillance in Real-World</title>
+      <title>SenseCity - Acoustic Surveillance in Real-World</title>
       <link>http://localhost:1313/project-research/sensecity/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-research/sensecity/</guid>
       <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
-&lt;p&gt;SensCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance&lt;/p&gt;
+&lt;p&gt;SenseCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;A strategic research collaboration with the SensCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A strategic research collaboration with the SenseCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Why &amp;ldquo;Off-the-Shelf&amp;rdquo; Fails in the Wild:&lt;/strong&gt;&lt;br&gt;
 Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on &lt;em&gt;raw, unprocessed urban audio&lt;/em&gt; remains largely unverified.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Our Mission:&lt;/strong&gt;&lt;br&gt;
 In collaboration with &lt;em&gt;AsaSense&lt;/em&gt;, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to &lt;em&gt;stress-test&lt;/em&gt; two dominant paradigms: anomaly detection and sound tagging, and identify &lt;em&gt;why&lt;/em&gt; conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.&lt;/p&gt;
-&lt;h3 id=&#34;operational-context-the-senscity-testbed&#34;&gt;Operational Context (The SensCity Testbed)&lt;/h3&gt;
+&lt;h3 id=&#34;operational-context-the-sensecity-testbed&#34;&gt;Operational Context (The SenseCity Testbed)&lt;/h3&gt;
 &lt;p&gt;This project leveraged a real-world infrastructure to diagnose algorithmic limitations:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Raw Data Ingestion:&lt;/strong&gt;&lt;br&gt;
-Unlike academic datasets, the SensCity sensor network captures the &amp;ldquo;messy&amp;rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.&lt;/li&gt;
+Unlike academic datasets, the SenseCity sensor network captures the &amp;ldquo;messy&amp;rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;System Audit:&lt;/strong&gt;&lt;br&gt;
 We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to &lt;em&gt;contextual blindness&lt;/em&gt; (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Core Conclusion:&lt;/strong&gt;&lt;br&gt;

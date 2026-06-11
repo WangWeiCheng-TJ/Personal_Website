@@ -1,69 +1,56 @@
 ---
-title: SenseCity - Acoustic Surveillance in Real-World
+title: "SenseCity: 5000-Hour Real-World Acoustic Surveillance Study"
 date: 2021-06-30
+lastmod: 2026-06-11
+draft: false
 tags:
-  - Urban Acoustic Surveillance
-  - Unsupervised Learning
-  - Domain Adaptation
+  - Acoustic Surveillance
+  - Real-World Deployment
+  - Anomaly Detection
   - Edge-Cloud Architecture
-  - Python/Pytorch
-  - Generative Models
+  - Industrial Collaboration
+
+featured: true
+page_type: projects
+
+summary: A two-year industrial collaboration with AsaSense, deploying a context-aware acoustic surveillance system across Ghent and Rotterdam at 5000+ hour scale. The study surfaced concrete lab-to-field failure modes that anchored three subsequent PhD research lines.
+
 ---
 <div style="text-align: justify;">
 
-SenseCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance
+> A two-year industrial collaboration with AsaSense. The collaboration provided access to more than 5000 hours of continuous, uncurated audio recorded from an acoustic surveillance network across multiple sites in Ghent and Rotterdam.
 
-> **A strategic research collaboration with the SenseCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.**
+## Why the study existed
 
-### The Research Gap & Motivation
-**Why "Off-the-Shelf" Fails in the Wild:**<br>
-Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on _raw, unprocessed urban audio_ remains largely unverified.
+Most acoustic surveillance models are validated on curated benchmark datasets. Whether the same models hold up on raw, uninterrupted urban audio is a separate question that benchmarks cannot answer. The SenseCity collaboration provided access to that kind of stream: long-term, uncurated recordings from a real sensor network, with all the wind, overlap, and non-stationary background that benchmark data smooths out. The goal was not to deploy a model but to find out which paradigms break under those conditions, and why.
 
-**Our Mission:**<br>
-In collaboration with _AsaSense_, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to _stress-test_ two dominant paradigms: anomaly detection and sound tagging, and identify *why* conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.
+## System architecture
 
-### Operational Context (The SenseCity Testbed)
-This project leveraged a real-world infrastructure to diagnose algorithmic limitations:
-1.  **Raw Data Ingestion:**<br>
-    Unlike academic datasets, the SenseCity sensor network captures the "messy" reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.
-2.  **System Audit:**<br>
-    We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to _contextual blindness_ (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.
-3.  **Core Conclusion:**<br>
-    Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, _Context-Specific Modeling_ (sensor-specific baselines) is a prerequisite for operational reliability.
-4.  **Proposed Resolution:**<br>
-    Based on these findings, we formulated a _Context-Aware Design Framework_, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life.
+Cloud-side event tagging across a continuous 5000+ hour stream is economically out of reach. The deployed pipeline addressed this by running on-device unsupervised anomaly detection as a first-pass filter, and escalating only flagged events to cloud-side analysis. This reduced downstream event-tagging workload by approximately 90 percent and made city-scale deployment viable.
 
----
+The on-device stage uses unsupervised deep autoregressive modeling rather than supervised classification, because the taxonomy of "interesting events" is not known in advance at deployment time. The cloud-side stage applies pre-trained tagging models to the filtered stream as an enrichment layer rather than a primary filter.
 
-### Core Methodologies
-* **Data Source:** High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent & Rotterdam).
-* **Diagnosis Method:** Cross-context evaluation (Spatial & Temporal Domain Shift).
-* **Algorithmic Focus:** Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models.
-* **Architecture Design:** Feasibility analysis of _Hybrid Edge-Cloud_ pipelines to mitigate bandwidth bottlenecks.
+## What the study surfaced
 
-### Technical Analysis & Innovations
+The study exposed two structural problems that benchmark evaluation had smoothed out:
 
-#### 1. Diagnosing the "Generalization Fallacy"
-* **The Problem:** We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on "winter data" failed catastrophically during summer evenings due to changed human activity patterns.
-* **The Solution:** Proposed a _Context-Specific Modeling_ approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval.
+**1. Context drift across deployment sites.** Models trained on one site degraded sharply when applied to another, and a model fit to one time window failed under predictable seasonal and weekly shifts. The drift was not noise; it was structural across space and time, and global models could not absorb it.
 
-#### 2. The Limits of Semantic Tagging
-* **The Finding:** Standard sound taggers (trained on AudioSet) struggle with the _Open-Set Nature_ of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment.
-* **The Proposal:** Suggested moving from "rigid classification" to "_unsupervised deviation detection_" at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter.
+**2. The impossibility of enumerating in advance.** Three observations turned out to share this same underlying problem. Pre-trained taggers fail on open-set events because the categories that matter at a site cannot be enumerated up front, and they are partly site-conditional. Privacy boundaries cannot be defended by enumerating sensitive attributes, because the attack surface is open-ended and changes as new extractors emerge, and what counts as sensitive is itself jurisdiction-dependent. And at deployment time, the downstream tasks a model will actually be asked to perform are not known when the encoder is trained, which rules out task-specific representations.
 
-#### 3. Architectural Scalability (Edge vs. Cloud)
-* **Analysis:** Analyzed the trade-off between _transmission cost_ and _detection latency_.
-* **Recommendation:** Proposed a _"Filter-then-Forward"_ architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy.
+These two problems motivated the three method-level research directions in the subsequent PhD work: representation learning for general-purpose multi-task deployment, source-free transferability that does not assume access to source data or labelled targets, and opt-in privacy in place of enumerable defenses.
 
-### Outcomes & Impact
-* **Empirical Evidence:** Provided one of the first comprehensive studies on the _limitations of transfer learning_ in acoustic surveillance using real-world, longitudinal data.
-* **Design Guidelines:** The findings established the foundation for _Privacy-Preserved & Adaptive Surveillance_, directly influencing the design of subsequent research on privacy in surveillance.
-* **Strategic Value:** Delivered critical insights to the industrial partner (AsaSense) on avoiding "technical debt" by pivoting from global models to adaptive, edge-based learning.
+## Outcomes
 
----
+- Empirical evidence on how transfer learning behaves on real-world, longitudinal acoustic streams, drawn from one of the few studies with access to data at this scale and duration
+- A context-aware deployment design that reduced cloud-side event-tagging workload by approximately 90 percent through edge-side filtering
+- Two structural problems that became the empirical foundation for the subsequent PhD research line: context drift, and the impossibility of enumerating downstream tasks, attack surfaces, and event categories in advance
 
-### Resources
-* [**Chapter 2: The AsaSense Project**](https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5) - *Detailed analysis of deployment constraints and algorithmic failures.*
+## Continue Reading
+* [**Subsequent PhD Research Line**](/project-research/phd/)
+
+## Resources
+* [**PhD Thesis Chapter 2**](https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5)<br> &nbsp; *Detailed analysis of deployment constraints and algorithmic failures.*
 
 
 </div>
