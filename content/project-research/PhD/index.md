@@ -48,7 +48,7 @@ Published in [Sensors, first author](/publication/wang-2025-source/).
 
 ## 3. Opt-in Privacy-Preserving ML {#opt-in-privacy}
 
-**The problem.** Privacy protection cannot be done by enumeration. Raw signals carry many bundled attributes (a voice command leaks gender, emotion, identity), and the attack surface is open-ended: new extractors emerge faster than any defence list can keep up. Opt-out defence is also incompatible with GDPR's data minimization principle. Worse, retraining the downstream model to defend against each new attack is operationally impractical, especially when the downstream model is owned by a different service provider.
+**The problem.** Privacy protection cannot be done by enumeration. Raw signals carry many bundled attributes (a voice command leaks gender, emotion, identity), and the attack surface is open-ended: new extractors emerge faster than any defence list can keep up. Opt-out defence is also incompatible with GDPR's purpose limitation principle. Worse, retraining the downstream model to defend against each new attack is operationally impractical, especially when the downstream model is owned by a different service provider.
 
 **The approach.** I reframed the problem as opt-in attribute exposure. A generative obfuscator, adapted from CycleGAN-VC2 and trained with adversarial learning, sits between the raw input and the downstream model. It produces sanitized signals that retain only the features required for the authorized task and suppress everything else. The downstream model does not need to be retrained, which makes the framework deployable as a plug-in on top of existing systems.
 
