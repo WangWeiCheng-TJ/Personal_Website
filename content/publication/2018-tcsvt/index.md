@@ -10,7 +10,7 @@ date: "2018-03-01T00:00:00Z"
 publishDate: "2018-03-01T00:00:00Z"
 publication_types: [Journal article]
 publication: "*IEEE Transactions on Circuits and Systems for Video Technology, vol. 28, no. 3*"
-publication_short: "*IEEE T-CSVT*"
+publication_short: "*IEEE T-CSVT* (Scopus Top 3%)"
 doi: 10.1109/TCSVT.2016.2629340
 
 abstract: "In this paper, we propose a novel annotation placement approach for revealing information about foreground objects in surveillance videos. To arrange positions of annotations, spatiotemporal coherence between annotations and foreground objects is applied. The annotation placement problem is formulated as an optimization problem with respect to spatiotemporal coherence of annotations and foreground objects. The optimization problem is effectively solved using Markov random fields. To the best of our knowledge, this paper is the first work that discusses and solves the annotation placement problem for surveillance videos by considering the relationships between annotations and foreground objects with trajectories. As shown in the experiments, the proposed approach can arrange annotations based on the moving trajectories of foreground objects and prevent the occlusions between different annotations and foreground objects. It also achieves better quantitative and qualitative results compared with state-of-the-art approaches."

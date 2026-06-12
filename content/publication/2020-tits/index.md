@@ -11,7 +11,7 @@ date: "2019-01-27T00:00:00Z"
 publishDate: "2019-01-27T00:00:00Z"
 publication_types: [Journal article]
 publication: "*IEEE Transactions on Intelligent Transportation Systems, vol. 21, no. 1*"
-publication_short: "*IEEE T-ITS*"
+publication_short: "*IEEE T-ITS* (Scopus Top 3%)"
 doi: 10.1109/TITS.2019.2892155
 
 abstract: "Many driver monitoring systems (DMSs) have been proposed to reduce the risk of human-caused accidents. Traditional DMSs focus on detecting specific predefined abnormal driving behaviors, such as drowsiness or distracted driving, using generic models trained with the data collected during abnormal driving. However, it is difficult to collect sufficient representative training data to construct generic detection models, which are applicable to all drivers. Consequently, this paper proposes a new personal-based hierarchical DMS (HDMS). During driving, the first layer of the proposed HDMS detects normal and abnormal driving behavior based on normal personal driving models represented by sparse representations. When abnormal driving behavior is detected, the second layer of the HDMS further determines whether the behavior is drowsy driving behavior or distracted driving behavior. The experimental results obtained for three datasets show that the proposed HDMS outperforms existing state-of-the-art DMS methods in detecting normal driving behavior, drowsy driving behavior, and distracted driving behavior."

@@ -9,7 +9,7 @@ date: "2022-10-01T00:00:00Z"
 publishDate: "2022-10-01T00:00:00Z"
 publication_types: [Journal article]
 publication: "*IEEE Pervasive Computing, vol. 21, no. 4*"
-publication_short: "*IEEE Pervasive Computing*"
+publication_short: "*IEEE Pervasive Computing* (Scopus Top 40%)"
 doi: 10.1109/MPRV.2022.3210377
 
 abstract: |-
