@@ -118,28 +118,11 @@ sections:
     design:
       view: citation
 
-  - block: markdown
+  - block: resume-awards
     id: awards
     content:
       title: Awards
-      text: |-
-        <p style="text-align: justify;">
-        <br><b>Best Master's Thesis Award - 2016</b></br> 
-        &nbsp; The Chinese Image Processing and Pattern Society
-        <br>&nbsp; The Chinese Institute of Electrical Engineering
-        <br><b>Honourary Member - 2016</b></br> 
-        &nbsp; The Phi Tau Phi Scholastic Honour Society
-        <br><b>Merit Award - 2015</b></br> 
-        &nbsp; Asia Pacific ICT Alliance (APICTA) Awards, R&D category, representing Taiwan
-        <br><b>1st place - 2015</b></br> 
-        &nbsp; International ICT Innovative Services Awards
-        <br><b>2nd place  - 2015</b></br> 
-        &nbsp; International ICT Innovative Services Awards
-        </p>
-
-    design:
-      # view: article-grid
-      columns: 1
+      username: admin
 
 
   # - block: markdown

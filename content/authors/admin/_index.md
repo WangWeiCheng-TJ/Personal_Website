@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Wang Wei-Cheng
+title: Wei-Cheng Wang
 
 # Name pronunciation (optional)
 name_pronunciation: 王偉丞
@@ -235,34 +235,22 @@ languages:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: Dual Master's Thesis Award
-    # url: https://www.coursera.org/learn/neural-networks-deep-learning
+    url: /publication/2018-tcsvt/
     date: 2016-08-16
     awarder: The Chinese Image Processing and Pattern Society & The Chinese Institute of Electrical Engineering
-    # icon: coursera
     summary: |
       My master's thesis, _Spatiotemporal Coherence based Annotation Placement for Surveillance Videos_, received national recognition from two distinct professional societies. It was awarded the Best Master's Thesis Award by the Chinese Image Processing and Pattern Society for its contributions to the field, and concurrently received the Excellent Master's Thesis Award from the Chinese Institute of Electrical Engineering for its technical excellence.
 
-  - title: Honourary Member
-    # url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: 2016-05-25
-    awarder: The Phi Tau Phi Scholastic Honour Society
-    # icon: coursera
-    summary: |
-      Under the recommendation of the College of Electrical Engineering and Computer Science of National Cheng Kung University, I was recognized as the honorary member of the Phi Tau Phi Scholastic Honour Society
-
   - title: Multiple International Awards
-    # url: https://www.coursera.org/learn/neural-networks-deep-learning
+    url: /project-tech/sysnopsis/
     date: 2015-11-21
     awarder: Asia Pacific ICT Alliance (APICTA) & International ICT Innovative Services Awards
-    # icon: coursera
     summary: |
       As team leader, I led our project, _Online Video Synopsis: Shorten Video Content for Flicking Through_, to secure three major international awards in 2015. We achieved First Place (USD $17,000 prize) for business potential and Second Place for innovation at the International ICT Innovative Services Awards. Concurrently, representing Taiwan as the national nominee, we won the Merit Award in the R&D category at the 17-economy Asia Pacific ICT Alliance (APICTA) Awards held in Sri Lanka.
 
-  - title: Multiple International Awards
-    # url: https://www.coursera.org/learn/neural-networks-deep-learning
+  - title: International ICT Innovative Services Awards
     date: 2015-10-31
-    awarder: Asia Pacific ICT Alliance (APICTA) & International ICT Innovative Services Awards
-    # icon: coursera
+    awarder: International ICT Innovative Services Awards
     summary: |
       Our project, _Innovative Personal Driver Monitoring System_, was recognized for its innovation in ICT applications, securing Second Place in its category at the International ICT Innovative Services Awards.
 ---

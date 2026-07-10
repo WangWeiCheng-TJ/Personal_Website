@@ -13,66 +13,37 @@
     </image>
     
     <item>
-      <title>SenseCity - Acoustic Surveillance in Real-World</title>
+      <title>SenseCity: 5000-Hour Real-World Acoustic Surveillance Study</title>
       <link>http://localhost:1313/project-research/sensecity/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-research/sensecity/</guid>
       <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
-&lt;p&gt;SenseCity x AsaSense: Critical Analysis of Urban Acoustic Surveillance&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;A strategic research collaboration with the SenseCity project (AsaSense), utilizing city-scale raw acoustic data to expose the failure modes of standard surveillance models and proposing context-aware architectural solutions.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A two-year industrial collaboration with AsaSense. The collaboration provided access to more than 5000 hours of continuous, uncurated audio recorded from an acoustic surveillance network across multiple sites in Ghent and Rotterdam.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;the-research-gap--motivation&#34;&gt;The Research Gap &amp;amp; Motivation&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Why &amp;ldquo;Off-the-Shelf&amp;rdquo; Fails in the Wild:&lt;/strong&gt;&lt;br&gt;
-Most acoustic surveillance systems are validated on clean, curated datasets. However, their performance on &lt;em&gt;raw, unprocessed urban audio&lt;/em&gt; remains largely unverified.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Our Mission:&lt;/strong&gt;&lt;br&gt;
-In collaboration with &lt;em&gt;AsaSense&lt;/em&gt;, we accessed a unique stream of continuous, uncurated audio from Ghent and Rotterdam. Instead of just deploying a standard model, our goal was to &lt;em&gt;stress-test&lt;/em&gt; two dominant paradigms: anomaly detection and sound tagging, and identify &lt;em&gt;why&lt;/em&gt; conventional paradigms fail in dynamic environments (e.g., temporal drift, open-set events), and propose robust alternatives.&lt;/p&gt;
-&lt;h3 id=&#34;operational-context-the-sensecity-testbed&#34;&gt;Operational Context (The SenseCity Testbed)&lt;/h3&gt;
-&lt;p&gt;This project leveraged a real-world infrastructure to diagnose algorithmic limitations:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Raw Data Ingestion:&lt;/strong&gt;&lt;br&gt;
-Unlike academic datasets, the SenseCity sensor network captures the &amp;ldquo;messy&amp;rdquo; reality of cities across two years: wind noise, overlapping soundscapes, and non-stationary backgrounds. Most importantly, without any annotations.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;System Audit:&lt;/strong&gt;&lt;br&gt;
-We applied SOTA approaches on anomaly detection and sound tagging models to this raw stream. The analysis revealed that global models generate unmanageable false alarms due to &lt;em&gt;contextual blindness&lt;/em&gt; (e.g., treating a weekend market as an anomaly because the model only knew weekday traffic), further causing operator fatigue and leading to system failure.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Core Conclusion:&lt;/strong&gt;&lt;br&gt;
-Our experiments conclusively proved that a single global model is insufficient for city-scale deployment. Instead, &lt;em&gt;Context-Specific Modeling&lt;/em&gt; (sensor-specific baselines) is a prerequisite for operational reliability.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proposed Resolution:&lt;/strong&gt;&lt;br&gt;
-Based on these findings, we formulated a &lt;em&gt;Context-Aware Design Framework&lt;/em&gt;, advocating for sensor-specific baselines and adaptive thresholding to handle the inherent variance of city life.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;core-methodologies&#34;&gt;Core Methodologies&lt;/h3&gt;
+&lt;h2 id=&#34;why-the-study-existed&#34;&gt;Why the study existed&lt;/h2&gt;
+&lt;p&gt;Most acoustic surveillance models are validated on curated benchmark datasets. Whether the same models hold up on raw, uninterrupted urban audio is a separate question that benchmarks cannot answer. The SenseCity collaboration provided access to that kind of stream: long-term, uncurated recordings from a real sensor network, with all the wind, overlap, and non-stationary background that benchmark data smooths out. The goal was not to deploy a model but to find out which paradigms break under those conditions, and why.&lt;/p&gt;
+&lt;h2 id=&#34;system-architecture&#34;&gt;System architecture&lt;/h2&gt;
+&lt;p&gt;Cloud-side event tagging across a continuous 5000+ hour stream is economically out of reach. The deployed pipeline addressed this by running on-device unsupervised anomaly detection as a first-pass filter, and escalating only flagged events to cloud-side analysis. This reduced downstream event-tagging workload by approximately 90 percent and made city-scale deployment viable.&lt;/p&gt;
+&lt;p&gt;The on-device stage uses unsupervised deep autoregressive modeling rather than supervised classification, because the taxonomy of &amp;ldquo;interesting events&amp;rdquo; is not known in advance at deployment time. The cloud-side stage applies pre-trained tagging models to the filtered stream as an enrichment layer rather than a primary filter.&lt;/p&gt;
+&lt;h2 id=&#34;what-the-study-surfaced&#34;&gt;What the study surfaced&lt;/h2&gt;
+&lt;p&gt;The study exposed two structural problems that benchmark evaluation had smoothed out:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Context drift across deployment sites.&lt;/strong&gt; Models trained on one site degraded sharply when applied to another, and a model fit to one time window failed under predictable seasonal and weekly shifts. The drift was not noise; it was structural across space and time, and global models could not absorb it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. The impossibility of enumerating in advance.&lt;/strong&gt; Three observations turned out to share this same underlying problem. Pre-trained taggers fail on open-set events because the categories that matter at a site cannot be enumerated up front, and they are partly site-conditional. Privacy boundaries cannot be defended by enumerating sensitive attributes, because the attack surface is open-ended and changes as new extractors emerge, and what counts as sensitive is itself jurisdiction-dependent. And at deployment time, the downstream tasks a model will actually be asked to perform are not known when the encoder is trained, which rules out task-specific representations.&lt;/p&gt;
+&lt;p&gt;These two problems motivated the three method-level research directions in the subsequent PhD work: representation learning for general-purpose multi-task deployment, source-free transferability that does not assume access to source data or labelled targets, and opt-in privacy in place of enumerable defenses.&lt;/p&gt;
+&lt;h2 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Data Source:&lt;/strong&gt; High-fidelity, long-term raw acoustic logs from the AsaSense deployment (Ghent &amp;amp; Rotterdam).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Diagnosis Method:&lt;/strong&gt; Cross-context evaluation (Spatial &amp;amp; Temporal Domain Shift).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Algorithmic Focus:&lt;/strong&gt; Unsupervised Deep Autoregressive Modeling (WaveNet) vs. Pre-trained Tagging Models.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Architecture Design:&lt;/strong&gt; Feasibility analysis of &lt;em&gt;Hybrid Edge-Cloud&lt;/em&gt; pipelines to mitigate bandwidth bottlenecks.&lt;/li&gt;
+&lt;li&gt;Empirical evidence on how transfer learning behaves on real-world, longitudinal acoustic streams, drawn from one of the few studies with access to data at this scale and duration&lt;/li&gt;
+&lt;li&gt;A context-aware deployment design that reduced cloud-side event-tagging workload by approximately 90 percent through edge-side filtering&lt;/li&gt;
+&lt;li&gt;Two structural problems that became the empirical foundation for the subsequent PhD research line: context drift, and the impossibility of enumerating downstream tasks, attack surfaces, and event categories in advance&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;technical-analysis--innovations&#34;&gt;Technical Analysis &amp;amp; Innovations&lt;/h3&gt;
-&lt;h4 id=&#34;1-diagnosing-the-generalization-fallacy&#34;&gt;1. Diagnosing the &amp;ldquo;Generalization Fallacy&amp;rdquo;&lt;/h4&gt;
+&lt;h2 id=&#34;continue-reading&#34;&gt;Continue Reading&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; We demonstrated that state-of-the-art anomaly detectors suffer from severe concept drift. A model trained on &amp;ldquo;winter data&amp;rdquo; failed catastrophically during summer evenings due to changed human activity patterns.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The Solution:&lt;/strong&gt; Proposed a &lt;em&gt;Context-Specific Modeling&lt;/em&gt; approach, proving that training lightweight, dedicated models for each sensor location significantly outperforms a massive, generic global model in anomaly retrieval.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/project-research/phd/&#34;&gt;&lt;strong&gt;Subsequent PhD Research Line&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;2-the-limits-of-semantic-tagging&#34;&gt;2. The Limits of Semantic Tagging&lt;/h4&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;The Finding:&lt;/strong&gt; Standard sound taggers (trained on AudioSet) struggle with the &lt;em&gt;Open-Set Nature&lt;/em&gt; of cities. They force novel urban sounds into rigid, pre-defined categories, leading to semantic misalignment.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The Proposal:&lt;/strong&gt; Suggested moving from &amp;ldquo;rigid classification&amp;rdquo; to &amp;ldquo;&lt;em&gt;unsupervised deviation detection&lt;/em&gt;&amp;rdquo; at the edge, using tagging only as a secondary enrichment layer in the cloud, rather than a primary filter.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;3-architectural-scalability-edge-vs-cloud&#34;&gt;3. Architectural Scalability (Edge vs. Cloud)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Analysis:&lt;/strong&gt; Analyzed the trade-off between &lt;em&gt;transmission cost&lt;/em&gt; and &lt;em&gt;detection latency&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; Proposed a &lt;em&gt;&amp;ldquo;Filter-then-Forward&amp;rdquo;&lt;/em&gt; architecture where edge nodes perform lightweight unsupervised screening, transmitting only potential anomalies to the cloud. This reduces bandwidth consumption by orders of magnitude while preserving privacy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;outcomes--impact&#34;&gt;Outcomes &amp;amp; Impact&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Empirical Evidence:&lt;/strong&gt; Provided one of the first comprehensive studies on the &lt;em&gt;limitations of transfer learning&lt;/em&gt; in acoustic surveillance using real-world, longitudinal data.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Design Guidelines:&lt;/strong&gt; The findings established the foundation for &lt;em&gt;Privacy-Preserved &amp;amp; Adaptive Surveillance&lt;/em&gt;, directly influencing the design of subsequent research on privacy in surveillance.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Strategic Value:&lt;/strong&gt; Delivered critical insights to the industrial partner (AsaSense) on avoiding &amp;ldquo;technical debt&amp;rdquo; by pivoting from global models to adaptive, edge-based learning.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Chapter 2: The AsaSense Project&lt;/strong&gt;&lt;/a&gt; - &lt;em&gt;Detailed analysis of deployment constraints and algorithmic failures.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://biblio.ugent.be/publication/01KAZFSQQ1Z5TWS14MDF57RWX5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;PhD Thesis Chapter 2&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;   &lt;em&gt;Detailed analysis of deployment constraints and algorithmic failures.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</description>
     </item>
