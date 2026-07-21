@@ -19,7 +19,7 @@ sections:
 
         In 2025, I completed my Ph.D. at Ghent University-imec, and was previously a RA at Academia Sinica. Both my PhD and MSc research were conducted on real-world data, covering 5000+ hours of uncurated audio streams and extended video across multiple deployment sites.
 
-        My research focuses on building solutions at the mechanism-level while under real-world constraints. Recognition includes 12 peer-reviewed articles (7 journals, ICIP oral), 140+ citations, APICTA award, and Top 3% master's graduate honor.
+        My research focuses on building solutions at the mechanism-level while under real-world constraints. Recognition includes 13 peer-reviewed articles (7 journals, ICIP oral), 150+ citations, APICTA award, and Top 3% master's graduate honor.
         </p>
       # Show a call-to-action button under your biography? (optional)
       button:
