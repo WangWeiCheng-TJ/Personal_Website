@@ -15,7 +15,7 @@ sections:
       username: admin
       text: |-
         <p style="text-align: justify;">
-        I am currently working on synthetic data generation, extending my PhD research line to cross-environment ML transfer and explainable AI. Recently built a cost-efficient multi-agent LLM orchestration pipeline as PoC, and submitted a Google TPU Research Cloud proposal.
+        I am currently working on edge-cloud vision-language systems, quantizing the vision encoder for on-device deployment on a Qualcomm NPU, with a manuscript in preparation on where evaluation breaks between development and deployment. In parallel, I am extending my PhD research line into synthetic data generation for cross-environment ML transfer and explainable AI; a Google TPU Research Cloud proposal is under review. To validate the orchestration pattern for that work, I built a cost-efficient multi-agent LLM pipeline as a PoC.
 
         In 2025, I completed my Ph.D. at Ghent University-imec, and was previously a RA at Academia Sinica. Both my PhD and MSc research were conducted on real-world data, covering 5000+ hours of uncurated audio streams and extended video across multiple deployment sites.
 
@@ -37,6 +37,68 @@ sections:
           size: cover
           position: center
           parallax: false
+
+  - block: markdown
+    id: activities
+    content:
+      title: Recent Activities
+      subtitle: ''
+      text: |-
+        <ul class="hb-timeline">
+
+          <li class="hb-timeline__item hb-timeline__item--now">
+            <div class="hb-timeline__date">2026 to now</div>
+            <div class="hb-timeline__body">
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Research</span><a href="/project-research/edgecloudvlm/">Edge-Cloud VLM: vision encoder quantization for on-device deployment</a></p>
+              <p class="hb-timeline__text">Quantizing a VLM vision encoder for a Qualcomm QCS8550 NPU. Eleven configurations evaluated on GPU, four actually executable on target. The paper is about where evaluation breaks between development and deployment. <em>Manuscript to be submitted.</em></p>
+            </div>
+          </li>
+
+          <li class="hb-timeline__item">
+            <div class="hb-timeline__date">2026.06</div>
+            <div class="hb-timeline__body">
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Proposal</span>Google TPU Research Cloud proposal, under review</p>
+              <p class="hb-timeline__text"><em>Reality-Bounded Synthetic Data via Decoupling and Recombination</em>: extending the PhD line to cross-environment event and behaviour transfer, and person-level stress-testing for deepfake detection.</p>
+            </div>
+          </li>
+
+          <li class="hb-timeline__item">
+            <div class="hb-timeline__date">2026.01</div>
+            <div class="hb-timeline__body">
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Build</span><a href="/project-applied/multi_agent_poc/">Multi-agent LLM orchestration PoC</a></p>
+              <p class="hb-timeline__text">Cost-efficient routing, context isolation, and model gating, validated on a CPU/API-only setup before committing to GPU-heavy compute.</p>
+            </div>
+          </li>
+
+          <li class="hb-timeline__item">
+            <div class="hb-timeline__date">2025.11</div>
+            <div class="hb-timeline__body">
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Milestone</span>Ph.D. conferred by Ghent University-imec</p>
+              <p class="hb-timeline__text"><a href="/project-research/phd/">From Lab to Street</a>: transferable and privacy-friendly deep learning for urban surveillance, built on 5000+ hours of uncurated real-world audio.</p>
+            </div>
+          </li>
+
+          <li class="hb-timeline__item">
+            <div class="hb-timeline__date">2025.06</div>
+            <div class="hb-timeline__body">
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Paper</span><a href="/publication/wang-2025-source/">Source-free model transferability assessment</a></p>
+              <p class="hb-timeline__text">Published in <em>MDPI Sensors</em>: ranking model transferability for smart surveillance without access to source data.</p>
+            </div>
+          </li>
+
+          <li class="hb-timeline__item">
+            <div class="hb-timeline__date">2025.01</div>
+            <div class="hb-timeline__body">
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Paper</span><a href="/publication/2025-rai/">Embedding-based pair generation for contrastive learning</a></p>
+              <p class="hb-timeline__text">Published in <em>Frontiers in Robotics and AI</em>: audio-visual representation learning on real surveillance streams.</p>
+            </div>
+          </li>
+
+        </ul>
+    design:
+      columns: 1
+      spacing:
+        padding: ['1rem', 0, '1rem', 0]
 
   - block: collection
     id: projects

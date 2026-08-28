@@ -202,3 +202,142 @@
   padding: 0 1rem !important;
 }
 
+
+/* ===================== Recent Activities timeline ===================== */
+/* 顏色全部用 currentColor + opacity，因此 light / dark 模式自動適應 */
+
+.hb-timeline {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.hb-timeline__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    gap: 0 1.25rem;
+    padding: 0 0 1.6rem 0;
+}
+
+/* 垂直軸線：畫在日期欄右側 */
+.hb-timeline__item::before {
+    content: "";
+    position: absolute;
+    left: 6.5rem;
+    top: 0.55rem;
+    bottom: -0.55rem;
+    width: 1px;
+    background: currentColor;
+    opacity: 0.18;
+}
+
+.hb-timeline__item:last-child {
+    padding-bottom: 0;
+}
+
+.hb-timeline__item:last-child::before {
+    display: none;
+}
+
+.hb-timeline__date {
+    grid-column: 1;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    text-align: right;
+    padding-top: 0.1rem;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
+.hb-timeline__body {
+    grid-column: 2;
+    padding-left: 0.35rem;
+}
+
+/* 圓點：壓在軸線上 */
+.hb-timeline__body::before {
+    content: "";
+    position: absolute;
+    left: calc(6.5rem - 3.5px);
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.35;
+}
+
+.hb-timeline__item--now .hb-timeline__body::before {
+    opacity: 1;
+    box-shadow: 0 0 0 3px rgba(127, 127, 127, 0.18);
+}
+
+.hb-timeline__title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.hb-timeline__title a {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    border-bottom-color: rgba(127, 127, 127, 0.35);
+}
+
+.hb-timeline__title a:hover {
+    border-bottom-color: currentColor;
+}
+
+.hb-timeline__text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin: 0.2rem 0 0 0;
+    opacity: 0.72;
+}
+
+.hb-timeline__tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.1rem 0.45rem;
+    margin-right: 0.4rem;
+    border-radius: 3px;
+    border: 1px solid rgba(127, 127, 127, 0.35);
+    opacity: 0.75;
+    vertical-align: 0.08em;
+}
+
+@media (max-width: 640px) {
+    .hb-timeline__item {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-left: 1.1rem;
+    }
+
+    .hb-timeline__item::before {
+        left: 0;
+    }
+
+    .hb-timeline__body::before {
+        left: -3.5px;
+    }
+
+    .hb-timeline__date {
+        grid-column: 1;
+        text-align: left;
+        padding-top: 0;
+        margin-bottom: 0.15rem;
+    }
+
+    .hb-timeline__body {
+        grid-column: 1;
+        padding-left: 0;
+    }
+}

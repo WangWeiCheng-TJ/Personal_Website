@@ -1,6 +1,6 @@
 ---
 title: From Lab to Street：Transferable and Privacy-friendly Deep Learning for Urban Surveillance
-date: 2025-06-30
+date: 2025-11-14
 tags:
   - Source-Free Transferability
   - Self-Supervised Learning

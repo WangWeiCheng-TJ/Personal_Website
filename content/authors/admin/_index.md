@@ -26,9 +26,9 @@ role: |
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: |
-      Based in Ghent until August 2026, returning to Taiwan thereafter.
+      Based in Taiwan.
   - name: |
-      Open to AS / RE roles, remote interviews available now.
+      Open to AS / RE roles, interviews available now.
   # - name: IDLab, Department of Information and Technology, Ghent University-imec
   #   url: https://decide.ugent.be/
 
@@ -246,7 +246,7 @@ awards:
     date: 2015-11-21
     awarder: Asia Pacific ICT Alliance (APICTA) & International ICT Innovative Services Awards
     summary: |
-      As team leader, I led our project, _Online Video Synopsis: Shorten Video Content for Flicking Through_, to secure three major international awards in 2015. We achieved First Place (USD $17,000 prize) for business potential and Second Place for innovation at the International ICT Innovative Services Awards. Concurrently, representing Taiwan as the national nominee, we won the Merit Award in the R&D category at the 17-economy Asia Pacific ICT Alliance (APICTA) Awards held in Sri Lanka.
+      As team leader, I led our project, _Online Video Synopsis: Shorten Video Content for Flicking Through_, to secure three major international awards in 2015. We achieved First Place (USD $17000 prize) for business potential and Second Place for innovation at the International ICT Innovative Services Awards. Concurrently, representing Taiwan as the national nominee, we won the Merit Award in the R&D category at the 17-economy Asia Pacific ICT Alliance (APICTA) Awards held in Sri Lanka.
 
   - title: International ICT Innovative Services Awards
     date: 2015-10-31
