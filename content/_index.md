@@ -49,7 +49,7 @@ sections:
           <li class="hb-timeline__item hb-timeline__item--now">
             <div class="hb-timeline__date">2026 to now</div>
             <div class="hb-timeline__body">
-              <p class="hb-timeline__title"><span class="hb-timeline__tag">Research</span><a href="/project-research/edgecloudvlm/">Edge-Cloud VLM: vision encoder quantization for on-device deployment</a></p>
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Research</span><a href="project-research/edgecloudvlm/">Edge-Cloud VLM: vision encoder quantization for on-device deployment</a></p>
               <p class="hb-timeline__text">Quantizing a VLM vision encoder for a Qualcomm QCS8550 NPU. Eleven configurations evaluated on GPU, four actually executable on target. The paper is about where evaluation breaks between development and deployment. <em>Manuscript to be submitted.</em></p>
             </div>
           </li>
@@ -65,7 +65,7 @@ sections:
           <li class="hb-timeline__item">
             <div class="hb-timeline__date">2026.01</div>
             <div class="hb-timeline__body">
-              <p class="hb-timeline__title"><span class="hb-timeline__tag">Build</span><a href="/project-applied/multi_agent_poc/">Multi-agent LLM orchestration PoC</a></p>
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Build</span><a href="project-applied/multi_agent_poc/">Multi-agent LLM orchestration PoC</a></p>
               <p class="hb-timeline__text">Cost-efficient routing, context isolation, and model gating, validated on a CPU/API-only setup before committing to GPU-heavy compute.</p>
             </div>
           </li>
@@ -74,14 +74,14 @@ sections:
             <div class="hb-timeline__date">2025.11</div>
             <div class="hb-timeline__body">
               <p class="hb-timeline__title"><span class="hb-timeline__tag">Milestone</span>Ph.D. conferred by Ghent University-imec</p>
-              <p class="hb-timeline__text"><a href="/project-research/phd/">From Lab to Street</a>: transferable and privacy-friendly deep learning for urban surveillance, built on 5000+ hours of uncurated real-world audio.</p>
+              <p class="hb-timeline__text"><a href="project-research/phd/">From Lab to Street</a>: transferable and privacy-friendly deep learning for urban surveillance, built on 5000+ hours of uncurated real-world audio.</p>
             </div>
           </li>
 
           <li class="hb-timeline__item">
             <div class="hb-timeline__date">2025.06</div>
             <div class="hb-timeline__body">
-              <p class="hb-timeline__title"><span class="hb-timeline__tag">Paper</span><a href="/publication/wang-2025-source/">Source-free model transferability assessment</a></p>
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Paper</span><a href="publication/wang-2025-source/">Source-free model transferability assessment</a></p>
               <p class="hb-timeline__text">Published in <em>MDPI Sensors</em>: ranking model transferability for smart surveillance without access to source data.</p>
             </div>
           </li>
@@ -89,7 +89,7 @@ sections:
           <li class="hb-timeline__item">
             <div class="hb-timeline__date">2025.01</div>
             <div class="hb-timeline__body">
-              <p class="hb-timeline__title"><span class="hb-timeline__tag">Paper</span><a href="/publication/2025-rai/">Embedding-based pair generation for contrastive learning</a></p>
+              <p class="hb-timeline__title"><span class="hb-timeline__tag">Paper</span><a href="publication/2025-rai/">Embedding-based pair generation for contrastive learning</a></p>
               <p class="hb-timeline__text">Published in <em>Frontiers in Robotics and AI</em>: audio-visual representation learning on real surveillance streams.</p>
             </div>
           </li>
@@ -147,7 +147,7 @@ sections:
   #       As a Teaching Assistant for "Applied Machine Learning" for three semesters, I guided students to navigate messy, real-world datasets ranging from Airbnb to Sony Depthsensing. My objective went beyond teaching code; it was to pass on the logic of rigorous problem-solving.
   #       </p>
   #       <p style="text-align: justify;">
-  #       This commitment to service culminated during my tenure as President of the Taiwanese Student Association (TSA) in Ghent, where I initiated a city-wide mentor-mentee program to support the community through the pandemic. However, my dedication did not end with my term. Identifying that high operational friction remained a burden for my successors, I continued to serve the community by architecting the <a href="/project-applied/ugentapp/">Survivor Kit for Taiwanese in Ghent</a>. This AI-driven, serverless platform automates information dissemination, ensuring that my technical expertise continues to provide value and sustainability to the ecosystem long after my direct leadership concluded.
+  #       This commitment to service culminated during my tenure as President of the Taiwanese Student Association (TSA) in Ghent, where I initiated a city-wide mentor-mentee program to support the community through the pandemic. However, my dedication did not end with my term. Identifying that high operational friction remained a burden for my successors, I continued to serve the community by architecting the <a href="project-applied/ugentapp/">Survivor Kit for Taiwanese in Ghent</a>. This AI-driven, serverless platform automates information dissemination, ensuring that my technical expertise continues to provide value and sustainability to the ecosystem long after my direct leadership concluded.
   #       </p>
   #       <p style="text-align: justify;">
   #       Together, these experiences reflect my commitment to advancing AI technology that is not only powerful, but also human-centric, transparent, and positively impactful for diverse urban societies.
