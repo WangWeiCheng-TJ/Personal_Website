@@ -15,7 +15,7 @@ sections:
       username: admin
       text: |-
         <p style="text-align: justify;">
-        I am currently working on edge-cloud vision-language systems, quantizing the vision encoder for on-device deployment on a Qualcomm NPU, with a manuscript in preparation on where evaluation breaks between development and deployment. In parallel, I am extending my PhD research line into synthetic data generation for cross-environment ML transfer and explainable AI; a Google TPU Research Cloud proposal is under review. To validate the orchestration pattern for that work, I built a cost-efficient multi-agent LLM pipeline as a PoC.
+        I am currently working on edge-cloud VLMs, quantizing the vision encoder for on-device deployment on a Qualcomm NPU, with a manuscript in preparation on where evaluation breaks between development and deployment. In parallel, I am extending my PhD research line into synthetic data generation for cross-environment ML transfer and explainable AI; a Google TPU Research Cloud proposal is under review. To validate the orchestration pattern for that work, I built a cost-efficient multi-agent LLM pipeline as a PoC.
 
         In 2025, I completed my Ph.D. at Ghent University-imec, and was previously a RA at Academia Sinica. Both my PhD and MSc research were conducted on real-world data, covering 5000+ hours of uncurated audio streams and extended video across multiple deployment sites.
 
@@ -24,7 +24,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/Resume_Wei-Cheng Wang_0612_ASRE.pdf
+        url: uploads/Resume_Wei-Cheng Wang_0829.pdf
     design:
       css_class: dark
       background:
