@@ -15,11 +15,11 @@ sections:
       username: admin
       text: |-
         <p style="text-align: justify;">
-        I am currently working on edge-cloud VLMs, quantizing the vision encoder for on-device deployment on a Qualcomm NPU, with a manuscript in preparation on where evaluation breaks between development and deployment. In parallel, I am extending my PhD research line into synthetic data generation for cross-environment ML transfer and explainable AI; a Google TPU Research Cloud proposal is under review. To validate the orchestration pattern for that work, I built a cost-efficient multi-agent LLM pipeline as a PoC.
+        After 10 years of working with real-world data and use scenarios, I am now looking for opportunities to take a step closer to the deployment side.
 
-        In 2025, I completed my Ph.D. at Ghent University-imec, and was previously a RA at Academia Sinica. Both my PhD and MSc research were conducted on real-world data, covering 5000+ hours of uncurated audio streams and extended video across multiple deployment sites.
+        With a focus on computer vision, audio and machine learning, I have been working on identifying when, where and how ML models/frameworks would fail when applied to real-world data and deployment constraints across my work prior to and during my PhD at Ghent University-imec. Years of work have led to recognition including 13 peer-reviewed publications (7 journal papers, ICIP oral), 150+ citations, an APICTA Award, and a Top 3% Master’s graduate honor. After my PhD, I extended this work to VLM quantization for edge-cloud deployment with Qualcomm AI Hub, as well as synthetic data generation to bridge cross-site domain shift.
 
-        My research focuses on building solutions at the mechanism-level while under real-world constraints. Recognition includes 13 peer-reviewed articles (7 journals, ICIP oral), 150+ citations, APICTA award, and Top 3% master's graduate honor.
+        After closing my chapter in Belgium, I returned to Taiwan in late August and am now actively looking for new opportunities.
         </p>
       # Show a call-to-action button under your biography? (optional)
       button:
